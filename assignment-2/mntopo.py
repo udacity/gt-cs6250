@@ -14,19 +14,19 @@ class MNTopo(Topo):
         Topo.__init__(self, **params)
 
         # Host and link configuration
-        hconfig = {'cpu': cpu}
-        lconfig_eth = {'bw': 10, 'delay': '1ms', 'loss': 0,
+        hostConfig = {'cpu': cpu}
+        linkConfig = {'bw': 10, 'delay': '1ms', 'loss': 0,
                    'max_queue_size': max_queue_size }
        
 	# Hosts and switches
         s1 = self.addSwitch('s1')
-	sender = self.addHost('sender', **hconfig)
-	receiver = self.addHost('receiver', **hconfig)
+	sender = self.addHost('sender', **hostConfig)
+	receiver = self.addHost('receiver', **hostConfig)
 
 	# Wire receiver
-        self.addLink(receiver, s1, **lconfig_eth)
+        self.addLink(receiver, s1, **linkConfig)
 
 	# Wire sender
-	self.addLink(sender, s1, **lconfig_eth)
+	self.addLink(sender, s1, **linkConfig)
 
 
