@@ -28,4 +28,4 @@ class MNTopo(Topo):
 	# Wire sender
 	self.addLink(sender, s1, **linkConfig)
 
-
+topos = { 'mntopo': ( lambda: MNTopo() ) }
