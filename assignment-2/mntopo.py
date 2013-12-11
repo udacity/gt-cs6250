@@ -7,8 +7,7 @@ from mininet.util import custom
 class MNTopo(Topo):
     "Topo1 Topology"
 
-    def __init__(self, cpu=.1, bw=10, delay=None,
-                 max_queue_size=None, **params):
+    def __init__(self, cpu=.1, max_queue_size=None, **params):
 
         # Initialize topo
         Topo.__init__(self, **params)
