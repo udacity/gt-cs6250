@@ -28,7 +28,6 @@ for n in 1; do
     python measure.py \
         --dir $dir 
     python util/plot_rate.py --rx \
-	--maxy 10 \
         --xlabel 'Time (s)' \
         --ylabel 'Rate (Mbps)' \
         -i 's.*-eth2' \
