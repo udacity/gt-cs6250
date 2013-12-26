@@ -11,4 +11,4 @@ python util/plot_rate.py --rx \
         --ylabel 'Rate (Mbps)' \
         -i 's.*-eth2' \
         -f $1 \
-        -o $dir/rate.png
+        -o ./rate.png
