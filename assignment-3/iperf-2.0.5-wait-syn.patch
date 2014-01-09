@@ -1,0 +1,25 @@
+diff --git a/Client.cpp b/Client.cpp
+index 71a5b5c..6aa25f8 100644
+--- a/Client.cpp
++++ b/Client.cpp
+@@ -213,6 +213,7 @@ void Client::Run( void ) {
+ 
+ #if HAVE_THREAD
+     if ( !isUDP( mSettings ) ) {
++    sleep(5);  // Sleep a bit before blasting data
+ 	RunTCP();
+ 	return;
+     }
+diff --git a/Listener.cpp b/Listener.cpp
+index 94e32de..0071a59 100644
+--- a/Listener.cpp
++++ b/Listener.cpp
+@@ -338,7 +338,7 @@ void Listener::Listen( ) {
+     // listen for connections (TCP only).
+     // default backlog traditionally 5
+     if ( !isUDP( mSettings ) ) {
+-        rc = listen( mSettings->mSock, 5 );
++        rc = listen( mSettings->mSock, 1024 );
+         WARN_errno( rc == SOCKET_ERROR, "listen" );
+     }
+ 
