@@ -43,7 +43,7 @@ done
 done
 
 cat $rootdir/*/result.txt | sort -n -k 1
-cat $rootdir/*/result.txt | sort -n -k 1 > $rootdir/result.txt
+cat $rootdir/*/result.txt | sort -n -k 1 > $rootdir/buffer-size-result.txt
 python plot-results.py --dir $rootdir -o $rootdir/result.png
 echo "Started at" $start
 echo "Ended at" `date`
