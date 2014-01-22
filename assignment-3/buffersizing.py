@@ -45,6 +45,9 @@ SAMPLE_PERIOD_SEC = 1.0
 # Time to wait for first sample, in seconds, as a float.
 SAMPLE_WAIT_SEC = 3.0
 
+# Number of hosts
+NUM_HOSTS = 3
+
 
 def cprint(s, color, cr=True):
     """Print in color
@@ -81,13 +84,6 @@ parser.add_argument('--dir', '-d',
                     action="store",
                     help="Directory to store outputs",
                     default="results",
-                    required=True)
-
-parser.add_argument('-n',
-                    dest="n",
-                    type=int,
-                    action="store",
-                    help="Number of nodes in star.  Must be >= 3",
                     required=True)
 
 parser.add_argument('--nflows',
@@ -134,7 +130,7 @@ lg.setLogLevel('info')
 class StarTopo(Topo):
     "Star topology for Buffer Sizing experiment"
 
-    def __init__(self, n=3, cpu=None, bw_host=None, bw_net=None,
+    def __init__(self, n=NUM_HOSTS, cpu=None, bw_host=None, bw_net=None,
                  delay=None, maxq=None):
         # Add default members to class.
         super(StarTopo, self ).__init__()
@@ -146,10 +142,10 @@ class StarTopo(Topo):
         self.maxq = maxq
         self.create_topology()
 
-    # TODO: Fill in the following function to  
-    # Create the experiment topology 
-    # Set appropriate values for bandwidth, delay, 
-    # and queue size 
+    # TODO: Fill in the following function to
+    # Create the experiment topology
+    # Set appropriate values for bandwidth, delay,
+    # and queue size
     def create_topology(self):
         pass
 
@@ -265,7 +261,7 @@ def do_sweep(iface):
        search to find a value that yields the desired result"""
 
     bdp = args.bw_net * 2 * args.delay * 1000.0 / 8.0 / 1500.0
-    nflows = args.nflows * (args.n - 1)
+    nflows = args.nflows * (NUM_HOSTS - 1)
     min_q, max_q = 1, int(bdp)
 
     # Set a higher speed
@@ -294,7 +290,7 @@ def do_sweep(iface):
     sys.stdout.flush()
     set_q(iface, max_q)
 
-    # Wait till link is 100% utilised and train 
+    # Wait till link is 100% utilised and train
     reference_rate = 0.0
     while reference_rate <= args.bw_net * START_BW_FRACTION:
         rates = get_rates(iface, nsamples=CALIBRATION_SAMPLES+CALIBRATION_SKIP)
@@ -315,8 +311,8 @@ def do_sweep(iface):
 
         # TODO: Binary search over queue sizes
         # (1) Check if a queue size of "mid" achieves required utilization
-        #     based on the median value of the measured rate samples. 
-        # (2) Change values of max_q and min_q accordingly 
+        #     based on the median value of the measured rate samples.
+        # (2) Change values of max_q and min_q accordingly
         #     to continue with the binary search
 
         # You may use the helper functions set_q(),
@@ -327,33 +323,33 @@ def do_sweep(iface):
     print "*** Minq for target: %d" % max_q
     return max_q
 
-# TODO: Fill in the following function to verify the latency 
+# TODO: Fill in the following function to verify the latency
 # settings of your topology
 
 def verify_latency(net):
     "(Incomplete) verify link latency"
     pass
 
-# TODO: Fill in the following function to verify the bandwidth 
+# TODO: Fill in the following function to verify the bandwidth
 # settings of your topology
 
 def verify_bandwidth(net):
     "(Incomplete) verify link bandwidth"
     pass
 
-# TODO: Fill in the following function to 
+# TODO: Fill in the following function to
 # Start iperf on the receiver node
 # Hint: use getNodeByName to get a handle on the receiver node
 # Hint: iperf command to start the receiver:
 #       '%s -s -p %s > %s/iperf_server.txt &' %
 #        (CUSTOM_IPERF_PATH, 5001, args.dir)
-# Note: The output file should be <args.dir>/iperf_server.txt 
+# Note: The output file should be <args.dir>/iperf_server.txt
 #       It will be used later in count_connections()
 
 def start_receiver(net):
     pass
 
-# TODO: Fill in the following function to 
+# TODO: Fill in the following function to
 # Start N flows across the senders in a round-robin fashion
 # Hint: use getNodeByName to get a handle on the sender node
 # Hint: iperf command to start flow:
@@ -370,7 +366,7 @@ def main():
 
     start = time()
     # Reset to known state
-    topo = StarTopo(n=args.n, bw_host=args.bw_host,
+    topo = StarTopo(n=NUM_HOSTS, bw_host=args.bw_host,
                     delay='%sms' % args.delay,
                     bw_net=args.bw_net, maxq=args.maxq)
     net = Mininet(topo=topo, host=CPULimitedHost, link=TCLink,
@@ -394,7 +390,7 @@ def main():
     # TODO: change the interface for which queue size is adjusted
     # should be <switch-name>-eth3
     ret = do_sweep(iface='s1-eth3')
-    total_flows = (args.n - 1) * args.nflows
+    total_flows = (NUM_HOSTS - 1) * args.nflows
 
     # Store output
     output = "%d %s %.3f\n" % (total_flows, ret, ret * 1500.0)
