@@ -38,7 +38,7 @@ class Firewall (EventMixin):
             reader = DictReader(f, delimiter = ",")
             policies = {}
             for row in reader:
-                policies[row['id']] = Policy(row['mac_0'], row['mac_1'])
+                policies[row['id']] = Policy(EthAddr(row['mac_0']), EthAddr(row['mac_1']))
         return policies
 
     def _handle_ConnectionUp (self, event):    
