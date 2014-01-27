@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
-"CS244 Assignment 2: Buffer Sizing"
+"Assignment 3 - Creates buffer sizing topology \
+        and performs binary search for correct \
+        buffer size."
 
 from mininet.topo import Topo
 from mininet.node import CPULimitedHost
