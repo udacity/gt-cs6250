@@ -31,4 +31,4 @@ echo "<tr><td><a href=\"${exp}_tcp_cwnd_wget.png\"><img src=\"${exp}_tcp_cwnd_wg
 echo "</table></center></body></html>" >> index.html
 
 #sudo pkill -9 -f SimpleHTTPServer
-python -m SimpleHTTPServer 8888
+python -m SimpleHTTPServer 8000
