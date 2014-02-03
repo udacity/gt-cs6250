@@ -34,7 +34,6 @@ for flows_per_host in 1 2 5 10 50 100 200 300 400; do
 		--delay 43.5 \
 		--dir $dir \
 		--nflows $flows_per_host \
-		-n 3 \
 		--iperf $iperf
 
 	python $plotpath/plot_queue.py -f $dir/qlen_$iface.txt -o $dir/q.png
