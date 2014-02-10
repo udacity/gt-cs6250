@@ -1,10 +1,9 @@
 '''
-Coursera:
+Udacity:
 - Software Defined Networking (SDN) course
--- Module 4 Programming Assignment
+-- Assignment 7 Programming Assignment
 
 Professor: Nick Feamster
-Teaching Assistant: Muhammad Shahbaz
 '''
 
 from pox.core import core
@@ -18,9 +17,9 @@ from csv import DictReader
 
 
 log = core.getLogger()
-policyFile = "%s/pox/pox/misc/firewall-policies.csv" % os.environ[ 'HOME' ]  
+policyFile = "%s/pox/pox/misc/firewall-policies.csv" % os.environ[ 'HOME' ]
 
-# Add your global variables here ... 
+# Add your global variables here ...
 
 # Note: Policy is data structure which contains a single
 # source-destination flow to be blocked on the controller.
@@ -41,7 +40,7 @@ class Firewall (EventMixin):
                 policies[row['id']] = Policy(EthAddr(row['mac_0']), EthAddr(row['mac_1']))
         return policies
 
-    def _handle_ConnectionUp (self, event):    
+    def _handle_ConnectionUp (self, event):
         policies = self.read_policies(policyFile)
         for policy in policies.itervalues():
         # TODO: implement the code to add a rule to block the flow
@@ -55,7 +54,7 @@ class Firewall (EventMixin):
         # Note: Set the priority for your rule to 20 so that it
         # doesn't conflict with the learning bridge setup
             pass
-    
+
         log.debug("Firewall rules installed on %s", dpidToStr(event.dpid))
 
 def launch ():

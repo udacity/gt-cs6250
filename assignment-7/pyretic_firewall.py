@@ -1,10 +1,9 @@
 '''
-    Coursera:
-    - Software Defined Networking (SDN) course
-    -- Module 6 Programming Assignment
-    
-    Professor: Nick Feamster
-    Teaching Assistant: Muhammad Shahbaz
+Udacity:
+- Software Defined Networking (SDN) course
+-- Assignment 7 Programming Assignment
+
+Professor: Nick Feamster
 '''
 
 ################################################################################
@@ -56,7 +55,7 @@ def main():
             for row in reader:
                 policies[row['id']] = Policy(MAC(row['mac_0']), MAC(row['mac_1']))
         return policies
-    
+
     policies = read_policies(policy_file)
 
     # start with a policy that doesn't match any packets
