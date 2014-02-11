@@ -9,7 +9,7 @@ from mininet.net import Mininet
 from mininet.log import lg, output
 from mininet.node import CPULimitedHost
 from mininet.link import TCLink
-from mininet.util import irange, custom, quietRun, dumpNetConnections
+from mininet.util import custom, quietRun, dumpNetConnections
 from mininet.cli import CLI
 
 from time import sleep, time
