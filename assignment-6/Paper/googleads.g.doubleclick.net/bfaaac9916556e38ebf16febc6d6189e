@@ -1,0 +1,53 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=CpgWnRds_UZ_CEYrIlgTG4YCAA8KZtNoBgsuMlBnAjbcBEAEgksSHBigDULjg8psEYMnu7YbIo6AZiAEBoAHwyPH-A8gBAagDAaoEVU_QG8PXzlhpwZlgIBdT7q_X-5k2_vtDLpoSK6NuX44OytfTGh7a4jDI9NWkml4LofysZHy2wlgGWea6z-fMACsOROQm4Lm_5nrRSeTXIXcG3fp2aumAB_i2jgE&amp;num=1&amp;sig=AOD64_3_G5E-0WHnnk0lWDekHeQFzf5FvQ&amp;client=ca-nytimes_homepage_js&amp;adurl=http://www.nanawall.com/%3Fref%3DAdwords%26_kk%3Dsustainable%2520development%26_kt%3D88abf99d-1945-4b51-b08f-e22a67bc6e3f"; 
+google_ad.visible_url = "www.NanaWall.com"; 
+google_ad.line1 = "NanaWall Systems"; 
+google_ad.line2 = "Use NanaWall folding glass doors"; 
+google_ad.line3 = "to help achieve LEED credits."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = {}; 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=Chs2dRds_UZ_CEYrIlgTG4YCAA-rr1o0CuvXj-S_ircqHBBACIJLEhwYoA1Dev4rT-v____8BYMnu7YbIo6AZiAEByAEBqAMBqgRWT9A7-srOW2nBmWAgF1Pur9f7mTb--0MumhIro25fjg7K19MaHtriMMj01aSaXguh_KxkfLbCWAZZ5rrP58wAKw5E5Cbgub_metFJ5Nchdwbd-mgUJweAB8j2rhY&amp;num=2&amp;sig=AOD64_1I-shnTL2YlIBoQMQXwZwBuvOlbQ&amp;client=ca-nytimes_homepage_js&amp;adurl=http://www.isosgroup.com"; 
+google_ad.visible_url = "www.isosgroup.com"; 
+google_ad.line1 = "GRI Sustainability Report"; 
+google_ad.line2 = "External Assurance"; 
+google_ad.line3 = "GRI Certified Trainings"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = {}; 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=CwMGaRds_UZ_CEYrIlgTG4YCAA9a3pOwC3tX7hzrAjbcBEAMgksSHBigDUJX09bEFYMnu7YbIo6AZiAEBoAGq66PiA8gBAagDAaoEWU_QO6_YzlppwZlgIBdT7q_X-5k2_vtDLpoSK6NuX44OytfTGh7a4jDI9NWkml4LofysZHy2ulsGMedbIQwvnsDl32rNFje8H3nVsOfj1HQ2PfzkDr_mHp_PgAe-lNwd&amp;num=3&amp;sig=AOD64_2oRjTUiYKtGajZVcqN9TSyfKxFrA&amp;client=ca-nytimes_homepage_js&amp;adurl=http://www.TheCreditSolutionProgram.com/free-lessons-3g%3Futm_source%3Dgoogle%26utm_medium%3Dtext%26utm_content%3Dad104%26utm_campaign%3Dpolitics"; 
+google_ad.visible_url = "www.thecreditsolutionprogram.com"; 
+google_ad.line1 = "Man Cheats Credit Score"; 
+google_ad.line2 = "1 simple trick \x26amp; my credit score"; 
+google_ad.line3 = "jumped 217 pts. Banks hate this!"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.nytimes.com/%26gl%3DUS%26hl%3Den%26client%3Dca-nytimes_homepage_js%26hideleadgen%3D1%26ai0%3DCpgWnRds_UZ_CEYrIlgTG4YCAA8KZtNoBgsuMlBnAjbcBEAEgksSHBigDULjg8psEYMnu7YbIo6AZiAEBoAHwyPH-A8gBAagDAaoEVU_QG8PXzlhpwZlgIBdT7q_X-5k2_vtDLpoSK6NuX44OytfTGh7a4jDI9NWkml4LofysZHy2wlgGWea6z-fMACsOROQm4Lm_5nrRSeTXIXcG3fp2aumAB_i2jgE%26ai1%3DChs2dRds_UZ_CEYrIlgTG4YCAA-rr1o0CuvXj-S_ircqHBBACIJLEhwYoA1Dev4rT-v____8BYMnu7YbIo6AZiAEByAEBqAMBqgRWT9A7-srOW2nBmWAgF1Pur9f7mTb--0MumhIro25fjg7K19MaHtriMMj01aSaXguh_KxkfLbCWAZZ5rrP58wAKw5E5Cbgub_metFJ5Nchdwbd-mgUJweAB8j2rhY%26ai2%3DCwMGaRds_UZ_CEYrIlgTG4YCAA9a3pOwC3tX7hzrAjbcBEAMgksSHBigDUJX09bEFYMnu7YbIo6AZiAEBoAGq66PiA8gBAagDAaoEWU_QO6_YzlppwZlgIBdT7q_X-5k2_vtDLpoSK6NuX44OytfTGh7a4jDI9NWkml4LofysZHy2ulsGMedbIQwvnsDl32rNFje8H3nVsOfj1HQ2PfzkDr_mHp_PgAe-lNwd\x26usg\x3dAFQjCNHkqP4_vMwy8wv5I1pctvHkIlCH0Q";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

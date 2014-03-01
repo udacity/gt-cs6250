@@ -1,0 +1,376 @@
+.ciuImgDiv {
+	position: relative;  
+	margin-left: auto;
+	margin-right: auto;	
+}
+.ciuImg {
+        position: relative; 
+	top: 1px;
+	left: 1px; 
+	text-align: center; 
+}
+
+
+.ciuInnerAnnotation {
+	background-color: #ffffff;
+	filter:alpha(opacity=0);
+	opacity: 0.0;
+	-moz-opacity:0;
+	display: block;
+	visibility: visible;
+    font-size: 1px;
+}
+.ciuBlackAnnotation {
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	background-color: transparent;
+	display: block;
+	visibility: visible;
+}
+.ciuWhiteAnnotation {
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+	background-color: transparent;
+	display: block;
+	visibility: visible;
+}
+.ciuOuterAnnotation {
+	position: absolute;
+	border-color: transparent;
+	border-width: 1px;
+	border-style: solid;
+	background-color: transparent;
+	display: none;
+        _border-color:magenta; 
+        _filter:chroma(color=magenta); 
+}
+.ciuHighlightAnnotation {
+	border-color: #ffff99;
+}
+
+
+.ciuJQueryNoteTextDiv {
+	font-family: verdana, arial, helvetica, sans-serif;
+	text-decoration: none;
+	word-wrap: break-word;
+	cursor: default;
+}
+
+.ciuJQueryNoteTextDiv tbody td {
+	font-size: 8pt;
+   	line-height: 130%;
+}
+
+.ciuJQueryNoteTextDiv a:link,
+.ciuJQueryNoteTextDiv a:visited,
+.ciuJQueryNoteTextDiv a:hover,
+.ciuJQueryNoteTextDiv a:active
+{
+	text-decoration: underline !important;
+	cursor: pointer !important;
+}
+
+
+.ciuNoteTextDiv {
+	font-family: verdana, arial, helvetica, sans-serif;
+	position: absolute;
+	background-color: transparent;
+	display: none;
+	text-decoration: none;
+	word-wrap: break-word;
+	cursor: default;
+}
+
+.ciuNoteTextDiv tbody td {
+	font-size: 8pt;
+   	line-height: 130%;
+}
+
+
+.ciuNoteTextDiv a:link,
+.ciuNoteTextDiv a:visited,
+.ciuNoteTextDiv a:hover,
+.ciuNoteTextDiv a:active
+{
+	text-decoration: underline !important;
+	cursor: pointer !important;
+}
+
+
+.ciuNoteEditBoxDiv {
+	position:absolute;
+	background-color: transparent;
+	display: block;
+	z-index: 990;
+}
+.ciuNoteEditBoxDiv textarea {
+	font-family: verdana, arial, helvetica, sans-serif;
+
+  	font-size: 8pt;   
+	width: 100%; 
+	height: 100px; 
+	color: #333333;
+	margin-bottom: -3px !important;
+	overflow: auto;
+	border: 1px #dddddd solid;
+	padding: 4px 4px 4px 4px;
+}
+
+.ciuNoteEditBoxForm
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.ciuCharCountOK
+{
+	margin: 7px 0px 5px 0px;
+	font-size: 7pt;
+	color: #999999;
+	text-align: center;
+	height: 14px;
+}
+
+.ciuCharCountNotOK
+{
+	margin: 7px 0px 5px 0px;
+	font-size: 7pt;
+	color: #bb0000;
+	text-align: center;
+	background-color: #ffffcc;
+	height: 14px;
+}
+
+.ciuOffendingText
+{
+	color: #bb0000;
+	background-color: #ffffcc;
+}
+
+.ciuDragHandle {
+	position:absolute;
+	font-size: 1px; 
+	width: 8px;
+	height: 8px;
+	background-color:white;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	padding-left: 0px;
+	margin: 0px;
+	z-index:990;
+}
+
+.ciuAnnotationButton {
+	margin: 0px 2px;
+	cursor: pointer;
+}
+
+.ciuAnnotationGhostedSaveButton
+{
+	cursor: default;
+}
+
+.ciuAddNoteButton {
+	position: absolute;
+	right: 0px;
+	top: -30px;
+}
+
+.ciuEditNoteButtons
+{
+	width: 100%;
+}
+
+.ciuEditNoteSaveButton
+{
+	padding-right: 12px;
+}
+
+.ciuEditNoteNonSaveButtons
+{
+	text-align: right;
+}
+
+
+.ciuJsfmsgDiv {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding: 2px;
+	text-align: center;
+	border-color: #999999;
+	border-width: 1px;
+	border-style: solid;
+	width: 180px;
+	position: absolute;
+	background-color: #FFFFD5;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity:0.8;
+	opacity: 0.8;
+	z-index: 999;
+}
+.ciuJsfmsgDiv img {
+	padding: 4px;
+}
+
+
+#ciuRollOverMsgDiv { 
+	line-height: 100%;
+}
+
+.ciuRollOverMsg {
+	padding-top: 5px;
+	padding-bottom: 1px;
+	font-size: 0.86em;
+	font-weight: bold;
+	color: #666666;
+	text-align: center;
+}
+
+
+.ciuNoteBox, .ciuNoteEditBox
+{
+	border-collapse: collapse;
+}
+
+.ciuNoteEditBox
+{
+	width: 300px;
+	height: 185px;
+}
+
+.ciuNoteBox .topLeft,
+.ciuNoteEditBox .topLeft
+{
+        background-position:left top;
+	background-repeat:no-repeat;
+	font-size:4px;
+	
+	
+	padding: 0px 0px 0px 1px; 
+	
+	width:7px;
+}
+
+
+.ciuNoteBox .topLeft,
+.ciuNoteEditBox .topLeft, x:-moz-any-link {
+	font-size: 0px;
+}
+
+.ciuNoteBox .topLeft,
+.ciuNoteEditBox .topLeft, x:-moz-any-link, x:default {
+	font-size: 4px;
+}
+
+.ciuNoteBox .topCenter,
+.ciuNoteEditBox .topCenter
+{
+	background-color: #eaf2fd;
+	background-position: top;
+	background-repeat:repeat-x;
+	padding: 7px 0px 0px 0px;
+}
+.ciuNoteBox .topRight,
+.ciuNoteEditBox .topRight
+{
+	background-position: top right;
+	background-repeat:no-repeat;
+	font-size: 16px;
+	width:6px;
+	padding: 0px;
+}
+.ciuNoteBox .bottomLeft,
+.ciuNoteEditBox .bottomLeft
+{
+	background-position: bottom left;
+	background-repeat:no-repeat;
+	font-size:6px;
+	padding-left: 0px;
+	padding-right: 0px;
+	width:7px;
+}
+.ciuNoteBox .bottomCenter,
+.ciuNoteEditBox .bottomCenter
+{
+	background-color: #eaf2fd;
+	background-position: bottom;
+	background-repeat:repeat-x;
+	font-size:6px;
+	height:7px;
+}
+.ciuNoteBox .bottomRight,
+.ciuNoteEditBox .bottomRight
+{
+	background-position: bottom right;
+	background-repeat:no-repeat;
+	font-size:6px;
+	width: 6px;
+}
+
+
+
+.ciuAsinInjectorDiv
+{
+	margin-bottom: 5px;
+	text-align: right;
+}
+
+.ciuAsinInjectorDiv img
+{
+	border: 0px;
+}
+
+.asinpop-Body 
+{
+  font-family:         verdana, arial, helvetica, sans-serif;
+  font-size:           x-small;
+  _font-size:          xx-small;
+  background-color:    #F5F5E6;
+  border:              3px solid #F5F5E6;
+}
+                                                                                                                                                             
+.asinpop-TitleBar 
+{
+  background-color:   #CC6600;
+  cursor:             move;
+  height:             22px;
+}
+
+.asinpop-Title 
+{
+  font-family:    verdana, arial, helvetica, sans-serif;
+  font-size:      small;
+  _font-size:     x-small;
+  font-weight:    bold;
+                                                                                                                                                             
+  color:          #FFFFFF;
+                                                                                                                                                             
+  padding-left:   4px;
+}
+
+
+.ciuJQueryDropShadow {
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.ciuDropShadow {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.ciuDropShadowImg {
+	position: absolute;
+ 	font-size: 1px;
+}
+
+
+#prodImageCell a {
+	text-decoration: none;
+}

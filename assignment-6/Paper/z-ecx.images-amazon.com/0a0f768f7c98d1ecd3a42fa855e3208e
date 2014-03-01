@@ -1,0 +1,310 @@
+
+
+/*! ###
+    Copyright (c) 2008 Amazon.com, Inc., and its Affiliates.
+    All rights reserved.
+    Not to be reused without permission
+    $DateTime: 2008/09/16 17:15:38 $
+    ###
+*/
+
+.productImage {
+ max-width:90px;
+ _width:90px;
+}
+
+.bodyText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.25em
+}
+
+.smallGrey {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: xx-small;
+    color: #666666;
+}
+
+.defaultText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #666666;
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #BEBEBE;
+    overflow: auto;
+}
+
+.errorText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: red;
+}
+
+.boldErrorText {
+    font-weight: bold;
+    color: red;
+}
+
+.textArea {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #BEBEBE;
+    overflow: auto;
+}
+
+
+
+.tellfriendConfirmation {
+    padding: 1em 20px 0px;
+    font-size: 1.1em;
+}
+
+.confirmationBox {
+    color: green;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0 -5px 1em -5px;
+}
+
+.confirmationBox .success {
+    border: 0 none;
+    font-weight: bold;    
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.confirmationBox .success img {
+    vertical-align: bottom;
+    margin-bottom: -3px;
+}
+
+.confirmationOrangeText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    color: #CC6600;
+}
+
+.errorRedText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    color: red;
+    margin: 0em;
+}
+
+.greyBorder {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #999;
+
+}
+
+.permalink {
+    margin-top: 6px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.solidLine {
+    border:solid #ddeeff;
+    border-width:1px 0 0;
+    height:0;
+}
+
+
+
+.checkbox {
+    margin: 2px 0 2px 0;
+    padding: 0px;
+}
+
+
+.tafPoContent {
+    position: relative;
+    z-index: 100;
+    padding: 10px 18px 18px 18px;
+    font-size: 1em;
+}
+
+.tafPoContent .buttons {
+    float: left;
+    margin-top: 5px;
+}
+
+.tafPoContent .productTitle {
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.tafPoContent .byLine {
+    font-weight: normal;
+}
+
+.tafPoContent .socialSites {
+    margin: 5px 6px;
+    padding: 3px 0;
+    float: right;
+}
+
+.tafPoContent .socialSites div.shareTitleText {
+    float: left;
+}
+
+.tafPoContent .socialSites div.sites {
+    float: left;
+}
+
+.tafPoContent .socialSites div.sites div {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    zoom: 1;
+    *display: inline;
+}
+
+.tafPoContent .socialSites div.sites img {
+    display: block;
+    margin: 0 auto 2px auto;
+}
+
+.tafPoContent .socialSites div.sites a.text {
+    display: block;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.tafPoContent .emailFields {
+    width: 100%;
+}
+
+.tafPoContent table.emailFields th {
+    padding: 7px 10px 0 0;
+}
+
+.tafPoContent table.emailFields td {
+    padding-top: 7px;
+}
+
+.tafPoContent table.emailFields tr {
+    width: 425px;
+}
+
+
+.tafPoContent span.clickable img {
+    cursor: pointer;
+}
+
+.tafCaptchaBox {
+    background-color:#FFFFDD;
+    border-bottom-color:#DDDAC0;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-top-color:#DDDAC0;
+    border-top-style:solid;
+    border-top-width:1px;
+    border-left-color:#DDDAC0;
+    border-left-style:solid;
+    border-left-width:1px;
+    border-right-color:#DDDAC0;
+    border-right-style:solid;
+    border-right-width:1px;
+    font-size:11px;
+    margin-bottom:10px;
+    margin-left:0;
+    margin-right:0;
+    padding: 7px 0 7px 7px;
+    position:relative;
+}
+
+.tafCaptchaBox td {
+    font-size:11px;
+    vertical-align: top;
+    padding: 5px 15px 0 0;
+}
+
+.tafCaptchaBox p {
+    margin-bottom:4px;
+    margin-left:30px;
+    margin-right:0;
+    margin-top:0;
+    width:100%;
+    line-height:140%;
+}
+
+.tafCaptchaAlert {
+    background-image:url("http://g-ecx.images-amazon.com/images/G/01/x-locale/traffic/s9m/alert-small._V195630253_.gif");
+    -moz-background-clip:border;
+    -moz-background-origin:padding;
+    -moz-background-size:auto auto;
+    background-attachment:scroll;
+    background-color:transparent;
+    background-position:0 0;
+    background-repeat:no-repeat;
+    display:inline-block;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    position:relative;
+    vertical-align:middle;
+    width: 17px;
+    height: 17px;
+    margin-left: 2px;
+    display: inline-block;
+}
+
+
+
+.tafCompactChevron{
+  display:inline-block;
+  vertical-align:top;
+  height:11px;
+  margin:2px 0px 0px 5px;
+  padding:0px;
+}
+
+.social_chevron {
+  background-image:url(http://g-ec2.images-amazon.com/images/G/28/x-locale/communities/social/social_chevron._V392093723_.png);
+  display: -moz-inline-box; 
+  display: inline-block;
+  background-position:0px,0px;
+  height:11px;
+  width: 11px;
+}
+
+.tafShareTextCompact{
+  line-height:13px;
+}
+
+.tafSwfPoTopArrow{
+  background:transparent url(http://g-ecx.images-amazon.com/images/G/01/x-locale/personalization/amznlike/donsbeak-sm-up._V197474569_.png) no-repeat 0 0;
+  width:10px;
+  height:12px;
+  display:inline-block;
+}
+.vam {
+  vertical-align: middle;
+}
+.tafEmailIcon {
+    border: none;
+    cursor: pointer;
+}
+
+.tafShareText {
+    padding: 0 5px;
+}
+
+.tafSocialButton {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+}
+#printThisList div, #sharethisList div{
+ vertical-align:bottom;
+}
+
+#listActionMenu #sharethisList, #listActionMenu #printThisList, #listActionMenu #editThisList{
+ vertical-align:middle;
+}

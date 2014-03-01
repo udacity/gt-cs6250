@@ -1,0 +1,5 @@
+document.write('<!-- Template ID = 16913 Template Name = Amazon - CloudFront - Safe Iframe -->\n');
+
+window.aanResponse={adId:'269553739',creativeId:'53262780'};
+
+document.write('\n<iframe height=\"250\" frameborder=\"0\" width=\"300\" scrolling=\"no\" src=\"http://ad.doubleclick.net/adi/N1823.amazon.com/B7263121.38;sz=300x250;click=http://ad.doubleclick.net/click%3Bh%3Dv8/3da4/3/0/%2a/d%3B269553739%3B0-0%3B0%3B18273353%3B4307-300/250%3B53262780/53190019/1%3Bu%3D44a8253a9046421195b6bce2a7fbb0f8%3B%7Esscs%3D%3f;ord=5464239?\" title=\"Ad\" marginheight=\"0\" marginwidth=\"0\" topmargin=\"0\" leftmargin=\"0\" allowtransparency=\"true\">\n</iframe>\n');
