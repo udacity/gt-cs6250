@@ -1,0 +1,14 @@
+document.write('');
+
+window.aanResponse={adId:'227810883',creativeId:'37968347'};
+if (frameElement && frameElement.punt) {
+    frameElement.punt();
+}
+else {
+    window.showAdSlug=true;
+    var slot = 'right-2';
+    var aanParams = {'right-2':"site=amazon.us;pt=Gateway;slot=right-2;ef=0"};
+    document.write('<body><script src="http://g-ecx.images-amazon.com/images/G/01/pda/pda.js"><\/script><\/body>');
+}
+
+document.write('');

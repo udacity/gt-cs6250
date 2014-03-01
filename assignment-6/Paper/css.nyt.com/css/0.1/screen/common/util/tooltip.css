@@ -1,0 +1,50 @@
+/*$Id: tooltip.css 103768 2012-07-17 17:39:19Z konige $
+/css/0.1/screen/common/util/tooltip.css
+(c)2006 - 2011 The New York Times Company */ 
+
+#toolTip,
+.toolTip {
+  background: #FFFFEF;
+  width: 352px;
+  padding: 10px;
+  border: 1px solid #D5D5D5;
+  font-family: arial,helvetica,sans-serif;
+  position: absolute;
+  font-size: 1.1em;
+  color: #333;
+  display: none;
+  z-index: 100000003; /* one less than 100000004 reserved for adops fullscreen overlay ads */
+  text-align: left;
+}
+
+#toolTip #content,
+.toolTip .content {
+  padding: 0 5px 0 0;
+  width: 340px;
+  line-height: 15px;
+}
+
+#toolTip #button {
+  float: right;
+  width: 13px;
+  padding: 0;
+  margin: 0;
+  background: transparent url(/images/article/comments/buttons/close_window.gif) no-repeat left top;
+  overflow: hidden;
+  margin: 0;
+  height: 0 !important;
+  padding: 13px 0 0 0;
+}
+
+#toolTip #button a {
+  padding: 15px;
+}
+
+#toolTip.autoWidth,
+#toolTip.autoWidth #content {
+	width: auto;
+}
+
+#toolTip.autoWidth #content {
+	padding-right: 0;
+}

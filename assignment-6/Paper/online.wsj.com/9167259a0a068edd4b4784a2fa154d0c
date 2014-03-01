@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JSFrame</title>
+<style type="text/css"> 
+  body {margin: 0; padding: 0;} 
+  #jsframeContainer:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  #jsframeContainer { display: inline-block; }
+</style>
+
+<!--[if IE]>
+<style type="text/css">
+  #jsframeContainer { zoom: 1; display: block; }
+</style>
+<![endif]-->
+</head>
+<body>
+
+<div class="jsframeContainer">
+<script type="text/javascript">
+/* <![CDATA[ */
+
+function expandMarketsAd() { 
+	parent.dj.module.ad.ExpandingAd.ExpandParent();  
+}
+
+function contractMarketsAd() {
+	parent.dj.module.ad.ExpandingAd.CloseParent();              
+}
+var loc = (window.location + "").split("?");
+var uri = loc.shift();
+loc = loc.join("?").substring(6);
+
+document.write("<script type=\"text\/javascript\" src=\"" + loc + "\"><\/script>");
+
+/* ]]> */
+</script>
+</div>
+
+</body>
+</html>

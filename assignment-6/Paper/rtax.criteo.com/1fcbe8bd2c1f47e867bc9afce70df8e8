@@ -1,0 +1,5 @@
+crtg_content = '';
+function writeCtoCookie(){
+document.cookie='cto_wsj=' + escape(crtg_content)+ '; path=/; expires=Fri, 12 Apr 2013 07:18:46 GMT;' + 'domain=.wsj.com; ';
+}
+writeCtoCookie();

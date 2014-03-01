@@ -1,0 +1,120 @@
+<html><head><title>Advertisement</title></head><body bgcolor=#ffffff marginwidth=0 marginheight=0 leftmargin=0 topmargin=0><!-- Copyright 2008 DoubleClick, a division of Google Inc. All rights reserved. -->
+<!-- Code auto-generated on Wed Jan 02 19:25:00 EST 2013 -->
+<script src="http://s0.2mdn.net/879366/flashwrite_1_2.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function DCFlash(id,pVM){
+var swf = "http://s0.2mdn.net/568459/2-SFY_2012_NatAABanners_Pennies_300x250.swf";
+var gif = "http://s0.2mdn.net/568459/2-SFY_2012_NatAABanners_Pennies_300x250.gif";
+var minV = 9;
+var FWH = ' width="300" height="250" ';
+var url = escape("http://ad.doubleclick.net/click%3Bh%3Dv8/3da4/7/b2/%2a/d%3B266474546%3B7-0%3B0%3B95653619%3B4307-300/250%3B52206160/52165808/1%3Bu%3D44a8253a9046421195b6bce2a7fbb0f8%3B%7Esscs%3D%3fhttp://ad.doubleclick.net/click%3Bh%3Dv8/3da4/3/0/%2a/d%3B269553739%3B0-0%3B0%3B18273353%3B4307-300/250%3B53262780/53190019/1%3Bu%3D44a8253a9046421195b6bce2a7fbb0f8%3B~sscs%3D%3fhttp://www.statefarm.com/landing/quote/index.html?wt.mc_id=displaybuy&camp=7263121&site=527856&plac=95653619&crea=52206160");
+var fscUrl = url;
+var fscUrlClickTagFound = false;
+var wmode = "opaque";
+var bg = "";
+var dcallowscriptaccess = "never";
+
+var openWindow = "false";
+var winW = 0;
+var winH = 0;
+var winL = 0;
+var winT = 0;
+
+var moviePath=swf.substring(0,swf.lastIndexOf("/"));
+var sm=new Array();
+
+
+var defaultCtVal = escape("http://ad.doubleclick.net/click%3Bh%3Dv8/3da4/7/b2/%2a/d%3B266474546%3B7-0%3B0%3B95653619%3B4307-300/250%3B52206160/52165808/1%3Bu%3D44a8253a9046421195b6bce2a7fbb0f8%3B%7Esscs%3D%3fhttp://ad.doubleclick.net/click%3Bh%3Dv8/3da4/3/0/%2a/d%3B269553739%3B0-0%3B0%3B18273353%3B4307-300/250%3B53262780/53190019/1%3Bu%3D44a8253a9046421195b6bce2a7fbb0f8%3B~sscs%3D%3fhttp://www.statefarm.com/landing/quote/index.html?wt.mc_id=displaybuy&camp=7263121&site=527856&plac=95653619&crea=52206160");
+var ctp=new Array();
+var ctv=new Array();
+ctp[0] = "clickTag";
+ctv[0] = "";
+ctp[1] = "ClickTag";
+ctv[1] = "";
+ctp[2] = "ClickTag";
+ctv[2] = "";
+
+
+var fv='"moviePath='+moviePath+'/'+'&moviepath='+moviePath+'/';
+for(i=1;i<sm.length;i++){if(sm[i]!=""){fv+="&submovie"+i+"="+escape(sm[i]);}}
+for(var ctIndex = 0; ctIndex < ctp.length; ctIndex++) {
+  var ctParam = ctp[ctIndex];
+  var ctVal = ctv[ctIndex];
+  if(ctVal != null && typeof(ctVal) == 'string') {
+    if(ctVal == "") {
+      ctVal = defaultCtVal;
+    }
+    else {
+      ctVal = escape("http://ad.doubleclick.net/click%3Bh%3Dv8/3da4/7/b2/%2a/d%3B266474546%3B7-0%3B0%3B95653619%3B4307-300/250%3B52206160/52165808/1%3Bu%3D44a8253a9046421195b6bce2a7fbb0f8%3B%7Esscs%3D%3fhttp://ad.doubleclick.net/click%3Bh%3Dv8/3da4/3/0/%2a/d%3B269553739%3B0-0%3B0%3B18273353%3B4307-300/250%3B53262780/53190019/1%3Bu%3D44a8253a9046421195b6bce2a7fbb0f8%3B~sscs%3D%3f" + ctVal);
+    }
+    if(ctParam.toLowerCase() == "clicktag") {
+      fscUrl = ctVal;
+      fscUrlClickTagFound = true;
+    }
+    else if(!fscUrlClickTagFound) {
+      fscUrl = ctVal;
+    }
+    fv += "&" + ctParam + "=" + ctVal;
+  }
+}
+fv+='"';
+var bgo=(bg=="")?"":'<param name="bgcolor" value="#'+bg+'">';
+var bge=(bg=="")?"":' bgcolor="#'+bg+'"';
+function FSWin(){if((openWindow=="false")&&(id=="DCF0"))alert('openWindow is wrong.');
+var dcw = 800;
+var dch = 600;
+// IE
+if(!window.innerWidth)
+{
+  // strict mode
+  if(!(document.documentElement.clientWidth == 0))
+  {
+    dcw = document.documentElement.clientWidth;
+    dch = document.documentElement.clientHeight;
+  }
+  // quirks mode
+  else if(document.body)
+  {
+    dcw = document.body.clientWidth;
+    dch = document.body.clientHeight;
+  }
+}
+// w3c
+else
+{
+  dcw = window.innerWidth;
+  dch = window.innerHeight;
+}
+if(openWindow=="center"){winL=Math.floor((dcw-winW)/2);winT=Math.floor((dch-winH)/2);}window.open(unescape(fscUrl),id,"width="+winW+",height="+winH+",top="+winT+",left="+winL+",status=no,toolbar=no,menubar=no,location=no");}this.FSWin = FSWin;
+ua=navigator.userAgent;
+if(minV<=pVM&&(openWindow=="false"||(ua.indexOf("Mac")<0&&ua.indexOf("Opera")<0))){
+	var adcode='<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="'+id+'"'+FWH+'>'+
+		'<param name="movie" value="'+swf+'"><param name="flashvars" value='+fv+'><param name="quality" value="high"><param name="wmode" value="'+wmode+'"><param name="base" value="'+swf.substring(0,swf.lastIndexOf("/"))+'"><PARAM NAME="AllowScriptAccess" VALUE="'+dcallowscriptaccess+'">'+bgo+
+		'<embed src="'+swf+'" flashvars='+fv+bge+FWH+' type="application/x-shockwave-flash" quality="high" swliveconnect="true" wmode="'+wmode+'" name="'+id+'" base="'+swf.substring(0,swf.lastIndexOf("/"))+'" AllowScriptAccess="'+dcallowscriptaccess+'"></embed></object>';
+  if(('i'!="j")&&(typeof dclkFlashWrite!="undefined")){dclkFlashWrite(adcode);}else{document.write(adcode);}
+}else{
+	document.write('<a target="_blank" href="'+unescape(url)+'"><img src="'+gif+'"'+FWH+'border="0" alt="Advertisement" galleryimg="no"></a>');
+}}
+function getFlashVersion(){
+// code derived from SWFObject (http://code.google.com/p/swfobject/)
+ var vfv = "0,0,0";
+ try {
+ try {
+   var axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+     try {axo.AllowScriptAccess = "always"; }catch(e) {return "6";}
+ }catch(e) {}
+ vfv = new ActiveXObject("ShockwaveFlash.ShockwaveFlash").GetVariable("$version");}
+ catch(e) {
+   try {if(navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){vfv= navigator.plugins["Shockwave Flash"].description;}}
+   catch(e) {}
+ }
+ return vfv.replace(/\D+/g, ",").match(/^,?(.+),?$/)[1].split(',').shift();
+}
+var DCid=(isNaN("266474546"))?"DCF2":"DCF266474546";
+var pVM=getFlashVersion();
+eval("function "+DCid+"_DoFSCommand(c,a){if(c=='openWindow')o"+DCid+".FSWin();}o"+DCid+"=new DCFlash('"+DCid+"',pVM);");
+//-->
+</SCRIPT>
+<noscript><a target="_blank" href="http://ad.doubleclick.net/click%3Bh%3Dv8/3da4/7/b2/%2a/d%3B266474546%3B7-0%3B0%3B95653619%3B4307-300/250%3B52206160/52165808/1%3Bu%3D44a8253a9046421195b6bce2a7fbb0f8%3B%7Esscs%3D%3fhttp://ad.doubleclick.net/click%3Bh%3Dv8/3da4/3/0/%2a/d%3B269553739%3B0-0%3B0%3B18273353%3B4307-300/250%3B53262780/53190019/1%3Bu%3D44a8253a9046421195b6bce2a7fbb0f8%3B~sscs%3D%3fhttp://www.statefarm.com/landing/quote/index.html?wt.mc_id=displaybuy&camp=7263121&site=527856&plac=95653619&crea=52206160"><img src="http://s0.2mdn.net/568459/2-SFY_2012_NatAABanners_Pennies_300x250.gif" width="300" height="250" border="0" alt="Advertisement" galleryimg="no"></a></noscript>
+</body></html>
