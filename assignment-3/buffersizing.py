@@ -175,7 +175,7 @@ def set_q(iface, q):
 
 def set_speed(iface, spd):
     "Change htb maximum rate for interface"
-    cmd = ("tc class change dev %s parent 1:0 classid 1:1 "
+    cmd = ("tc class change dev %s parent 5:1 classid 5:1 "
            "htb rate %s burst 15k" % (iface, spd))
     os.system(cmd)
 
