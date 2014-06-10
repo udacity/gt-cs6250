@@ -120,6 +120,11 @@ parser.add_argument('--iperf',
                     help="Path to custom iperf",
                     required=True)
 
+parser.add_argument('--iface',
+		    dest="iface",
+		    help="The interface for which queue size is adjusted, eg s1-eth3",
+		    required=True) 
+
 # Expt parameters
 args = parser.parse_args()
 
@@ -396,7 +401,7 @@ def main():
 
     # TODO: change the interface for which queue size is adjusted
     # should be <switch-name>-eth3
-    ret = do_sweep(iface='s1-eth3')
+    ret = do_sweep(iface=args.iface)
     total_flows = (NUM_HOSTS - 1) * args.nflows
 
     # Store output
