@@ -176,6 +176,8 @@ def set_q(iface, q):
            "handle 10: netem limit %s" % (iface, q))
     os.system(cmd)
 
+
+#HINT values of parent and classid may vary. Changing values to 5:1 for both may remove the RTNETLINK error.
 def set_speed(iface, spd):
     "Change htb maximum rate for interface"
     cmd = ("tc class change dev %s parent 1:0 classid 1:1 "
