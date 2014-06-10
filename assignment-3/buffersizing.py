@@ -51,11 +51,14 @@ SAMPLE_WAIT_SEC = 3.0
 NUM_HOSTS = 3
 
 
-def cprint(s, color, cr=True):
-    """Print in color
-       s: string to print
-       color: color to use"""
-    print s
+#def cprint(s, color, cr=True)
+#"""Print in color
+#      s: string to print
+#       color: color to use"""
+#    print s
+
+import termcolor as T
+cprint = T.cprint
 
 
 # Parse arguments
