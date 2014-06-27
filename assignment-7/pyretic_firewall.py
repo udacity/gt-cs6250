@@ -38,7 +38,7 @@ from pyretic.lib.corelib import *
 from pyretic.lib.std import *
 
 # insert the name of the module and policy you want to import
-from pyretic.examples.pyretic_switch import act_like_switch
+from pyretic.examples.pyretic_switch import ActLikeSwitch
 from csv import DictReader
 from collections import namedtuple
 import os
