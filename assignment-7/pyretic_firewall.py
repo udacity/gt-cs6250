@@ -71,7 +71,7 @@ def main():
     allowed = <...>
 
     # and only send allowed traffic to the mac learning (act_like_switch) logic
-    return allowed >> act_like_switch()
+    return allowed >> ActLikeSwitch()
 
 
 
