@@ -40,7 +40,7 @@ from pyretic.lib.query import *
 
 class act_like_switch(DynamicPolicy):
     def __init__(self):
-        super(ActLikeSwitch, self).__init__()
+        super(act_like_switch, self).__init__()
         # Set up the initial forwarding behavior for your mac learning switch to flood 
         # all packets
         self.forward = flood()
