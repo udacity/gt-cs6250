@@ -61,13 +61,13 @@ def main():
     # start with a policy that doesn't match any packets
     not_allowed = none
 
-    # and add traffic that isn't allowed
+    # TODO and add traffic that isn't allowed
     # Note: this uses the same policy named tuple from the POX
     # firewall code. Please refer there for further info
     for policy in policies.itervalues():
         not_allowed = not_allowed + ( <traffic going in one direction> ) + ( <traffic going in the other direction> )
 
-    # express allowed traffic in terms of not_allowed - hint use '~'
+    # TODO express allowed traffic in terms of not_allowed - hint use '~'
     allowed = <...>
 
     # and only send allowed traffic to the mac learning (act_like_switch) logic
