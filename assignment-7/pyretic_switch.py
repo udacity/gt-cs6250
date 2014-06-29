@@ -64,4 +64,4 @@ class ActLikeSwitch(DynamicPolicy):
 
     
 def main():
-    return act_like_switch()
+    return ActLikeSwitch()
