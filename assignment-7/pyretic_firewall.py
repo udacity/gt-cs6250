@@ -63,7 +63,7 @@ def main():
 
     # TODO and add traffic that isn't allowed
     # Note: this uses the same policy named tuple from the POX
-    # firewall code. Please refer there for further info
+    # firewall code. Please refer there for further info. HINT - You could use '|' in place of  '+' as well.
     for policy in policies.itervalues():
         not_allowed = not_allowed + ( <traffic going in one direction> ) + ( <traffic going in the other direction> )
 
