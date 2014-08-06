@@ -231,7 +231,7 @@ def run_parkinglot_expt(net, n):
     recvr.cmd("echo 'net.ipv4.tcp_rmem=%s %s %s'>> /etc/sysctl.conf" % (args.size, args.size, args.size))
     recvr.cmd(("echo 'net.ipv4.tcp_wmax=%s' >> /etc/sysctl.conf" % args.size))
     recvr.cmd(("echo 'net.ipv4.tcp_rmax=%s' >> /etc/sysctl.conf" % args.size))
-    recvr.cmd("echo 'net.ipv4.tcp_rmax=51200' >> /etc/sysctl.conf")
+    recvr.cmd("echo 'net.ipv4.tcp_rmax=51200' >> /etc/sysctl.conf")#Changing max buffer size to 512000 does not affect output graph as the flow is not bursty.
     recvr.cmd('sysctl -p')
 
     s1 = net.getNodeByName('s1')
