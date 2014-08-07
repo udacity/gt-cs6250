@@ -21,7 +21,7 @@ import argparse
 import sys
 import os
 from util.monitor import monitor_devs_ng
-#TCP SAWTOOTH IS DEFINITELY A MONSTER
+
 def cprint(s, color, cr=True):
     """Print in color
        s: string to print
