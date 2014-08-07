@@ -96,7 +96,7 @@ class Topo1(Topo):
 	sender = self.addHost('sender', **hconfig)
 	receiver = self.addHost('receiver', **hconfig)
 
-	# Wire receiver
+	# Wire receiver (the lconfig should be reversed to match the diagram)
         self.addLink(receiver, s1,
                       port1=0, port2=uplink, **lconfig_3g)
         self.addLink(receiver, s2,
