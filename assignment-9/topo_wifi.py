@@ -100,7 +100,7 @@ class Topo1(Topo):
         self.addLink(receiver, s1,
                       port1=0, port2=uplink, **lconfig_wifi)
         self.addLink(receiver, s2,
-                      port1=1, port2=uplink, **lconfig_wifi)
+                      port1=1, port2=uplink, **lconfig_wifi)#Should be lconfig_3g to match the diagram
 
 	# Wire sender
 	self.addLink(sender, s1,
