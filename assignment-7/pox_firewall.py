@@ -1,8 +1,5 @@
 '''
-Udacity:
-- Software Defined Networking (SDN) course
--- Assignment 7 Programming Assignment
-
+Udacity: ud436/sdn-firewall
 Professor: Nick Feamster
 '''
 
