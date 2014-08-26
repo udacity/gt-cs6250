@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-"Assignment 4 - Creates a parking lot topology, \
+"Assignment 3 - Creates a parking lot topology, \
     generates flows from senders to the receiver, \
     measures throughput of each flow"
 
