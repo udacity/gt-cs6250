@@ -23,7 +23,7 @@ class LSTopo(Topo):
             delay: link delay (e.g. 10ms)"""
 
         # Initialize topo
-        Topo.__init__(self, **params)
+        super(LSTopo, self).__init__()
 
         # Host in link configuration
         hconfig = {'cpu': cpu}
@@ -63,7 +63,8 @@ class LSTopo(Topo):
 def main():
     print "Starting topology"
     topo = LSTopo()
-    net = Mininet(topo=topo, link=TCLink, controller=RemoteController)
+    net = Mininet(topo=topo, link=TCLink, controller=RemoteController, autoSetMacs=True)
+    net.start()
     CLI(net)
 
 if __name__ == '__main__':
