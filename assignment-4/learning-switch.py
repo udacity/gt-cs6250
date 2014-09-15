@@ -83,7 +83,6 @@ class LearningSwitch(DynamicPolicy):
         # the forwarding table. 
 
 
-
         # print out the switch tables:
         self.print_switch_tables()
 
@@ -96,6 +95,7 @@ class LearningSwitch(DynamicPolicy):
 
     def push_rules(self):
         new_policy = None
+        not_flood_pkts = None
         
         for entry in self.fwd_table.keys():
             for fwd_rule in self.fwd_table[entry].keys():
@@ -105,10 +105,17 @@ class LearningSwitch(DynamicPolicy):
                 else:
                     new_policy += (match(switch=entry, srcport=fwd_rule) >> 
                                    fwd(self.fwd_table[entry][fwd_rule]))
+                
+                if not_flood_pkts == None:
+                    not_flood_pkts = (match(switch=entry, srcport=fwd_rule))
+                else:
+                    not_flood_pkts |= (match(switch=entry, srcport=fwd_rule))
+
+
         if new_policy == None:
             self.policy = self.flood + self.query
         else:
-            self.policy = new_policy + self.flood + self.query
+            self.policy = if_(not_flood_pkts, new_policy, self.flood) + self.query
         
         # The following line can be uncommented to see your policy being
         # built up, say during a flood period. When submitting your completed
