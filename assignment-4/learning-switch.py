@@ -56,7 +56,7 @@ class LearningSwitch(DynamicPolicy):
         self.flood = flood()
 
         # get the first packet from each new MAC address on a switch
-        new_pkts = packets(1, ['dstmac', 'switch'])
+        new_pkts = packets(1, ['srcmac', 'switch'])
         new_pkts.register_callback(self.learn_route)
         self.query = new_pkts
 
