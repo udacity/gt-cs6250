@@ -100,16 +100,16 @@ class LearningSwitch(DynamicPolicy):
         for entry in self.fwd_table.keys():
             for fwd_rule in self.fwd_table[entry].keys():
                 if new_policy == None:
-                    new_policy = (match(switch=entry, srcport=fwd_rule) >> 
+                    new_policy = (match(switch=int(entry), dstmac=fwd_rule) >> 
                                   fwd(self.fwd_table[entry][fwd_rule]))
                 else:
-                    new_policy += (match(switch=entry, srcport=fwd_rule) >> 
+                    new_policy += (match(switch=int(entry), dstmac=fwd_rule) >> 
                                    fwd(self.fwd_table[entry][fwd_rule]))
                 
                 if not_flood_pkts == None:
-                    not_flood_pkts = (match(switch=entry, srcport=fwd_rule))
+                    not_flood_pkts = (match(switch=int(entry), dstmac=fwd_rule))
                 else:
-                    not_flood_pkts |= (match(switch=entry, srcport=fwd_rule))
+                    not_flood_pkts |= (match(switch=int(entry), dstmac=fwd_rule))
 
 
         if new_policy == None:
