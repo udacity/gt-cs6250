@@ -65,25 +65,22 @@ class LearningSwitch(DynamicPolicy):
 
 
     def print_switch_tables(self):
-        for entry in self.fwd_table.keys():
-            print "Switch " + str(entry)
-            for fwd_rule in self.fwd_table[entry].keys():
-                print "   %s : %s" % (str(fwd_rule), 
-                                      str(self.fwd_table[entry][fwd_rule]))
-        print "----------------"
+        lines = []
+        for entry, table in self.fwd_table.items():
+            lines.append("Switch %d" % entry)
+            for mac, port in table.items():
+                lines.append("   %s : %d" % (str(mac), port))
+        lines.append("----------------")
+        switch_table = "\n".join(lines)
 
-	# **** Adding the following lines for ease of grading *****
+        print switch_table
 
-	f = open("output.txt", "w")
-	for entry in self.fwd_table.keys():
-	    f.write("Switch " + str(entry)+ "\n")
-	    for fwd_rule in self.fwd_table[entry].keys():
-	         f.write(" %s : %s \n" % (str(fwd_rule),
-	                                  str(self.fwd_table[entry][fwd_rule])))
-	f.write("---------------- \n")
-	f.close()
+        # **** Adding the following lines for ease of grading *****
 
-	# **********************************************
+        with open("output.txt", "w") as f:
+            f.write(switch_table)
+
+        # **********************************************
 
     def learn_route(self, pkt):
         """  This function adds new routes into the fowarding table. """
