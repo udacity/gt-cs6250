@@ -97,10 +97,6 @@ class LearningSwitch(DynamicPolicy):
 
         # Call push_rules to update the fowarding tables of the switches.
         self.push_rules()
-        pass
-
-
-
 
     def push_rules(self):
         new_policy = None
