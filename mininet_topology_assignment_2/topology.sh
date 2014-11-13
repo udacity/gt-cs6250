@@ -30,6 +30,7 @@ for n in 1; do
     python util/plot_rate.py --rx \
         --xlabel 'Time (s)' \
         --ylabel 'Rate (Mbps)' \
+        --maxy 10 \
         -i 's.*-eth2' \
         -f $dir/bwm.txt \
         -o $dir/rate.png
