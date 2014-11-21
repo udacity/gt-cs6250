@@ -99,29 +99,20 @@ class LearningSwitch(DynamicPolicy):
         self.push_rules()
 
     def push_rules(self):
-        new_policy = None
-        not_flood_pkts = None
-        
-        for entry in self.fwd_table.keys():
-            for fwd_rule in self.fwd_table[entry].keys():
-                if new_policy == None:
-                    new_policy = (match(switch=int(entry), dstmac=fwd_rule) >> 
-                                  fwd(self.fwd_table[entry][fwd_rule]))
-                else:
-                    new_policy += (match(switch=int(entry), dstmac=fwd_rule) >> 
-                                   fwd(self.fwd_table[entry][fwd_rule]))
-                
-                if not_flood_pkts == None:
-                    not_flood_pkts = (match(switch=int(entry), dstmac=fwd_rule))
-                else:
-                    not_flood_pkts |= (match(switch=int(entry), dstmac=fwd_rule))
+        """ Update the pyretic policy for the switches on new packets. """
+        matches = []
+        rules = []
 
+        for switch_num, table in self.fwd_table.items():
+            for dest, port in table.items():
+                new_match = match(switch=switch_num, dstmac=dest)
+                matches.append(new_match)
+                rules.append(new_match >> fwd(port))
 
-        if new_policy == None:
-            self.policy = self.flood + self.query
-        else:
-            self.policy = if_(not_flood_pkts, new_policy, self.flood) + self.query
-        
+        self.policy = if_(union(matches),
+                          union(rules),
+                          self.flood) + self.query
+
         # The following line can be uncommented to see your policy being
         # built up, say during a flood period. When submitting your completed
         # code, be sure to comment it out!
