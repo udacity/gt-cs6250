@@ -46,11 +46,11 @@ class LearningSwitch(DynamicPolicy):
         # initialize the forwarding table to empty.
         # This may need to be updated if a different topology is used.
         self.fwd_table = {}
-        self.fwd_table['1'] = {}
-        self.fwd_table['2'] = {}
-        self.fwd_table['3'] = {}
-        self.fwd_table['4'] = {}
-        self.fwd_table['5'] = {}
+        self.fwd_table[1] = {}
+        self.fwd_table[2] = {}
+        self.fwd_table[3] = {}
+        self.fwd_table[4] = {}
+        self.fwd_table[5] = {}
 
         # only use one flood instance - this is the default policy
         self.flood = flood()
@@ -87,7 +87,7 @@ class LearningSwitch(DynamicPolicy):
 
         # TODO - create a new entry in the fowarding table.
         # Adding a new route should be
-        #    self.fwd_table['s1'][mac_addr] = port
+        #    self.fwd_table[switch_num][mac_addr] = port
         # You must extract the correct pieces from the packet to populate
         # the forwarding table. 
 
