@@ -1,0 +1,10 @@
+.s9Popover .watchlist-popover{width:295px;margin-top:-5px;padding-left:3px;overflow:hidden;}
+.s9Popover .watchlist-popover-top{background:url("../digital/video/avod-1-5/hoverback.png") no-repeat 4px 0;height:8px;width:295px;line-height:0;font-size:1px;}
+.s9Popover .watchlist-popover-body{background:url("../digital/video/avod-1-5/hovermid.png") repeat-y 4px 0;width:295px;}
+.s9Popover .watchlist-popover-bottom{background:url("../digital/video/avod-1-5/hoverback.png") no-repeat 4px -11px;height:8px;width:295px;line-height:0;font-size:1px;}
+.s9Popover .watchlist-arrow,.s9Popover .watchlist-arrow-Left,.s9Popover .watchlist-arrow-Right{background:url("../digital/video/avod-1-5/watchlist-hover-arrows.png") no-repeat;padding:0 25px 5px;min-height:200px;}
+.s9Popover .watchlist-popover .ap_content{width:233px;margin:auto;position:relative;overflow:hidden;}
+.s9Popover .watchlist-arrow-Left{background-position:-18px 55px;}
+.s9Popover .watchlist-arrow-Right{background-position:282px 55px;}
+.s9Popover .spinner{display:block;width:16px;height:16px;margin:auto;margin-top:50px;background:url("../javascripts/lib/popover/images/snake") no-repeat top left;text-indent:-999px;}
+.s9Popover .amzn-logo{background:url("../digital/video/avod-1-5/aiv-logo.jpg") no-repeat right 2px;width:270px;height:40px;}

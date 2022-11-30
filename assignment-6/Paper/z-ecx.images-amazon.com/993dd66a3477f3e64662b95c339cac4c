@@ -1,0 +1,15 @@
+//! ################################################################
+//! Copyright (c) 2009 Amazon.com, Inc., and its Affiliates.
+//! All rights reserved.
+//! Not to be reused without permission
+//! $DateTime:  $
+//! ################################################################
+;function sendAjaxPerfInfo(app,action,metrics){if(window.clientLogger){metrics['ap']=app;metrics['ac']=action;}else{;}};(function($){function _loadLazyContent(opts){;$(opts.elem).find('.loading_ind').show();if(opts.metrics){opts.ajaxStart=new Date();$(opts.elem).find('.loading_ind:first').fromScreenBottom(function(){opts.loadBarTime=new Date();},0);}
+try{$.ajax({url:opts.url,type:'GET',timeout:opts.timeout,retryLimit:opts.retry,tryCount:0,cache:opts.cache,success:function(text,status,XMLHttpRequest){;$(opts.elem).html(text);if(opts.metrics){endTime=new Date().getTime();sendAjaxPerfInfo('lazyload',opts.name,{at:endTime-opts.ajaxStart.getTime(),s:true,tc:this.tryCount,tt:opts.type,lt:opts.loadBarTime?endTime-opts.loadBarTime.getTime():0});}},error:function(xhr,error){;this.tryCount++;;if(this.tryCount<this.retryLimit){$.ajax(this);return;}
+$(opts.elem).find('.loading_ind').hide();$(opts.elem).find('.failed_load').show();if(opts.metrics){endTime=new Date().getTime();sendAjaxPerfInfo('lazyload',opts.name,{at:endTime-opts.ajaxStart.getTime(),s:false,tc:this.tryCount,tt:opts.type,lt:opts.loadBarTime?endTime-opts.loadBarTime.getTime():0,xs:xhr.status,ae:error.substr(0,100)});}}});}catch(err){;if(opts.metrics){sendAjaxPerfInfo('lazyload',opts.name,{s:false,tt:opts.type,ae:err.substr(0,100)});}}}
+$.fn.lazyLoadContent=function(options){if(!options['url']){;return;}
+this.each(function(){var lazyOpts={elem:this,trigger:['scroll'],threshold:400,metrics:false,name:'lazy',retry:3,timeout:10000,cache:true};$.extend(lazyOpts,options);var triggered=false;if(!window.ue){lazyOpts['metrics']=false;}
+for(var i=0;i<lazyOpts.trigger.length;i++){if(lazyOpts.trigger[i]=='scroll'){;$(this).fromScreenBottom(function(elem,type){;if(!triggered){triggered=true;lazyOpts.type=type;_loadLazyContent(lazyOpts);}},lazyOpts['threshold']);}else if(lazyOpts.trigger[i]='oncf'){;amznJQ.onCompletion('amznJQ.criticalFeature',function(){;if(!triggered){triggered=true;lazyOpts.type='oncf';_loadLazyContent(lazyOpts);}});}}});}
+$.fn.fromScreenBottom=function(callback,threshold){if(!callback)return;if(!threshold)threshold=0;this.each(function(){;var element=this;var scrollListener=function(event){var yPos=$(window).scrollTop()+$(window).height();var elPos=$(element).offset().top;if(elPos-yPos<threshold){var trigType='ready';if(event&&event.type){trigType=event.type;}
+try{callback(element,trigType);}catch(err){;}
+$(window).unbind('scroll',scrollListener);}};$(window).bind('scroll',scrollListener);scrollListener();});}})(jQuery);amznJQ.declareAvailable("lazyLoadLib");;

@@ -1,0 +1,122 @@
+/* $Id: modalForms.css 116576 2012-11-27 18:44:58Z joseph.crane-messina $
+/css/0.1/screen/common/modal/modalForms.css
+(c)2006 - 2012 The New York Times Company */
+
+
+/* This file is dependent on /common/forms.css which should be imported 
+into your [name]Modal.css file */
+
+.modalForm label,
+.modalForm .error,
+.nytModalContent .notificationContainer  {
+  font-family: arial, helvetica, sans-serif;
+}
+
+.modalForm input,
+.modalForm label,
+.modalForm textarea,
+.modalForm select {
+  font-size: 11px;
+  line-height: 13px;
+  color: #000;
+}
+
+.modalForm input {
+  vertical-align: middle;
+}
+
+.modalForm .containingBlock {
+  position: relative; 
+}
+
+.modalForm a {
+  color: #004276;
+  text-decoration: none;
+}
+
+.modalForm a:visited {
+  color: #666699;
+}
+
+.modalForm a:hover {
+  text-decoration: underline;
+}
+
+.modalForm .hidden {
+  display: none !important;
+}
+
+.modalForm .errorContainer,
+.nytModalContent .notificationContainer {
+  position: relative;
+}
+
+.modalForm .error,
+.nytModalContent .notification {
+  margin: 0 0 1em 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modalForm .error,
+.nytModalContent .errorNotification {
+  color: #a81817;
+}
+
+.modalForm .applicationButtonInactive {
+  background-color: #bfbfbf;
+}
+
+.modalForm .submitLoader {
+  display: inline; /* js toggling display */
+}
+
+.modalForm  .submitLoader img {
+  vertical-align: middle;
+}
+
+/* layout styles */
+
+.horizontalModalFormControl .labelContainer {
+  width: 120px;
+  text-align: right;
+}
+
+.horizontalModalFormControl .fieldContainer {
+  padding-left: 130px;
+}
+
+.horizontalModalFormControl .fieldContainer  .error {
+  margin-bottom: 0;
+}
+
+.horizontalModalFormControl .checkboxControl .fieldContainer {
+  width: 143px;
+  text-align: right;
+}
+
+.horizontalModalFormControl .checkboxControl .labelContainer {
+  width: auto;
+  text-align: left;
+  padding-left: 149px;
+}
+
+.horizontalModalFormControl .checkboxLabel {
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.horizontalModalFormControl .buttonControl .fieldContainer {
+  padding-left: 100px;
+}
+
+.horizontalModalFormControl .applicationButton {
+  *position: relative;
+  *left: 31px;  
+  margin-left: 31px;
+}
+
+.horizontalModalFormControl .submitLoader {
+  position: absolute;
+  left: 102px;
+}

@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Transmission Control Protocol - Wikipedia, the free encyclopedia</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21wmf11" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit" />
+<link rel="apple-touch-icon" href="//en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="//bits.wikimedia.org/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cteahouse%7Cext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmw.PopUpMediaTransform%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:d11e4771671c2d6cdedf7c90d8131cd5 */</style>
+
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Transmission_Control_Protocol","wgTitle":"Transmission Control Protocol","wgCurRevisionId":543626719,"wgArticleId":30538,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles with dead external links","Articles with dead external links from July 2012","Articles with inconsistent citation formats","Wikipedia articles needing clarification from March 2008","Articles containing potentially dated statements from 2010","All articles containing potentially dated statements","Articles containing potentially dated statements from July 2012","Transmission Control Protocol","Transport layer protocols"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Transmission_Control_Protocol","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVectorEnabledModules":{"collapsiblenav":true,"collapsibletabs":true,"editwarning":true,"expandablesearch":false,"footercleanup":true,"sectioneditlinks":false,"experiments":true},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false},"wgTrackingToken":"a700258f97c952bf06c8fd3fc8ca866a","wgArticleFeedbackv5Permissions":{"aft-reader":true,"aft-member":false,"aft-editor":false,"aft-monitor":false,"aft-administrator":false,"aft-oversighter":false},"wgVisualEditor":{"isPageWatched":false,"enableSectionEditLinks":false},"wikilove-recipient":"","wikilove-anon":0,"wgGuidedTourHelpGuiderUrl":"Help:Guided tours/guider","wgGuidedTourTestWikitextDescription":"A guider in your on-wiki tour can contain wikitext using onShow and parseDescription. Use it to create a wikilink to the \x3ca href=\"/wiki/Help:Guided_tours\" title=\"Help:Guided tours\"\x3eGuided tours documentation\x3c/a\x3e. Or an external link \x3ca rel=\"nofollow\" class=\"external text\" href=\"https://github.com/tychay/mwgadget.GuidedTour\"\x3eto GitHub\x3c/a\x3e, for instance.","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","Geo":{"city":"","country":""},"wgNoticeProject":"wikipedia","aftv5Article":{"id":30538,"title":"Transmission Control Protocol","namespace":0,"categories":["All articles containing potentially dated statements","All articles with dead external links","Articles containing potentially dated statements from 2010","Articles containing potentially dated statements from July 2012","Articles with dead external links from July 2012","Articles with inconsistent citation formats","Transmission Control Protocol","Transport layer protocols","Wikipedia articles needing clarification from March 2008"],"permissionLevel":"aft-reader"}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":false,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3
+,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"aftv5-last-filter":null,"wikilove-enabled":1,"echo-subscriptions-web-page-review":true,"echo-subscriptions-email-page-review":true,"ep_showtoplink":false,"ep_bulkdelorgs":false,"ep_bulkdelcourses":true,"ep_showdyk":true,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,"searchNs109":
+false,"searchNs446":false,"searchNs447":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"gadget-teahouse":1,"gadget-ReferenceTooltips":1,"gadget-HotCat":1,"gadget-DRN-wizard":1,"gadget-charinsert":1,"gadget-mySandbox":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:ee476f5a261e7897000ddebb57fff2ce */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.vector.footerCleanup","ext.wikimediaShopLink.core","wikibase.client.init","ext.centralNotice.bannerController"]);
+}</script>
+<script src="//bits.wikimedia.org/geoiplookup"></script><link rel="dns-prefetch" href="//meta.wikimedia.org" /><!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static-1.21wmf11/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Transmission_Control_Protocol skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- CentralNotice --><script>
+	mw.loader.using( 'ext.centralNotice.bannerController', function() { mw.centralNotice.initialize(); } );
+</script>
+</div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Transmission Control Protocol</span></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Transmission Control Protocol</caption>
+<tr class="">
+<th scope="row" style="text-align:left; width:100px">International standard</th>
+<td class="" style="">
+<ul>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc675">RFC 675</a></li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc793">RFC 793</a></li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1122">RFC 1122</a></li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc2581">RFC 2581</a></li>
+</ul>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; width:100px">Industry</th>
+<td class="" style=""><a href="/wiki/LAN" title="LAN" class="mw-redirect">LAN</a>, <a href="/wiki/WAN" title="WAN">WAN</a>, <a href="/wiki/Internet" title="Internet">Internet</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; width:100px">Compatible hardware</th>
+<td class="" style=""><a href="/wiki/Mobile_phone" title="Mobile phone">Mobile phones</a>, <a href="/wiki/Personal_computer" title="Personal computer">Personal computers</a>, <a href="/wiki/Laptop_computer" title="Laptop computer" class="mw-redirect">Laptop computers</a></td>
+</tr>
+</table>
+<p>The <b>Transmission Control Protocol</b> (<b>TCP</b>) is one of the core <a href="/wiki/Communications_protocol" title="Communications protocol">protocols</a> of the <a href="/wiki/Internet_protocol_suite" title="Internet protocol suite">Internet protocol suite</a>. TCP is one of the two original components of the suite, complementing the <a href="/wiki/Internet_Protocol" title="Internet Protocol">Internet Protocol</a> (IP), and therefore the entire suite is commonly referred to as <i>TCP/IP</i>. TCP provides reliable, ordered delivery of a stream of <a href="/wiki/Octet_(computing)" title="Octet (computing)">octets</a> from a program on one computer to another program on another computer. TCP is the protocol used by major Internet applications such as the <a href="/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a>, <a href="/wiki/Email" title="Email">email</a>, <a href="/wiki/Remote_administration" title="Remote administration">remote administration</a> and <a href="/wiki/File_transfer" title="File transfer">file transfer</a>. Other applications, which do not require reliable <a href="/wiki/Data_stream" title="Data stream">data stream</a> service, may use the <a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">User Datagram Protocol</a> (UDP), which provides a <a href="/wiki/Datagram" title="Datagram">datagram</a> service that emphasizes reduced <a href="/wiki/Latency_(engineering)" title="Latency (engineering)">latency</a> over reliability.</p>
+<table class="vertical-navbox nowraplinks hlist" cellspacing="5" cellpadding="0" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;">
+<tr>
+<th class="" style=";padding:0.2em 0.4em 0.2em;;font-size:145%;line-height:1.2em;"><a href="/wiki/Internet_protocol_suite" title="Internet protocol suite">Internet protocol suite</a></th>
+</tr>
+<tr>
+<th class="" style="padding:0.1em;;;"><a href="/wiki/Application_layer" title="Application layer">Application layer</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Dynamic_Host_Configuration_Protocol" title="Dynamic Host Configuration Protocol">DHCP</a></li>
+<li><a href="/wiki/DHCPv6" title="DHCPv6">DHCPv6</a></li>
+<li><a href="/wiki/Domain_Name_System" title="Domain Name System">DNS</a></li>
+<li><a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">FTP</a></li>
+<li><a href="/wiki/Hypertext_Transfer_Protocol" title="Hypertext Transfer Protocol">HTTP</a></li>
+<li><a href="/wiki/Internet_Message_Access_Protocol" title="Internet Message Access Protocol">IMAP</a></li>
+<li><a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">IRC</a></li>
+<li><a href="/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol">LDAP</a></li>
+<li><a href="/wiki/Media_Gateway_Control_Protocol" title="Media Gateway Control Protocol">MGCP</a></li>
+<li><a href="/wiki/Network_News_Transfer_Protocol" title="Network News Transfer Protocol">NNTP</a></li>
+<li><a href="/wiki/Border_Gateway_Protocol" title="Border Gateway Protocol">BGP</a></li>
+<li><a href="/wiki/Network_Time_Protocol" title="Network Time Protocol">NTP</a></li>
+<li><a href="/wiki/Post_Office_Protocol" title="Post Office Protocol">POP</a></li>
+<li><a href="/wiki/Remote_procedure_call" title="Remote procedure call">RPC</a></li>
+<li><a href="/wiki/Real-time_Transport_Protocol" title="Real-time Transport Protocol">RTP</a></li>
+<li><a href="/wiki/Real_Time_Streaming_Protocol" title="Real Time Streaming Protocol">RTSP</a></li>
+<li><a href="/wiki/Routing_Information_Protocol" title="Routing Information Protocol">RIP</a></li>
+<li><a href="/wiki/Session_Initiation_Protocol" title="Session Initiation Protocol">SIP</a></li>
+<li><a href="/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">SMTP</a></li>
+<li><a href="/wiki/Simple_Network_Management_Protocol" title="Simple Network Management Protocol">SNMP</a></li>
+<li><a href="/wiki/SOCKS" title="SOCKS">SOCKS</a></li>
+<li><a href="/wiki/Secure_Shell" title="Secure Shell">SSH</a></li>
+<li><a href="/wiki/Telnet" title="Telnet">Telnet</a></li>
+<li><a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a></li>
+<li><a href="/wiki/XMPP" title="XMPP">XMPP</a></li>
+<li><a href="/wiki/Category:Application_layer_protocols" title="Category:Application layer protocols">(more)</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="" style="padding:0.1em;;;"><a href="/wiki/Transport_layer" title="Transport layer">Transport layer</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><strong class="selflink">TCP</strong></li>
+<li><a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">UDP</a></li>
+<li><a href="/wiki/Datagram_Congestion_Control_Protocol" title="Datagram Congestion Control Protocol">DCCP</a></li>
+<li><a href="/wiki/Stream_Control_Transmission_Protocol" title="Stream Control Transmission Protocol">SCTP</a></li>
+<li><a href="/wiki/Resource_Reservation_Protocol" title="Resource Reservation Protocol">RSVP</a></li>
+<li><a href="/wiki/Category:Transport_layer_protocols" title="Category:Transport layer protocols">(more)</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="" style="padding:0.1em;;;"><a href="/wiki/Internet_layer" title="Internet layer">Internet layer</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Internet_Protocol" title="Internet Protocol">IP</a>
+<ul>
+<li><a href="/wiki/IPv4" title="IPv4">IPv4</a></li>
+<li><a href="/wiki/IPv6" title="IPv6">IPv6</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Internet_Control_Message_Protocol" title="Internet Control Message Protocol">ICMP</a></li>
+<li><a href="/wiki/ICMPv6" title="ICMPv6">ICMPv6</a></li>
+<li><a href="/wiki/Explicit_Congestion_Notification" title="Explicit Congestion Notification">ECN</a></li>
+<li><a href="/wiki/Internet_Group_Management_Protocol" title="Internet Group Management Protocol">IGMP</a></li>
+<li><a href="/wiki/IPsec" title="IPsec">IPsec</a></li>
+<li><a href="/wiki/Category:Internet_layer_protocols" title="Category:Internet layer protocols">(more)</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="" style="padding:0.1em;;;"><a href="/wiki/Link_layer" title="Link layer">Link layer</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Address_Resolution_Protocol" title="Address Resolution Protocol">ARP/InARP</a></li>
+<li><a href="/wiki/Neighbor_Discovery_Protocol" title="Neighbor Discovery Protocol">NDP</a></li>
+<li><a href="/wiki/Open_Shortest_Path_First" title="Open Shortest Path First">OSPF</a></li>
+<li><a href="/wiki/Tunneling_protocol" title="Tunneling protocol">Tunnels</a>
+<ul>
+<li><a href="/wiki/Layer_2_Tunneling_Protocol" title="Layer 2 Tunneling Protocol">L2TP</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Point-to-point_protocol" title="Point-to-point protocol">PPP</a></li>
+<li><a href="/wiki/Media_access_control" title="Media access control">Media access control</a>
+<ul>
+<li><a href="/wiki/Ethernet" title="Ethernet">Ethernet</a></li>
+<li><a href="/wiki/Digital_subscriber_line" title="Digital subscriber line">DSL</a></li>
+<li><a href="/wiki/Integrated_Services_Digital_Network" title="Integrated Services Digital Network">ISDN</a></li>
+<li><a href="/wiki/Fiber_Distributed_Data_Interface" title="Fiber Distributed Data Interface">FDDI</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Category:Link_protocols" title="Category:Link protocols">(more)</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:IPstack" title="Template:IPstack"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:IPstack" title="Template talk:IPstack"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:IPstack&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Historical_origin"><span class="tocnumber">1</span> <span class="toctext">Historical origin</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Network_function"><span class="tocnumber">2</span> <span class="toctext">Network function</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#TCP_segment_structure"><span class="tocnumber">3</span> <span class="toctext">TCP segment structure</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Protocol_operation"><span class="tocnumber">4</span> <span class="toctext">Protocol operation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Connection_establishment"><span class="tocnumber">4.1</span> <span class="toctext">Connection establishment</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Connection_termination"><span class="tocnumber">4.2</span> <span class="toctext">Connection termination</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Resource_usage"><span class="tocnumber">4.3</span> <span class="toctext">Resource usage</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Data_transfer"><span class="tocnumber">4.4</span> <span class="toctext">Data transfer</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Reliable_transmission"><span class="tocnumber">4.4.1</span> <span class="toctext">Reliable transmission</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Error_detection"><span class="tocnumber">4.4.2</span> <span class="toctext">Error detection</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Flow_control"><span class="tocnumber">4.4.3</span> <span class="toctext">Flow control</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Congestion_control"><span class="tocnumber">4.4.4</span> <span class="toctext">Congestion control</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="#Maximum_segment_size"><span class="tocnumber">4.5</span> <span class="toctext">Maximum segment size</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Selective_acknowledgments"><span class="tocnumber">4.6</span> <span class="toctext">Selective acknowledgments</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Window_scaling"><span class="tocnumber">4.7</span> <span class="toctext">Window scaling</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#TCP_timestamps"><span class="tocnumber">4.8</span> <span class="toctext">TCP timestamps</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Out_of_band_data"><span class="tocnumber">4.9</span> <span class="toctext">Out of band data</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Forcing_data_delivery"><span class="tocnumber">4.10</span> <span class="toctext">Forcing data delivery</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#Vulnerabilities"><span class="tocnumber">5</span> <span class="toctext">Vulnerabilities</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="#Denial_of_service"><span class="tocnumber">5.1</span> <span class="toctext">Denial of service</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Connection_hijacking"><span class="tocnumber">5.2</span> <span class="toctext">Connection hijacking</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#TCP_ports"><span class="tocnumber">6</span> <span class="toctext">TCP ports</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#Development"><span class="tocnumber">7</span> <span class="toctext">Development</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#TCP_over_wireless_networks"><span class="tocnumber">8</span> <span class="toctext">TCP over wireless networks</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#Hardware_implementations"><span class="tocnumber">9</span> <span class="toctext">Hardware implementations</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#Debugging"><span class="tocnumber">10</span> <span class="toctext">Debugging</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#Alternatives"><span class="tocnumber">11</span> <span class="toctext">Alternatives</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#Checksum_computation"><span class="tocnumber">12</span> <span class="toctext">Checksum computation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-29"><a href="#TCP_checksum_for_IPv4"><span class="tocnumber">12.1</span> <span class="toctext">TCP checksum for IPv4</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#TCP_checksum_for_IPv6"><span class="tocnumber">12.2</span> <span class="toctext">TCP checksum for IPv6</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Checksum_offload"><span class="tocnumber">12.3</span> <span class="toctext">Checksum offload </span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-32"><a href="#See_also"><span class="tocnumber">13</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#References"><span class="tocnumber">14</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#Further_reading"><span class="tocnumber">15</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#External_links"><span class="tocnumber">16</span> <span class="toctext">External links</span></a>
+<ul>
+<li class="toclevel-2 tocsection-36"><a href="#RFC"><span class="tocnumber">16.1</span> <span class="toctext">RFC</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#Others"><span class="tocnumber">16.2</span> <span class="toctext">Others</span></a></li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=1" title="Edit section: Historical origin">edit</a>]</span> <span class="mw-headline" id="Historical_origin">Historical origin</span></h2>
+<p>In May 1974 the <a href="/wiki/Institute_of_Electrical_and_Electronic_Engineers" title="Institute of Electrical and Electronic Engineers" class="mw-redirect">Institute of Electrical and Electronic Engineers</a> (IEEE) published a paper entitled "<i>A Protocol for Packet Network Intercommunication.</i>"<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> The paper's authors, <a href="/wiki/Vint_Cerf" title="Vint Cerf">Vint Cerf</a> and <a href="/wiki/Bob_Kahn" title="Bob Kahn">Bob Kahn</a>, described an internetworking protocol for sharing resources using <a href="/wiki/Packet-switching" title="Packet-switching" class="mw-redirect">packet-switching</a> among the nodes. A central control component of this model was the <i>Transmission Control Program</i> that incorporated both connection-oriented links and <a href="/wiki/Datagram" title="Datagram">datagram</a> services between hosts. The monolithic Transmission Control Program was later divided into a modular architecture consisting of the <i>Transmission Control Protocol</i> at the <a href="/wiki/Connection-oriented_layer" title="Connection-oriented layer" class="mw-redirect">connection-oriented layer</a> and the <i>Internet Protocol</i> at the internetworking (datagram) layer. The model became known informally as <i>TCP/IP</i>, although formally it was henceforth called the <i>Internet Protocol Suite</i>.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=2" title="Edit section: Network function">edit</a>]</span> <span class="mw-headline" id="Network_function">Network function</span></h2>
+<p>The protocol corresponds to the transport layer of TCP/IP suite. TCP provides a communication service at an intermediate level between an application program and the Internet Protocol (IP). That is, when an <a href="/wiki/Application_software" title="Application software">application program</a> desires to send a large chunk of data across the Internet using IP, instead of breaking the data into IP-sized pieces and issuing a series of IP requests, the software can issue a single request to TCP and let TCP handle the IP details.</p>
+<p>IP works by exchanging pieces of information called <a href="/wiki/Packet_(information_technology)" title="Packet (information technology)" class="mw-redirect">packets</a>. A packet is a sequence of <a href="/wiki/Octet_(computing)" title="Octet (computing)">octets</a> and consists of a <i>header</i> followed by a <i>body</i>. The header describes the packet's destination and, optionally, the <a href="/wiki/Router_(computing)" title="Router (computing)">routers</a> to use for forwarding until it arrives at its destination. The body contains the data IP is transmitting.</p>
+<p>Due to network congestion, traffic load balancing, or other unpredictable network behavior, IP packets can be <a href="/wiki/Packet_loss" title="Packet loss">lost</a>, duplicated, or <a href="/wiki/Out-of-order_delivery" title="Out-of-order delivery">delivered out of order</a>. TCP detects these problems, requests retransmission of lost data, rearranges out-of-order data, and even helps minimize network congestion to reduce the occurrence of the other problems. Once the TCP receiver has reassembled the sequence of octets originally transmitted, it passes them to the application program. Thus, TCP abstracts the application's communication from the underlying networking details.</p>
+<p>TCP is utilized extensively by many of the Internet's most popular applications, including the <a href="/wiki/World_Wide_Web" title="World Wide Web">World Wide Web (WWW)</a>, <a href="/wiki/E-mail" title="E-mail" class="mw-redirect">E-mail</a>, <a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">File Transfer Protocol</a>, <a href="/wiki/Secure_Shell" title="Secure Shell">Secure Shell</a>, <a href="/wiki/Peer-to-peer" title="Peer-to-peer">peer-to-peer</a> <a href="/wiki/File_sharing" title="File sharing">file sharing</a>, and some <a href="/wiki/Streaming_media" title="Streaming media">streaming media</a> applications.</p>
+<p>TCP is optimized for accurate delivery rather than timely delivery, and therefore, TCP sometimes incurs relatively long delays (in the order of seconds) while waiting for out-of-order messages or retransmissions of lost messages. It is not particularly suitable for real-time applications such as <a href="/wiki/Voice_over_IP" title="Voice over IP">Voice over IP</a>. For such applications, protocols like the <a href="/wiki/Real-time_Transport_Protocol" title="Real-time Transport Protocol">Real-time Transport Protocol</a> (RTP) running over the <a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">User Datagram Protocol</a> (UDP) are usually recommended instead.<sup id="cite_ref-comer_2-0" class="reference"><a href="#cite_note-comer-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>TCP is a reliable stream delivery service that guarantees that all bytes received will be identical with bytes sent and in the correct order. Since packet transfer is not reliable, a technique known as positive acknowledgment with retransmission is used to guarantee reliability of packet transfers. This fundamental technique requires the receiver to respond with an acknowledgment message as it receives the data. The sender keeps a record of each packet it sends. The sender also keeps a timer from when the packet was sent, and retransmits a packet if the timer expires before the message has been acknowledged. The timer is needed in case a packet gets lost or corrupted.<sup id="cite_ref-comer_2-1" class="reference"><a href="#cite_note-comer-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>TCP consists of a set of rules: for the protocol, that are used with the Internet Protocol, and for the IP, to send data "in a form of message units" between computers over the Internet. While IP handles actual delivery of the data, TCP keeps track of the individual units of data transmission, called <i>segments</i>, that a message is divided into for efficient routing through the network. For example, when an HTML file is sent from a Web server, the TCP software layer of that server divides the sequence of octets of the file into segments and forwards them individually to the IP software layer (<a href="/wiki/Internet_Layer" title="Internet Layer" class="mw-redirect">Internet Layer</a>). The Internet Layer encapsulates each TCP segment into an IP packet by adding a header that includes (among other data) the destination <a href="/wiki/IP_address" title="IP address">IP address</a>. Even though every packet has the same destination address, they can be routed on different paths through the network. When the client program on the destination computer receives them, the TCP layer (<a href="/wiki/Transport_Layer" title="Transport Layer" class="mw-redirect">Transport Layer</a>) reassembles the individual segments and ensures they are correctly ordered and error free as it streams them to an application.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=3" title="Edit section: TCP segment structure">edit</a>]</span> <span class="mw-headline" id="TCP_segment_structure">TCP segment structure</span></h2>
+<p>Transmission Control Protocol accepts data from a data stream, segments it into chunks, and adds a TCP header creating a TCP segment. The TCP segment is then <a href="/wiki/Encapsulation_(networking)" title="Encapsulation (networking)">encapsulated</a> into an Internet Protocol (IP) datagram. A TCP segment is "the packet of information that TCP uses to exchange data with its peers." <sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>The term <i>TCP packet</i>, though sometimes informally used, is not in line with current terminology, where <i>segment</i> refers to the TCP <a href="/wiki/Protocol_data_unit" title="Protocol data unit">PDU</a>, <i>datagram</i><sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> to the IP PDU and <i>frame</i> to the data link layer PDU:</p>
+<blockquote>
+<p>Processes transmit data by calling on the TCP and passing buffers of data as arguments. The TCP packages the data from these buffers into segments and calls on the internet module [e.g. IP] to transmit each segment to the destination TCP.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+</blockquote>
+<p>A TCP segment consists of a segment <i>header</i> and a <i>data</i> section. The TCP header contains 10 mandatory fields, and an optional extension field (<i>Options</i>, orange background in table).</p>
+<p>The data section follows the header. Its contents are the payload data carried for the application. The length of the data section is not specified in the TCP segment header. It can be calculated by subtracting the combined length of the TCP header and the encapsulating IP header from the total IP datagram length (specified in the IP header).</p>
+<table class="wikitable" style="text-align:center">
+<caption>TCP Header</caption>
+<tr>
+<th style="border-bottom:none; border-right:none;"><i>Offsets</i></th>
+<th style="border-left:none;"><a href="/wiki/Octet_(computing)" title="Octet (computing)">Octet</a></th>
+<th colspan="8">0</th>
+<th colspan="8">1</th>
+<th colspan="8">2</th>
+<th colspan="8">3</th>
+</tr>
+<tr>
+<th style="border-top: none">Octet</th>
+<th><tt><a href="/wiki/Bit" title="Bit">Bit</a></tt></th>
+<th><tt>&#160;0</tt></th>
+<th><tt>&#160;1</tt></th>
+<th><tt>&#160;2</tt></th>
+<th><tt>&#160;3</tt></th>
+<th><tt>&#160;4</tt></th>
+<th><tt>&#160;5</tt></th>
+<th><tt>&#160;6</tt></th>
+<th><tt>&#160;7</tt></th>
+<th><tt>&#160;8</tt></th>
+<th><tt>&#160;9</tt></th>
+<th><tt>10</tt></th>
+<th><tt>11</tt></th>
+<th><tt>12</tt></th>
+<th><tt>13</tt></th>
+<th><tt>14</tt></th>
+<th><tt>15</tt></th>
+<th><tt>16</tt></th>
+<th><tt>17</tt></th>
+<th><tt>18</tt></th>
+<th><tt>19</tt></th>
+<th><tt>20</tt></th>
+<th><tt>21</tt></th>
+<th><tt>22</tt></th>
+<th><tt>23</tt></th>
+<th><tt>24</tt></th>
+<th><tt>25</tt></th>
+<th><tt>26</tt></th>
+<th><tt>27</tt></th>
+<th><tt>28</tt></th>
+<th><tt>29</tt></th>
+<th><tt>30</tt></th>
+<th><tt>31</tt></th>
+</tr>
+<tr>
+<th>0</th>
+<th><tt>0</tt></th>
+<td colspan="16">Source port</td>
+<td colspan="16">Destination port</td>
+</tr>
+<tr>
+<th>4</th>
+<th><tt>32</tt></th>
+<td colspan="32">Sequence number</td>
+</tr>
+<tr>
+<th>8</th>
+<th><tt>64</tt></th>
+<td colspan="32">Acknowledgment number (if <tt>ACK</tt> set)</td>
+</tr>
+<tr>
+<th>12</th>
+<th><tt>96</tt></th>
+<td colspan="4">Data offset</td>
+<td colspan="3">Reserved<br />
+<tt><b>0 0 0</b></tt></td>
+<td><tt>N<br />
+S</tt></td>
+<td><tt>C<br />
+W<br />
+R</tt></td>
+<td><tt>E<br />
+C<br />
+E</tt></td>
+<td><tt>U<br />
+R<br />
+G</tt></td>
+<td><tt>A<br />
+C<br />
+K</tt></td>
+<td><tt>P<br />
+S<br />
+H</tt></td>
+<td><tt>R<br />
+S<br />
+T</tt></td>
+<td><tt>S<br />
+Y<br />
+N</tt></td>
+<td><tt>F<br />
+I<br />
+N</tt></td>
+<td colspan="16">Window Size</td>
+</tr>
+<tr>
+<th>16</th>
+<th><tt>128</tt></th>
+<td colspan="16">Checksum</td>
+<td colspan="16">Urgent pointer (if <tt>URG</tt> set)</td>
+</tr>
+<tr>
+<th>20<br />
+...</th>
+<th><tt>160<br />
+...</tt></th>
+<td colspan="32" style="background:#ffcc88;">Options (if <i>data offset</i> &gt; 5. Padded at the end with "0" bytes if necessary.)<br />
+...</td>
+</tr>
+</table>
+<ul>
+<li>Source port (16 bits) – identifies the sending port</li>
+<li>Destination port (16 bits) – identifies the receiving port</li>
+<li>Sequence number (32 bits) – has a dual role:</li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li>If the <tt>SYN</tt> flag is set (1), then this is the initial sequence number. The sequence number of the actual first data byte and the acknowledged number in the corresponding ACK are then this sequence number plus 1.</li>
+<li>If the <tt>SYN</tt> flag is clear (0), then this is the accumulated sequence number of the first data byte of this segment for the current session.</li>
+</ul>
+</dd>
+</dl>
+<ul>
+<li>Acknowledgment number (32 bits) – if the <tt>ACK</tt> flag is set then the value of this field is the next sequence number that the receiver is expecting. This acknowledges receipt of all prior bytes (if any). The first <tt>ACK</tt> sent by each end acknowledges the other end's initial sequence number itself, but no data.</li>
+<li>Data offset (4 bits) – specifies the size of the TCP header in 32-bit words. The minimum size header is 5 words and the maximum is 15 words thus giving the minimum size of 20 bytes and maximum of 60 bytes, allowing for up to 40 bytes of options in the header. This field gets its name from the fact that it is also the offset from the start of the TCP segment to the actual data.</li>
+<li>Reserved (3 bits) – for future use and should be set to zero</li>
+<li>Flags (9 bits) (aka Control bits) – contains 9 1-bit flags</li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li><tt>NS</tt> (1 bit) – ECN-nonce concealment protection (added to header by <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc3540">RFC 3540</a>).</li>
+<li><tt>CWR</tt> (1 bit) – Congestion Window Reduced (CWR) flag is set by the sending host to indicate that it received a TCP segment with the <tt>ECE</tt> flag set and had responded in congestion control mechanism (added to header by <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc3168">RFC 3168</a>).</li>
+<li><tt>ECE</tt> (1 bit) – ECN-Echo indicates</li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li>If the <tt>SYN</tt> flag is set (1), that the TCP peer is <a href="/wiki/Explicit_Congestion_Notification" title="Explicit Congestion Notification">ECN</a> capable.</li>
+<li>If the <tt>SYN</tt> flag is clear (0), that a packet with Congestion Experienced flag in IP header set is received during normal transmission (added to header by <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc3168">RFC 3168</a>).</li>
+</ul>
+</dd>
+</dl>
+<ul>
+<li><tt>URG</tt> (1 bit) – indicates that the Urgent pointer field is significant</li>
+<li><tt>ACK</tt> (1 bit) – indicates that the Acknowledgment field is significant. All packets after the initial <tt>SYN</tt> packet sent by the client should have this flag set.</li>
+<li><tt>PSH</tt> (1 bit) – Push function. Asks to push the buffered data to the receiving application.</li>
+<li><tt>RST</tt> (1 bit) – Reset the connection</li>
+<li><tt>SYN</tt> (1 bit) – Synchronize sequence numbers. Only the first packet sent from each end should have this flag set. Some other flags change meaning based on this flag, and some are only valid for when it is set, and others when it is clear.</li>
+<li><tt>FIN</tt> (1 bit) – No more data from sender</li>
+</ul>
+</dd>
+</dl>
+<ul>
+<li>Window size (16 bits) – the size of the <i>receive window</i>, which specifies the number of window size units (by default, bytes) (beyond the sequence number in the acknowledgment field) that the sender of this segment is currently willing to receive (<i>see <a href="#Flow_control">Flow control</a> and <a href="#Window_scaling">Window Scaling</a></i>)</li>
+<li>Checksum (16 bits) – The 16-bit <a href="/wiki/Checksum" title="Checksum">checksum</a> field is used for error-checking of the header and data</li>
+<li>Urgent pointer (16 bits) – if the <tt>URG</tt> flag is set, then this 16-bit field is an offset from the sequence number indicating the last urgent data byte</li>
+<li>Options (Variable 0–320 bits, divisible by 32) – The length of this field is determined by the data offset field. Options have up to three fields: Option-Kind (1 byte), Option-Length (1 byte), Option-Data (variable). The Option-Kind field indicates the type of option, and is the only field that is not optional. Depending on what kind of option we are dealing with, the next two fields may be set: the Option-Length field indicates the total length of the option, and the Option-Data field contains the value of the option, if applicable. For example, an Option-Kind byte of 0x01 indicates that this is a No-Op option used only for padding, and does not have an Option-Length or Option-Data byte following it. An Option-Kind byte of 0 is the End Of Options option, and is also only one byte. An Option-Kind byte of 0x02 indicates that this is the Maximum Segment Size option, and will be followed by a byte specifying the length of the MSS field (should be 0x04). Note that this length is the total length of the given options field, including Option-Kind and Option-Length bytes. So while the MSS value is typically expressed in two bytes, the length of the field will be 4 bytes (+2 bytes of kind and length). In short, an MSS option field with a value of 0x05B4 will show up as (0x02 0x04 0x05B4) in the TCP options section.</li>
+<li>Padding – The TCP header padding is used to ensure that the TCP header ends and data begins on a 32 bit boundary. The padding is composed of zeros.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup></li>
+</ul>
+<p>Some options may only be sent when <tt>SYN</tt> is set; they are indicated below as <sup><tt style="color:#000; background:#ccc;">[SYN]</tt></sup>. Option-Kind and standard lengths given as (Option-Kind,Option-Length).</p>
+<dl>
+<dd>
+<ul>
+<li>0 (8 bits) – End of options list</li>
+<li>1 (8 bits) – No operation (NOP, Padding) This may be used to align option fields on 32-bit boundaries for better performance.</li>
+<li>2,4,<i>SS</i> (32 bits) – Maximum segment size (<i>see <a href="#Maximum_segment_size">maximum segment size</a></i>) <sup><tt style="color:#000; background:#ccc;">[SYN]</tt></sup></li>
+<li>3,3,<i>S</i> (24 bits) – Window scale (<i>see <a href="#Window_scaling">window scaling</a> for details</i>) <sup><tt style="color:#000; background:#ccc;">[SYN]</tt></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup></li>
+<li>4,2 (16 bits) – Selective Acknowledgement permitted. <sup><tt style="color:#000; background:#ccc;">[SYN]</tt></sup> (<i>See <a href="#Selective_acknowledgments">selective acknowledgments</a> for details</i>)<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup></li>
+<li>5,<i>N,BBBB,EEEE,...</i> (variable bits, <i>N</i> is either 10, 18, 26, or 34)- Selective ACKnowledgement (SACK)<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup> These first two bytes are followed by a list of 1–4 blocks being selectively acknowledged, specified as 32-bit begin/end pointers.</li>
+<li>8,10,<i>TTTT,EEEE</i> (80 bits)- Timestamp and echo of previous timestamp (<i>see <a href="#TCP_timestamps">TCP timestamps</a> for details</i>)<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>10<span>]</span></a></sup></li>
+<li>14,3,<i>S</i> (24 bits) – TCP Alternate Checksum Request. <sup><tt style="color:#000; background:#ccc;">[SYN]</tt></sup><sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>11<span>]</span></a></sup></li>
+<li>15,<i>N,...</i> (variable bits) – TCP Alternate Checksum Data.</li>
+</ul>
+</dd>
+<dd>(The remaining options are obsolete, experimental, not yet standardized, or unassigned)</dd>
+</dl>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=4" title="Edit section: Protocol operation">edit</a>]</span> <span class="mw-headline" id="Protocol_operation">Protocol operation</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;"><a href="/wiki/File:Tcp_state_diagram_fixed.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Tcp_state_diagram_fixed.svg/250px-Tcp_state_diagram_fixed.svg.png" width="250" height="188" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Tcp_state_diagram_fixed.svg/375px-Tcp_state_diagram_fixed.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Tcp_state_diagram_fixed.svg/500px-Tcp_state_diagram_fixed.svg.png 2x" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Tcp_state_diagram_fixed.svg" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/static-1.21wmf11/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+A Simplified TCP State Diagram. See <a rel="nofollow" class="external text" href="http://www.medianet.kent.edu/techreports/TR2005-07-22-tcp-EFSM.pdf">TCP EFSM diagram</a> for a more detailed state diagram including the states inside the ESTABLISHED state.</div>
+</div>
+</div>
+<p>TCP protocol operations may be divided into three phases. Connections must be properly established in a multi-step handshake process (<i>connection establishment</i>) before entering the <i>data transfer</i> phase. After data transmission is completed, the <i>connection termination</i> closes established virtual circuits and releases all allocated resources.</p>
+<p>A TCP connection is managed by an operating system through a programming interface that represents the local end-point for communications, the <i><a href="/wiki/Internet_socket" title="Internet socket" class="mw-redirect">Internet socket</a></i>. During the lifetime of a TCP connection the local end-point undergoes a series of <a href="/wiki/State_(computer_science)" title="State (computer science)">state</a> changes:<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<dl>
+<dt>LISTEN&#160;</dt>
+<dd>(server) represents waiting for a connection request from any remote TCP and port.</dd>
+<dt>SYN-SENT&#160;</dt>
+<dd>(client) represents waiting for a matching connection request after having sent a connection request.</dd>
+<dt>SYN-RECEIVED&#160;</dt>
+<dd>(server) represents waiting for a confirming connection request acknowledgment after having both received and sent a connection request.</dd>
+<dt>ESTABLISHED&#160;</dt>
+<dd>(both server and client) represents an open connection, data received can be delivered to the user. The normal state for the data transfer phase of the connection.</dd>
+<dt>FIN-WAIT-1&#160;</dt>
+<dd>(both server and client) represents waiting for a connection termination request from the remote TCP, or an acknowledgment of the connection termination request previously sent.</dd>
+<dt>FIN-WAIT-2&#160;</dt>
+<dd>(both server and client) represents waiting for a connection termination request from the remote TCP.</dd>
+<dt>CLOSE-WAIT&#160;</dt>
+<dd>(both server and client) represents waiting for a connection termination request from the local user.</dd>
+<dt>CLOSING&#160;</dt>
+<dd>(both server and client) represents waiting for a connection termination request acknowledgment from the remote TCP.</dd>
+<dt>LAST-ACK&#160;</dt>
+<dd>(both server and client) represents waiting for an acknowledgment of the connection termination request previously sent to the remote TCP (which includes an acknowledgment of its connection termination request).</dd>
+<dt>TIME-WAIT&#160;</dt>
+<dd>(either server or client) represents waiting for enough time to pass to be sure the remote TCP received the acknowledgment of its connection termination request. [According to <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc793">RFC 793</a> a connection can stay in TIME-WAIT for a maximum of four minutes known as a <a href="/wiki/Maximum_Segment_Lifetime" title="Maximum Segment Lifetime" class="mw-redirect">MSL</a> (maximum segment lifetime).]</dd>
+<dt>CLOSED&#160;</dt>
+<dd>(both server and client) represents no connection state at all.</dd>
+</dl>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=5" title="Edit section: Connection establishment">edit</a>]</span> <span class="mw-headline" id="Connection_establishment">Connection establishment</span></h3>
+<p>To establish a connection, TCP uses a three-way <a href="/wiki/Handshaking" title="Handshaking">handshake</a>. Before a client attempts to connect with a server, the server must first bind to and listen at a port to open it up for connections: this is called a passive open. Once the passive open is established, a client may initiate an active open. To establish a connection, the three-way (or 3-step) handshake occurs:</p>
+<ol>
+<li><b>SYN</b>: The active open is performed by the client sending a SYN to the server. The client sets the segment's sequence number to a random value A.</li>
+<li><b>SYN-ACK</b>: In response, the server replies with a SYN-ACK. The acknowledgment number is set to one more than the received sequence number (A + 1), and the sequence number that the server chooses for the packet is another random number, B.</li>
+<li><b>ACK</b>: Finally, the client sends an ACK back to the server. The sequence number is set to the received acknowledgement value i.e. A + 1, and the acknowledgement number is set to one more than the received sequence number i.e. B + 1.</li>
+</ol>
+<p>At this point, both the client and server have received an acknowledgment of the connection. The steps 1, 2 establish the connection parameter (sequence number) for one direction and it is acknowledged. The steps 2, 3 establish the connection parameter (sequence number) for the other direction and it is acknowledged. With these, a full-duplex communication is established.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=6" title="Edit section: Connection termination">edit</a>]</span> <span class="mw-headline" id="Connection_termination">Connection termination</span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:262px;"><a href="/wiki/File:TCP_CLOSE.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/55/TCP_CLOSE.svg/260px-TCP_CLOSE.svg.png" width="260" height="208" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/55/TCP_CLOSE.svg/390px-TCP_CLOSE.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/55/TCP_CLOSE.svg/520px-TCP_CLOSE.svg.png 2x" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:TCP_CLOSE.svg" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/static-1.21wmf11/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Connection termination</div>
+</div>
+</div>
+<p>The connection termination phase uses a four-way <a href="/wiki/Handshake_(computing)" title="Handshake (computing)" class="mw-redirect">handshake</a>, with each side of the connection terminating independently. When an endpoint wishes to stop its half of the connection, it transmits a FIN packet, which the other end acknowledges with an ACK. Therefore, a typical tear-down requires a pair of FIN and ACK segments from each TCP endpoint. After both FIN/ACK exchanges are concluded, the side which sent the first FIN before receiving one waits for a timeout before finally closing the connection, during which time the local port is unavailable for new connections; this prevents confusion due to delayed packets being delivered during subsequent connections.</p>
+<p>A connection can be <a href="/wiki/TCP_half-open" title="TCP half-open">"half-open"</a>, in which case one side has terminated its end, but the other has not. The side that has terminated can no longer send any data into the connection, but the other side can. The terminating side should continue reading the data until the other side terminates as well.</p>
+<p>It is also possible to terminate the connection by a 3-way handshake, when host A sends a FIN and host B replies with a FIN &amp; ACK (merely combines 2 steps into one) and host A replies with an ACK.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>13<span>]</span></a></sup> This is perhaps the most common method.</p>
+<p>It is possible for both hosts to send FINs simultaneously then both just have to ACK. This could possibly be considered a 2-way handshake since the FIN/ACK sequence is done in parallel for both directions.</p>
+<p>Some host TCP stacks may implement a half-duplex close sequence, as <a href="/wiki/Linux" title="Linux">Linux</a> or <a href="/wiki/HP-UX" title="HP-UX">HP-UX</a> do. If such a host actively closes a connection but still has not read all the incoming data the stack already received from the link, this host sends a RST instead of a FIN (Section 4.2.2.13 in <a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc1122">RFC 1122</a>). This allows a TCP application to be sure the remote application has read all the data the former sent—waiting the FIN from the remote side, when it actively closes the connection. However, the remote TCP stack cannot distinguish between a <i>Connection Aborting RST</i> and this <i>Data Loss RST</i>. Both cause the remote stack to throw away all the data it received, but that the application still didn't read.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text in the vicinity of this tag needs clarification or removal of jargon from March 2008">clarification needed</span></a></i>]</sup></p>
+<p>Some application protocols may violate the <a href="/wiki/OSI_model" title="OSI model">OSI model layers</a>, using the TCP open/close handshaking for the application protocol open/close handshaking&#160;— these may find the RST problem on active close. As an example:</p>
+<pre>
+s = connect(remote);
+send(s, data);
+close(s);
+</pre>
+<p>For a usual program flow like above, a TCP/IP stack like that described above does not guarantee that all the data arrives to the other application.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=7" title="Edit section: Resource usage">edit</a>]</span> <span class="mw-headline" id="Resource_usage">Resource usage</span></h3>
+<p>Most implementations allocate an entry in a table that maps a session to a running operating system process. Because TCP packets do not include a session identifier, both endpoints identify the session using the client's address and port. Whenever a packet is received, the TCP implementation must perform a lookup on this table to find the destination process.</p>
+<p>The number of sessions in the server side is limited only by memory and can grow as new connections arrive, but the client must allocate a random port before sending the first SYN to the server. This port remains allocated during the whole conversation, and effectively limits the number of outgoing connections from each of the client's IP addresses. If an application fails to properly close unrequired connections, a client can run out of resources and become unable to establish new TCP connections, even from other applications.</p>
+<p>Both endpoints must also allocate space for unacknowledged packets and received (but unread) data.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=8" title="Edit section: Data transfer">edit</a>]</span> <span class="mw-headline" id="Data_transfer">Data transfer</span></h3>
+<p>There are a few key features that set TCP apart from <a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">User Datagram Protocol</a>:</p>
+<ul>
+<li>Ordered data transfer&#160;— the destination host rearranges according to sequence number<sup id="cite_ref-comer_2-2" class="reference"><a href="#cite_note-comer-2"><span>[</span>2<span>]</span></a></sup></li>
+<li>Retransmission of lost packets&#160;— any cumulative stream not acknowledged is retransmitted<sup id="cite_ref-comer_2-3" class="reference"><a href="#cite_note-comer-2"><span>[</span>2<span>]</span></a></sup></li>
+<li>Error-free data transfer<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>14<span>]</span></a></sup></li>
+<li>Flow control&#160;— limits the rate a sender transfers data to guarantee reliable delivery. The receiver continually hints the sender on how much data can be received (controlled by the sliding window). When the receiving host's buffer fills, the next acknowledgment contains a 0 in the window size, to stop transfer and allow the data in the buffer to be processed.<sup id="cite_ref-comer_2-4" class="reference"><a href="#cite_note-comer-2"><span>[</span>2<span>]</span></a></sup></li>
+<li>Congestion control <sup id="cite_ref-comer_2-5" class="reference"><a href="#cite_note-comer-2"><span>[</span>2<span>]</span></a></sup></li>
+</ul>
+<h4><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=9" title="Edit section: Reliable transmission">edit</a>]</span> <span class="mw-headline" id="Reliable_transmission">Reliable transmission</span></h4>
+<p>TCP uses a <i>sequence number</i> to identify each byte of data. The sequence number identifies the order of the bytes sent from each computer so that the data can be reconstructed in order, regardless of any fragmentation, disordering, or <a href="/wiki/Packet_loss" title="Packet loss">packet loss</a> that may occur during transmission. For every payload byte transmitted, the sequence number must be incremented. In the first two steps of the 3-way handshake, both computers exchange an initial sequence number (ISN). This number can be arbitrary, and should in fact be unpredictable to defend against <a href="/wiki/TCP_sequence_prediction_attack" title="TCP sequence prediction attack">TCP sequence prediction attacks</a>.</p>
+<p>TCP primarily uses a <i>cumulative acknowledgment</i> scheme, where the receiver sends an acknowledgment signifying that the receiver has received all data preceding the acknowledged sequence number. The sender sets the sequence number field to the sequence number of the first payload byte in the segment's data field, and the receiver sends an acknowledgment specifying the sequence number of the next byte they expect to receive. For example, if a sending computer sends a packet containing four payload bytes with a sequence number field of 100, then the sequence numbers of the four payload bytes are 100, 101, 102 and 103. When this packet arrives at the receiving computer, it would send back an acknowledgment number of 104 since that is the sequence number of the next byte it expects to receive in the next packet.</p>
+<p>In addition to cumulative acknowledgments, TCP receivers can also send <a href="#Selective_acknowledgments">selective acknowledgments</a> to provide further information.</p>
+<p>If the sender infers that data has been lost in the network, it <a href="/wiki/Retransmission_(data_networks)" title="Retransmission (data networks)">retransmits</a> the data.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=10" title="Edit section: Error detection">edit</a>]</span> <span class="mw-headline" id="Error_detection">Error detection</span></h4>
+<p>Sequence numbers and acknowledgments cover discarding duplicate packets, retransmission of lost packets, and ordered-data transfer. To assure correctness a <a href="/wiki/Checksum" title="Checksum">checksum</a> field is included (<i>see <a href="#TCP_segment_structure">TCP segment structure</a> for details on checksumming</i>).</p>
+<p>The TCP checksum is a weak check by modern standards. Data Link Layers with high bit error rates may require additional link error correction/detection capabilities. The weak checksum is partially compensated for by the common use of a CRC or better integrity check at <a href="/wiki/Layer_2" title="Layer 2" class="mw-redirect">layer 2</a>, below both TCP and IP, such as is used in <a href="/wiki/Point-to-Point_Protocol" title="Point-to-Point Protocol" class="mw-redirect">PPP</a> or the <a href="/wiki/Ethernet" title="Ethernet">Ethernet</a> frame. However, this does not mean that the 16-bit TCP checksum is redundant: remarkably, introduction of errors in packets between CRC-protected hops is common, but the <a href="/wiki/End-to-end_principle" title="End-to-end principle">end-to-end</a> 16-bit TCP checksum catches most of these simple errors.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>15<span>]</span></a></sup> This is the <a href="/wiki/End-to-end_principle" title="End-to-end principle">end-to-end principle</a> at work.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=11" title="Edit section: Flow control">edit</a>]</span> <span class="mw-headline" id="Flow_control">Flow control</span></h4>
+<p>TCP uses an end-to-end <a href="/wiki/Flow_control_(data)" title="Flow control (data)">flow control</a> protocol to avoid having the sender send data too fast for the TCP receiver to receive and process it reliably. Having a mechanism for flow control is essential in an environment where machines of diverse network speeds communicate. For example, if a PC sends data to a smartphone that is slowly processing received data, the smartphone must regulate the data flow so as not to be overwhelmed.<sup id="cite_ref-comer_2-6" class="reference"><a href="#cite_note-comer-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>TCP uses a <a href="/wiki/Sliding_Window_Protocol" title="Sliding Window Protocol" class="mw-redirect">sliding window</a> flow control protocol. In each TCP segment, the receiver specifies in the <i>receive window</i> field the amount of additionally received data (in bytes) that it is willing to buffer for the connection. The sending host can send only up to that amount of data before it must wait for an acknowledgment and window update from the receiving host.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;"><a href="/wiki/File:Tcp.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/db/Tcp.svg/250px-Tcp.svg.png" width="250" height="229" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/db/Tcp.svg/375px-Tcp.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/db/Tcp.svg/500px-Tcp.svg.png 2x" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Tcp.svg" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/static-1.21wmf11/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+TCP sequence numbers and receive windows behave very much like a clock. The receive window shifts each time the receiver receives and acknowledges a new segment of data. Once it runs out of sequence numbers, the sequence number loops back to 0.</div>
+</div>
+</div>
+<p>When a receiver advertises a window size of 0, the sender stops sending data and starts the <i>persist timer</i>. The persist timer is used to protect TCP from a <a href="/wiki/Deadlock" title="Deadlock">deadlock</a> situation that could arise if a subsequent window size update from the receiver is lost, and the sender cannot send more data until receiving a new window size update from the receiver. When the persist timer expires, the TCP sender attempts recovery by sending a small packet so that the receiver responds by sending another acknowledgement containing the new window size.</p>
+<p>If a receiver is processing incoming data in small increments, it may repeatedly advertise a small receive window. This is referred to as the <a href="/wiki/Silly_window_syndrome" title="Silly window syndrome">silly window syndrome</a>, since it is inefficient to send only a few bytes of data in a TCP segment, given the relatively large overhead of the TCP header. TCP senders and receivers typically employ flow control logic to specifically avoid repeatedly sending small segments. The sender-side silly window syndrome avoidance logic is referred to as <a href="/wiki/Nagle%27s_algorithm" title="Nagle's algorithm">Nagle's algorithm</a>.</p>
+<h4><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=12" title="Edit section: Congestion control">edit</a>]</span> <span class="mw-headline" id="Congestion_control">Congestion control</span></h4>
+<p>The final main aspect of TCP is <a href="/wiki/Congestion_control" title="Congestion control" class="mw-redirect">congestion control</a>. TCP uses a number of mechanisms to achieve high performance and avoid <a href="/wiki/Congestive_collapse" title="Congestive collapse" class="mw-redirect">congestion collapse</a>, where network performance can fall by several orders of magnitude. These mechanisms control the rate of data entering the network, keeping the data flow below a rate that would trigger collapse. They also yield an approximately <a href="/wiki/Max-min_fairness" title="Max-min fairness">max-min fair</a> allocation between flows.</p>
+<p>Acknowledgments for data sent, or lack of acknowledgments, are used by senders to infer network conditions between the TCP sender and receiver. Coupled with timers, TCP senders and receivers can alter the behavior of the flow of data. This is more generally referred to as congestion control and/or network congestion avoidance.</p>
+<p>Modern implementations of TCP contain four intertwined algorithms: <a href="/wiki/Slow-start" title="Slow-start">Slow-start</a>, <a href="/wiki/TCP_congestion_avoidance_algorithm" title="TCP congestion avoidance algorithm">congestion avoidance</a>, <a href="/wiki/Fast_retransmit" title="Fast retransmit">fast retransmit</a>, and <a href="/wiki/Slow-start#Fast_recovery" title="Slow-start">fast recovery</a> (<a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc5681">RFC 5681</a>).</p>
+<p>In addition, senders employ a <i>retransmission timeout</i> (RTO) that is based on the estimated <a href="/wiki/Round-trip_time" title="Round-trip time" class="mw-redirect">round-trip time</a> (or RTT) between the sender and receiver, as well as the variance in this round trip time. The behavior of this timer is specified in <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc6298">RFC 6298</a>. There are subtleties in the estimation of RTT. For example, senders must be careful when calculating RTT samples for retransmitted packets; typically they use <a href="/wiki/Karn%27s_Algorithm" title="Karn's Algorithm">Karn's Algorithm</a> or TCP timestamps (see <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1323">RFC 1323</a>). These individual RTT samples are then averaged over time to create a Smoothed Round Trip Time (SRTT) using <a href="/wiki/Van_Jacobson" title="Van Jacobson">Jacobson</a>'s algorithm. This SRTT value is what is finally used as the round-trip time estimate.</p>
+<p>Enhancing TCP to reliably handle loss, minimize errors, manage congestion and go fast in very high-speed environments are ongoing areas of research and standards development. As a result, there are a number of <a href="/wiki/TCP_congestion_avoidance_algorithm" title="TCP congestion avoidance algorithm">TCP congestion avoidance algorithm</a> variations.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=13" title="Edit section: Maximum segment size">edit</a>]</span> <span class="mw-headline" id="Maximum_segment_size">Maximum segment size</span></h3>
+<p>The <a href="/wiki/Maximum_segment_size" title="Maximum segment size">maximum segment size</a> (MSS) is the largest amount of data, specified in bytes, that TCP is willing to receive in a single segment. For best performance, the MSS should be set small enough to avoid <a href="/wiki/IP_fragmentation" title="IP fragmentation">IP fragmentation</a>, which can lead to packet loss and excessive retransmissions. To try to accomplish this, typically the MSS is announced by each side using the MSS option when the TCP connection is established, in which case it is derived from the <a href="/wiki/MTU_(networking)" title="MTU (networking)" class="mw-redirect">maximum transmission unit</a> (MTU) size of the <a href="/wiki/Data_link_layer" title="Data link layer">data link layer</a> of the networks to which the sender and receiver are directly attached. Furthermore, TCP senders can use <a href="/wiki/Path_MTU_discovery" title="Path MTU discovery" class="mw-redirect">path MTU discovery</a> to infer the minimum MTU along the network path between the sender and receiver, and use this to dynamically adjust the MSS to avoid IP fragmentation within the network..</p>
+<p>MSS announcement is also often called "MSS negotiation". Strictly speaking, the MSS is not "negotiated" between the originator and the receiver, because that would imply that both originator and receiver will negotiate and agree upon a single, unified MSS that applies to all communication in both directions of the connection. In fact, two completely independent values of MSS are permitted for the two directions of data flow in a TCP connection.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>16<span>]</span></a></sup> This situation may arise, for example, if one of the devices participating in a connection has an extremely limited amount of memory reserved (perhaps even smaller than the overall discovered Path MTU) for processing incoming TCP segments.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=14" title="Edit section: Selective acknowledgments">edit</a>]</span> <span class="mw-headline" id="Selective_acknowledgments">Selective acknowledgments</span></h3>
+<p>Relying purely on the cumulative acknowledgment scheme employed by the original TCP protocol can lead to inefficiencies when packets are lost. For example, suppose 10,000 bytes are sent in 10 different TCP packets, and the first packet is lost during transmission. In a pure cumulative acknowledgment protocol, the receiver cannot say that it received bytes 1,000 to 9,999 successfully, but failed to receive the first packet, containing bytes 0 to 999. Thus the sender may then have to resend all 10,000 bytes.</p>
+<p>To solve this problem TCP employs the <i>selective acknowledgment (SACK)</i> option, defined in <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc2018">RFC 2018</a>, which allows the receiver to acknowledge discontinuous blocks of packets that were received correctly, in addition to the sequence number of the last contiguous byte received successively, as in the basic TCP acknowledgment. The acknowledgement can specify a number of <i>SACK blocks</i>, where each SACK block is conveyed by the starting and ending sequence numbers of a contiguous range that the receiver correctly received. In the example above, the receiver would send SACK with sequence numbers 1000 and 9999. The sender thus retransmits only the first packet, bytes 0 to 999.</p>
+<p>An extension to the SACK option is the duplicate-SACK option, defined in <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc2883">RFC 2883</a>. An out-of-order packet delivery can often falsely indicate the TCP sender of lost packet and, in turn, the TCP sender retransmits the suspected-to-be-lost packet and slow down the data delivery to prevent network congestion. The TCP sender undoes the action of slow-down, that is a recovery of the original pace of data transmission, upon receiving a D-SACK that indicates the retransmitted packet is duplicate.</p>
+<p>The SACK option is not mandatory and it is used only if both parties support it. This is negotiated when connection is established. SACK uses the optional part of the TCP header (<i>see <a href="#TCP_segment_structure">TCP segment structure</a> for details</i>). The use of SACK is widespread&#160;— all popular TCP stacks support it. Selective acknowledgment is also used in <a href="/wiki/Stream_Control_Transmission_Protocol" title="Stream Control Transmission Protocol">Stream Control Transmission Protocol</a> (SCTP).</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=15" title="Edit section: Window scaling">edit</a>]</span> <span class="mw-headline" id="Window_scaling">Window scaling</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/TCP_window_scale_option" title="TCP window scale option">TCP window scale option</a></div>
+<p>For more efficient use of high bandwidth networks, a larger TCP window size may be used. The TCP window size field controls the flow of data and its value is limited to between 2 and 65,535 bytes.</p>
+<p>Since the size field cannot be expanded, a scaling factor is used. The <a href="/wiki/TCP_window_scale_option" title="TCP window scale option">TCP window scale option</a>, as defined in <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1323">RFC 1323</a>, is an option used to increase the maximum window size from 65,535 bytes to 1 gigabyte. Scaling up to larger window sizes is a part of what is necessary for <a href="/wiki/TCP_Tuning" title="TCP Tuning" class="mw-redirect">TCP Tuning</a>.</p>
+<p>The window scale option is used only during the TCP 3-way handshake. The window scale value represents the number of bits to left-shift the 16-bit window size field. The window scale value can be set from 0 (no shift) to 14 for each direction independently. Both sides must send the option in their SYN segments to enable window scaling in either direction.</p>
+<p>Some routers and packet firewalls rewrite the window scaling factor during a transmission. This causes sending and receiving sides to assume different TCP window sizes. The result is non-stable traffic that may be very slow. The problem is visible on some sending and receiving sites behind the path of defective routers.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span>[</span>17<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=16" title="Edit section: TCP timestamps">edit</a>]</span> <span class="mw-headline" id="TCP_timestamps">TCP timestamps</span></h3>
+<p>TCP timestamps, defined in <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1323">RFC 1323</a>, can help TCP determine in which order packets were sent. TCP timestamps are not normally aligned to the system clock and start at some random value. Many operating systems will increment the timestamp for every elapsed milisecond; however the RFC only states that the tics should be proportional.</p>
+<p>There are two timestamp fields:</p>
+<pre>
+a 4-byte sender timestamp value (my timestamp)
+a 4-byte echo reply timestamp value (the most recent timestamp received from you).
+</pre>
+<p>TCP timestamps are used in an algorithm known as <i>Protection Against Wrapped Sequence</i> numbers, or <i>PAWS</i> (see <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1323">RFC 1323</a> for details). PAWS is used when the TCP window size exceeds the possible numbers of sequence numbers (2<sup>32</sup>). In the case where a packet was potentially retransmitted it answers the question: "Is this sequence number in the first 4&#160;GB or the second?" And the timestamp is used to break the tie.</p>
+<p><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1323">RFC 1323</a> incorrectly states in section 2.2 that the window scale must be limited to 2^14 to remain under 1&#160;GB (which is correct, but the sequence number limit is 4&#160;GB); however a scale of 16 and a window size of 65535 would be 65536 less than the 2^32 possible sequence numbers and thus an acceptable yet excessive value. Because of this error many systems have limited the max scale to 2^14 to "follow the RFC".</p>
+<p>Also, the Eifel detection algorithm (<a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc3522">RFC 3522</a>) uses TCP timestamps to determine if retransmissions are occurring because packets are lost or simply out of order.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=17" title="Edit section: Out of band data">edit</a>]</span> <span class="mw-headline" id="Out_of_band_data">Out of band data</span></h3>
+<p>One is able to interrupt or abort the queued stream instead of waiting for the stream to finish. This is done by specifying the data as <i>urgent</i>. This tells the receiving program to process it immediately, along with the rest of the urgent data. When finished, TCP informs the application and resumes back to the stream queue. An example is when TCP is used for a remote login session, the user can send a keyboard sequence that interrupts or aborts the program at the other end. These signals are most often needed when a program on the remote machine fails to operate correctly. The signals must be sent without waiting for the program to finish its current transfer.<sup id="cite_ref-comer_2-7" class="reference"><a href="#cite_note-comer-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>TCP OOB data was not designed for the modern Internet. The <i>urgent</i> pointer only alters the processing on the remote host and doesn't expedite any processing on the network itself. When it gets to the remote host there are two slightly different interpretations of the protocol, which means only single bytes of OOB data are reliable. This is assuming it is reliable at all as it is one of the least commonly used protocol elements and tends to be poorly implemented. <sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span>[</span>18<span>]</span></a></sup><sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span>[</span>19<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=18" title="Edit section: Forcing data delivery">edit</a>]</span> <span class="mw-headline" id="Forcing_data_delivery">Forcing data delivery</span></h3>
+<p>Normally, TCP waits for 200&#160;ms or for a full packet of data to send (Nagle's Algorithm = tries to group small messages into a single packet). This creates minor, but potentially serious delays if repeated constantly during a file transfer. For example a typical send block would be 4&#160;KB, a typical MSS is 1460, so 2 packets go out on a 10&#160;Mbit/s ethernet taking ~1.2&#160;ms each followed by a third carrying the remaining 1176 after a 197&#160;ms pause because TCP is waiting for a full buffer.</p>
+<p>In the case of telnet, each user keystroke is echoed back by the server before the user can see it on the screen. This delay would become very annoying.</p>
+<p>Setting the socket option <code>TCP_NODELAY</code> overrides the default 200&#160;ms send delay. Application programs use this socket option to force output to be sent after writing a character or line of characters.</p>
+<p>The RFC defines the <code>PSH</code> push bit as "a message to the receiving TCP stack to send this data immediately up to the receiving application".<sup id="cite_ref-comer_2-8" class="reference"><a href="#cite_note-comer-2"><span>[</span>2<span>]</span></a></sup> There is no way to indicate or control it in <a href="/wiki/User_space" title="User space">User space</a> using <a href="/wiki/Berkeley_sockets" title="Berkeley sockets">Berkeley sockets</a> and it is controlled by <a href="/wiki/Protocol_stack" title="Protocol stack">Protocol stack</a> only.<sup id="cite_ref-Stevens2006_20-0" class="reference"><a href="#cite_note-Stevens2006-20"><span>[</span>20<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=19" title="Edit section: Vulnerabilities">edit</a>]</span> <span class="mw-headline" id="Vulnerabilities">Vulnerabilities</span></h2>
+<p>TCP may be attacked in a variety of ways. The results of a thorough security assessment of TCP, along with possible mitigations for the identified issues, were published in 2009,<sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span>[</span>21<span>]</span></a></sup> and is currently being pursued within the <a href="/wiki/IETF" title="IETF" class="mw-redirect">IETF</a>.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span>[</span>22<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=20" title="Edit section: Denial of service">edit</a>]</span> <span class="mw-headline" id="Denial_of_service">Denial of service</span></h3>
+<p>By using a <a href="/wiki/IP_address_spoofing" title="IP address spoofing">spoofed IP</a> address and repeatedly sending <a href="/wiki/Mangled_packet" title="Mangled packet">purposely assembled</a> SYN packets, attackers can cause the server to consume large amounts of resources keeping track of the bogus connections. This is known as a <a href="/wiki/SYN_flood" title="SYN flood">SYN flood</a> attack. Proposed solutions to this problem include <a href="/wiki/SYN_cookies" title="SYN cookies">SYN cookies</a> and cryptographic puzzles. <a href="/wiki/Sockstress" title="Sockstress">Sockstress</a> is a similar attack, that might be mitigated with system resource management.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span>[</span>23<span>]</span></a></sup> An advanced DoS attack involving the exploitation of the TCP Persist Timer was analyzed at <a href="/wiki/Phrack" title="Phrack">Phrack</a> #66.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24"><span>[</span>24<span>]</span></a></sup></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=21" title="Edit section: Connection hijacking">edit</a>]</span> <span class="mw-headline" id="Connection_hijacking">Connection hijacking</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/TCP_sequence_prediction_attack" title="TCP sequence prediction attack">TCP sequence prediction attack</a></div>
+<p>An attacker who is able to eavesdrop a TCP session and redirect packets can hijack a TCP connection. To do so, the attacker learns the sequence number from the ongoing communication and forges a false segment that looks like the next segment in the stream. Such a simple hijack can result in one packet being erroneously accepted at one end. When the receiving host acknowledges the extra segment to the other side of the connection, synchronization is lost. Hijacking might be combined with ARP or routing attacks that allow taking control of the packet flow, so as to get permanent control of the hijacked TCP connection.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25"><span>[</span>25<span>]</span></a></sup></p>
+<p>Impersonating a different IP address was not difficult prior to <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1948">RFC 1948</a>, when the initial <i>sequence number</i> was easily guessable. That allowed an attacker to blindly send a sequence of packets that the receiver would believe to come from a different IP address, without the need to deploy ARP or routing attacks: it is enough to ensure that the legitimate host of the impersonated IP address is down, or bring it to that condition using denial of service attacks. This is why the initial sequence number is now chosen at random.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=22" title="Edit section: TCP ports">edit</a>]</span> <span class="mw-headline" id="TCP_ports">TCP ports</span></h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="/wiki/TCP_and_UDP_port" title="TCP and UDP port" class="mw-redirect">TCP and UDP port</a></div>
+<p>TCP uses <a href="/wiki/TCP_and_UDP_port" title="TCP and UDP port" class="mw-redirect">port numbers</a> to identify sending and receiving application end-points on a host, or <i><a href="/wiki/Internet_socket" title="Internet socket" class="mw-redirect">Internet sockets</a></i>. Each side of a TCP connection has an associated 16-bit unsigned port number (0-65535) reserved by the sending or receiving application. Arriving TCP data packets are identified as belonging to a specific TCP connection by its sockets, that is, the combination of source host address, source port, destination host address, and destination port. This means that a server computer can provide several clients with several services simultaneously, as long as a client takes care of initiating any simultaneous connections to one destination port from different source ports.</p>
+<p>Port numbers are categorized into three basic categories: well-known, registered, and dynamic/private. The well-known ports are assigned by the <a href="/wiki/Internet_Assigned_Numbers_Authority" title="Internet Assigned Numbers Authority">Internet Assigned Numbers Authority</a> (IANA) and are typically used by system-level or root processes. Well-known applications running as servers and passively listening for connections typically use these ports. Some examples include: <a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">FTP</a> (20 and 21), <a href="/wiki/Secure_Shell" title="Secure Shell">SSH</a> (22), <a href="/wiki/TELNET" title="TELNET" class="mw-redirect">TELNET</a> (23), <a href="/wiki/SMTP" title="SMTP" class="mw-redirect">SMTP</a> (25), <a href="/wiki/Secure_Socket_Layer" title="Secure Socket Layer" class="mw-redirect">SSL</a> (443) and <a href="/wiki/HTTP" title="HTTP" class="mw-redirect">HTTP</a> (80). Registered ports are typically used by end user applications as <a href="/wiki/Ephemeral_port" title="Ephemeral port">ephemeral</a> source ports when contacting servers, but they can also identify named services that have been registered by a third party. Dynamic/private ports can also be used by end user applications, but are less commonly so. Dynamic/private ports do not contain any meaning outside of any particular TCP connection.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=23" title="Edit section: Development">edit</a>]</span> <span class="mw-headline" id="Development">Development</span></h2>
+<p>TCP is a complex protocol. However, while significant enhancements have been made and proposed over the years, its most basic operation has not changed significantly since its first specification <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc675">RFC 675</a> in 1974, and the v4 specification <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc793">RFC 793</a>, published in September 1981. <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1122">RFC 1122</a>, Host Requirements for Internet Hosts, clarified a number of TCP protocol implementation requirements. <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc2581">RFC 2581</a>, TCP Congestion Control, one of the most important TCP-related RFCs in recent years, describes updated algorithms that avoid undue congestion. In 2001, <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc3168">RFC 3168</a> was written to describe <a href="/wiki/Explicit_Congestion_Notification" title="Explicit Congestion Notification">explicit congestion notification</a> (<a href="/wiki/Explicit_Congestion_Notification" title="Explicit Congestion Notification">ECN</a>), a congestion avoidance signaling mechanism.</p>
+<p>The original <a href="/wiki/TCP_congestion_avoidance_algorithm" title="TCP congestion avoidance algorithm">TCP congestion avoidance algorithm</a> was known as "TCP Tahoe", but many alternative algorithms have since been proposed (including <a href="/wiki/TCP_Reno" title="TCP Reno" class="mw-redirect">TCP Reno</a>, <a href="/wiki/TCP_Vegas" title="TCP Vegas">TCP Vegas</a>, <a href="/wiki/FAST_TCP" title="FAST TCP">FAST TCP</a>, <a href="/wiki/TCP_New_Reno" title="TCP New Reno" class="mw-redirect">TCP New Reno</a>, and <a href="/wiki/TCP_Hybla" title="TCP Hybla" class="mw-redirect">TCP Hybla</a>).</p>
+<p><a href="/w/index.php?title=TCP_Interactive&amp;action=edit&amp;redlink=1" class="new" title="TCP Interactive (page does not exist)">TCP Interactive</a> (iTCP) <sup id="cite_ref-26" class="reference"><a href="#cite_note-26"><span>[</span>26<span>]</span></a></sup> is a research effort into TCP extensions that allows applications to subscribe to TCP events and register handler components that can launch applications for various purposes, including application-assisted congestion control.</p>
+<p><a href="/w/index.php?title=Multipath_TCP&amp;action=edit&amp;redlink=1" class="new" title="Multipath TCP (page does not exist)">Multipath TCP</a> (MPTCP) <sup id="cite_ref-27" class="reference"><a href="#cite_note-27"><span>[</span>27<span>]</span></a></sup><sup id="cite_ref-28" class="reference"><a href="#cite_note-28"><span>[</span>28<span>]</span></a></sup> is an ongoing effort within the <a href="/wiki/IETF" title="IETF" class="mw-redirect">IETF</a> that aims at allowing a TCP connection to use multiple paths to maximise resource usage and increase redundancy. The redundancy offered by Multipath TCP in the context of wireless networks <sup id="cite_ref-29" class="reference"><a href="#cite_note-29"><span>[</span>29<span>]</span></a></sup> enables statistical multiplexing of resources, and thus increases TCP throughput dramatically. Multipath TCP also brings performance benefits in datacenter environments.<sup id="cite_ref-30" class="reference"><a href="#cite_note-30"><span>[</span>30<span>]</span></a></sup> The reference implementation<sup id="cite_ref-31" class="reference"><a href="#cite_note-31"><span>[</span>31<span>]</span></a></sup> of Multipath TCP is being developed in the Linux kernel.<sup id="cite_ref-32" class="reference"><a href="#cite_note-32"><span>[</span>32<span>]</span></a></sup></p>
+<p><a href="/wiki/TCP_Cookie_Transactions" title="TCP Cookie Transactions">TCP Cookie Transactions</a> (TCPCT) is an extension proposed in December 2009 to secure servers against denial-of-service attacks. Unlike <a href="/wiki/SYN_cookies" title="SYN cookies">SYN cookies</a>, TCPCT does not conflict with other TCP extensions such as <a href="/wiki/Window_scaling" title="Window scaling" class="mw-redirect">window scaling</a>. TCPCT was designed due to necessities of <a href="/wiki/DNSSEC" title="DNSSEC" class="mw-redirect">DNSSEC</a>, where servers have to handle large numbers of short-lived TCP connections.</p>
+<p><a href="/wiki/Tcpcrypt" title="Tcpcrypt">tcpcrypt</a> is an extension proposed in July 2010 to provide transport-level encryption directly in TCP itself. It is designed to work transparently and not require any configuration. Unlike <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS</a> (SSL), tcpcrypt itself does not provide authentication, but provides simple primitives down to the application to do that. As of 2010<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Transmission_Control_Protocol&amp;action=edit">[update]</a></sup>, the first tcpcrypt <a href="/wiki/IETF" title="IETF" class="mw-redirect">IETF</a> draft has been published and implementations exist for several major platforms.</p>
+<p><a href="/wiki/TCP_Fast_Open" title="TCP Fast Open">TCP Fast Open</a> is an extension to speed up the opening of successive TCP connections between two endpoints. It works by skipping the three-way handshake using a cryptographic "cookie". It is similar to an earlier proposal called <a href="/wiki/T/TCP" title="T/TCP">T/TCP</a>, which was not widely adopted due to security issues.<sup id="cite_ref-lwn_33-0" class="reference"><a href="#cite_note-lwn-33"><span>[</span>33<span>]</span></a></sup> As of July 2012<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Transmission_Control_Protocol&amp;action=edit">[update]</a></sup>, it is an IETF Internet draft.<sup id="cite_ref-34" class="reference"><a href="#cite_note-34"><span>[</span>34<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=24" title="Edit section: TCP over wireless networks">edit</a>]</span> <span class="mw-headline" id="TCP_over_wireless_networks">TCP over wireless networks</span></h2>
+<p>TCP has been optimized for wired networks. Any <a href="/wiki/Packet_loss" title="Packet loss">packet loss</a> is considered to be the result of <a href="/wiki/Network_congestion" title="Network congestion">network congestion</a> and the congestion window size is reduced dramatically as a precaution. However, wireless links are known to experience sporadic and usually temporary losses due to fading, shadowing, hand off, and other radio effects, that cannot be considered congestion. After the (erroneous) back-off of the congestion window size, due to wireless packet loss, there can be a congestion avoidance phase with a conservative decrease in window size. This causes the radio link to be underutilized. Extensive research has been done on the subject of how to combat these harmful effects. Suggested solutions can be categorized as end-to-end solutions (which require modifications at the client or server),<sup id="cite_ref-Microsoft_Academic_Research_35-0" class="reference"><a href="#cite_note-Microsoft_Academic_Research-35"><span>[</span>35<span>]</span></a></sup> link layer solutions (such as <a href="/wiki/Radio_Link_Protocol" title="Radio Link Protocol">RLP</a> in cellular networks), or proxy based solutions (which require some changes in the network without modifying end nodes).<sup id="cite_ref-Microsoft_Academic_Research_35-1" class="reference"><a href="#cite_note-Microsoft_Academic_Research-35"><span>[</span>35<span>]</span></a></sup><sup id="cite_ref-IEEE_Computer_Society_36-0" class="reference"><a href="#cite_note-IEEE_Computer_Society-36"><span>[</span>36<span>]</span></a></sup></p>
+<p>A number of alternative congestion control algorithms have been proposed to help solve the wireless problem, such as <a href="/wiki/TCP_Vegas" title="TCP Vegas">Vegas</a>, <a href="/wiki/TCP_Westwood" title="TCP Westwood">Westwood</a>, Veno and Santa Cruz.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=25" title="Edit section: Hardware implementations">edit</a>]</span> <span class="mw-headline" id="Hardware_implementations">Hardware implementations</span></h2>
+<p>One way to overcome the processing power requirements of TCP is to build hardware implementations of it, widely known as <a href="/wiki/TCP_Offload_Engine" title="TCP Offload Engine" class="mw-redirect">TCP Offload Engines</a> (TOE). The main problem of TOEs is that they are hard to integrate into computing systems, requiring extensive changes in the operating system of the computer or device. One company to develop such a device was <a href="/wiki/Alacritech" title="Alacritech">Alacritech</a>.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=26" title="Edit section: Debugging">edit</a>]</span> <span class="mw-headline" id="Debugging">Debugging</span></h2>
+<p>A <a href="/wiki/Packet_sniffer" title="Packet sniffer" class="mw-redirect">packet sniffer</a>, which intercepts TCP traffic on a network link, can be useful in debugging networks, network stacks and applications that use TCP by showing the user what packets are passing through a link. Some networking stacks support the SO_DEBUG socket option, which can be enabled on the socket using setsockopt. That option dumps all the packets, TCP states, and events on that socket, which is helpful in debugging. <a href="/wiki/Netstat" title="Netstat">Netstat</a> is another utility that can be used for debugging.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=27" title="Edit section: Alternatives">edit</a>]</span> <span class="mw-headline" id="Alternatives">Alternatives</span></h2>
+<p>For many applications TCP is not appropriate. One problem (at least with normal implementations) is that the application cannot access the packets coming after a lost packet until the retransmitted copy of the lost packet is received. This causes problems for real-time applications such as <a href="/wiki/Streaming_media" title="Streaming media">streaming media</a>, real-time multiplayer games and <a href="/wiki/Voice_over_IP" title="Voice over IP">voice over IP</a> (VoIP) where it is generally more useful to get most of the data in a timely fashion than it is to get all of the data in order.</p>
+<p>For both historical and performance reasons, most <a href="/wiki/Storage_area_network" title="Storage area network">storage area networks</a> (SANs) prefer to use <a href="/wiki/Fibre_Channel" title="Fibre Channel">Fibre Channel</a> protocol (<a href="/wiki/Fibre_Channel_Protocol" title="Fibre Channel Protocol" class="mw-redirect">FCP</a>) instead of TCP/IP.</p>
+<p>Also, for <a href="/wiki/Embedded_systems" title="Embedded systems" class="mw-redirect">embedded systems</a>, <a href="/wiki/Network_booting" title="Network booting">network booting</a>, and servers that serve simple requests from huge numbers of clients (e.g. <a href="/wiki/Domain_name_system" title="Domain name system" class="mw-redirect">DNS</a> servers) the complexity of TCP can be a problem. Finally, some tricks such as transmitting data between two hosts that are both behind <a href="/wiki/Network_address_translation" title="Network address translation">NAT</a> (using <a href="/wiki/STUN" title="STUN">STUN</a> or similar systems) are far simpler without a relatively complex protocol like TCP in the way.</p>
+<p>Generally, where TCP is unsuitable, the <a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">User Datagram Protocol</a> (UDP) is used. This provides the application <a href="/wiki/Multiplexing" title="Multiplexing">multiplexing</a> and checksums that TCP does, but does not handle streams or retransmission, giving the application developer the ability to code them in a way suitable for the situation, or to replace them with other methods like <a href="/wiki/Forward_error_correction" title="Forward error correction">forward error correction</a> or <a href="/wiki/Interpolation_(computer_programming)" title="Interpolation (computer programming)">interpolation</a>.</p>
+<p><a href="/wiki/Stream_Control_Transmission_Protocol" title="Stream Control Transmission Protocol">SCTP</a> is another IP protocol that provides reliable stream oriented services similar to TCP. It is newer and considerably more complex than TCP, and has not yet seen widespread deployment. However, it is especially designed to be used in situations where reliability and near-real-time considerations are important.</p>
+<p><a href="/wiki/Venturi_Transport_Protocol" title="Venturi Transport Protocol">Venturi Transport Protocol</a> (VTP) is a patented <a href="/wiki/Proprietary_protocol" title="Proprietary protocol">proprietary protocol</a> that is designed to replace TCP transparently to overcome perceived inefficiencies related to wireless data transport.</p>
+<p>TCP also has issues in high bandwidth environments. The <a href="/wiki/TCP_congestion_avoidance_algorithm" title="TCP congestion avoidance algorithm">TCP congestion avoidance algorithm</a> works very well for ad-hoc environments where the data sender is not known in advance, but if the environment is predictable, a timing based protocol such as <a href="/wiki/Asynchronous_Transfer_Mode" title="Asynchronous Transfer Mode">Asynchronous Transfer Mode</a> (ATM) can avoid TCP's retransmits overhead.</p>
+<p><a href="/wiki/Multipurpose_Transaction_Protocol" title="Multipurpose Transaction Protocol">Multipurpose Transaction Protocol</a> (MTP/IP) is patented proprietary software that is designed to adaptively achieve high throughput and transaction performance in a wide variety of network conditions, particularly those where TCP is perceived to be inefficient.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=28" title="Edit section: Checksum computation">edit</a>]</span> <span class="mw-headline" id="Checksum_computation">Checksum computation</span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=29" title="Edit section: TCP checksum for IPv4">edit</a>]</span> <span class="mw-headline" id="TCP_checksum_for_IPv4">TCP checksum for IPv4</span></h3>
+<p>When TCP runs over <a href="/wiki/IPv4" title="IPv4">IPv4</a>, the method used to compute the checksum is defined in <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc793">RFC 793</a>:</p>
+<blockquote>
+<p><i>The checksum field is the 16 bit one's complement of the one's complement sum of all 16-bit words in the header and text. If a segment contains an odd number of header and text octets to be checksummed, the last octet is padded on the right with zeros to form a 16-bit word for checksum purposes. The pad is not transmitted as part of the segment. While computing the checksum, the checksum field itself is replaced with zeros.</i></p>
+</blockquote>
+<p>In other words, after appropriate padding, all 16-bit words are added using <a href="/wiki/Signed_number_representations#Ones.27_complement" title="Signed number representations">one's complement arithmetic</a>. The sum is then bitwise complemented and inserted as the checksum field. A pseudo-header that mimics the IPv4 packet header used in the checksum computation is shown in the table below.</p>
+<table class="wikitable" style="text-align:center">
+<caption>TCP pseudo-header for checksum computation (IPv4)</caption>
+<tr>
+<th>Bit offset</th>
+<th colspan="4" style="width:11%;">0–3</th>
+<th colspan="4" style="width:11%;">4–7</th>
+<th colspan="8" style="width:22%;">8–15</th>
+<th colspan="16" style="width:44%;">16–31</th>
+</tr>
+<tr>
+<th>0</th>
+<td colspan="32" style="background:#fdd;">Source address</td>
+</tr>
+<tr>
+<th>32</th>
+<td colspan="32" style="background:#fdd;">Destination address</td>
+</tr>
+<tr>
+<th>64</th>
+<td colspan="8" style="background:#fdd;">Zeros</td>
+<td colspan="8" style="background:#fdd;">Protocol</td>
+<td colspan="16" style="background:#fdd;">TCP length</td>
+</tr>
+<tr>
+<th>96</th>
+<td colspan="16">Source port</td>
+<td colspan="16">Destination port</td>
+</tr>
+<tr>
+<th>128</th>
+<td colspan="32">Sequence number</td>
+</tr>
+<tr>
+<th>160</th>
+<td colspan="32">Acknowledgement number</td>
+</tr>
+<tr>
+<th>192</th>
+<td colspan="4">Data offset</td>
+<td colspan="4">Reserved</td>
+<td colspan="8">Flags</td>
+<td colspan="16">Window</td>
+</tr>
+<tr>
+<th>224</th>
+<td colspan="16" style="background:#fdd;">Checksum</td>
+<td colspan="16">Urgent pointer</td>
+</tr>
+<tr>
+<th>256</th>
+<td colspan="32">Options (optional)</td>
+</tr>
+<tr>
+<th>256/288+</th>
+<td colspan="32">&#160;<br />
+Data<br />
+&#160;</td>
+</tr>
+</table>
+<p>The source and destination addresses are those of the IPv4 header. The protocol value is 6 for TCP (cf. <a href="/wiki/List_of_IP_protocol_numbers" title="List of IP protocol numbers">List of IP protocol numbers</a>). The TCP length field is the length of the TCP header and data.</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=30" title="Edit section: TCP checksum for IPv6">edit</a>]</span> <span class="mw-headline" id="TCP_checksum_for_IPv6">TCP checksum for IPv6</span></h3>
+<p>When TCP runs over <a href="/wiki/IPv6" title="IPv6">IPv6</a>, the method used to compute the checksum is changed, as per <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc2460">RFC 2460</a>:</p>
+<dl>
+<dd><i>Any transport or other upper-layer protocol that includes the addresses from the IP header in its checksum computation must be modified for use over IPv6, to include the 128-bit IPv6 addresses instead of 32-bit IPv4 addresses.</i></dd>
+</dl>
+<p>A pseudo-header that mimics the IPv6 header for computation of the checksum is shown below.</p>
+<table class="wikitable" style="text-align: center;">
+<caption>TCP pseudo-header for checksum computation (IPv6)</caption>
+<tr>
+<th>Bit offset</th>
+<th colspan="8" style="width:22%;">0–7</th>
+<th colspan="8" style="width:22%;">8–15</th>
+<th colspan="8" style="width:22%;">16–23</th>
+<th colspan="8" style="width:22%;">24–31</th>
+</tr>
+<tr>
+<th>0</th>
+<td colspan="32" rowspan="4" style="background:#fdd;">Source address</td>
+</tr>
+<tr>
+<th>32</th>
+</tr>
+<tr>
+<th>64</th>
+</tr>
+<tr>
+<th>96</th>
+</tr>
+<tr>
+<th>128</th>
+<td colspan="32" rowspan="4" style="background:#fdd;">Destination address</td>
+</tr>
+<tr>
+<th>160</th>
+</tr>
+<tr>
+<th>192</th>
+</tr>
+<tr>
+<th>224</th>
+</tr>
+<tr>
+<th>256</th>
+<td colspan="32" style="background:#fdd;">TCP length</td>
+</tr>
+<tr>
+<th>288</th>
+<td colspan="24" style="background:#fdd;">Zeros</td>
+<td colspan="8" style="background:#fdd;">Next header</td>
+</tr>
+<tr>
+<th>320</th>
+<td colspan="16">Source port</td>
+<td colspan="16">Destination port</td>
+</tr>
+<tr>
+<th>352</th>
+<td colspan="32">Sequence number</td>
+</tr>
+<tr>
+<th>384</th>
+<td colspan="32">Acknowledgement number</td>
+</tr>
+<tr>
+<th>416</th>
+<td colspan="4">Data offset</td>
+<td colspan="4">Reserved</td>
+<td colspan="8">Flags</td>
+<td colspan="16">Window</td>
+</tr>
+<tr>
+<th>448</th>
+<td colspan="16" style="background:#fdd;">Checksum</td>
+<td colspan="16">Urgent pointer</td>
+</tr>
+<tr>
+<th>480</th>
+<td colspan="32">Options (optional)</td>
+</tr>
+<tr>
+<th>480/512+</th>
+<td colspan="32">&#160;<br />
+Data<br />
+&#160;</td>
+</tr>
+</table>
+<ul>
+<li>Source address – the one in the IPv6 header</li>
+<li>Destination address – the final destination; if the IPv6 packet doesn't contain a Routing header, TCP uses the destination address in the IPv6 header, otherwise, at the originating node, it uses the address in the last element of the Routing header, and, at the receiving node, it uses the destination address in the IPv6 header.</li>
+<li>TCP length – the length of the TCP header and data</li>
+<li>Next Header – the protocol value for TCP</li>
+</ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=31" title="Edit section: Checksum offload">edit</a>]</span> <span class="mw-headline" id="Checksum_offload">Checksum offload <span id="checksum_offload"></span></span></h3>
+<p>Many TCP/IP software stack implementations provide options to use hardware assistance to automatically compute the checksum in the <a href="/wiki/Network_adapter" title="Network adapter" class="mw-redirect">network adapter</a> prior to transmission onto the network or upon reception from the network for validation. This may relieve the OS from using precious CPU cycles calculating the checksum. Hence, overall network performance is increased.</p>
+<p>This feature may cause <a href="/wiki/Packet_analyzer" title="Packet analyzer">packet analyzers</a> detecting outbound network traffic upstream of the network adapter that are unaware or uncertain about the use of checksum offload to report invalid checksum in outbound packets.</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=32" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;">
+<tr>
+<td style="text-align: center;"><a href="/wiki/File:Bus_icon.svg" class="image"><img alt="Portal icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bus_icon.svg/32px-Bus_icon.svg.png" width="32" height="19" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bus_icon.svg/48px-Bus_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bus_icon.svg/64px-Bus_icon.svg.png 2x" /></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="/wiki/Portal:Computer_networking" title="Portal:Computer networking" class="mw-redirect">Computer networking  portal</a></td>
+</tr>
+<tr valign="middle">
+<td style="text-align: center;"><a href="/wiki/File:Internet_map_1024.jpg" class="image"><img alt="Portal icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/42px-Internet_map_1024.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/56px-Internet_map_1024.jpg 2x" /></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="/wiki/Portal:Computer_Science" title="Portal:Computer Science" class="mw-redirect">Computer Science  portal</a></td>
+</tr>
+<tr valign="middle">
+<td style="text-align: center;"><a href="/wiki/File:Computer-aj_aj_ashton_01.svg" class="image"><img alt="Portal icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x" /></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="/wiki/Portal:Computing" title="Portal:Computing" class="mw-redirect">Computing  portal</a></td>
+</tr>
+</table>
+</div>
+<div class="column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em;">
+<ul>
+<li><a href="/wiki/Connection-oriented_protocol" title="Connection-oriented protocol" class="mw-redirect">Connection-oriented protocol</a></li>
+<li><a href="/wiki/T/TCP" title="T/TCP">T/TCP</a> variant of TCP</li>
+<li><a href="/wiki/TCP_and_UDP_port" title="TCP and UDP port" class="mw-redirect">TCP and UDP port</a></li>
+<li><a href="/wiki/TCP_and_UDP_port_numbers" title="TCP and UDP port numbers" class="mw-redirect">TCP and UDP port numbers</a> for a long list of ports/services</li>
+<li><a href="/wiki/TCP_congestion_avoidance_algorithms" title="TCP congestion avoidance algorithms" class="mw-redirect">TCP congestion avoidance algorithms</a></li>
+<li><a href="/wiki/Nagle%27s_algorithm" title="Nagle's algorithm">Nagle's algorithm</a></li>
+<li><a href="/wiki/Karn%27s_Algorithm" title="Karn's Algorithm">Karn's Algorithm</a></li>
+<li><a href="/wiki/Maximum_transmission_unit" title="Maximum transmission unit">Maximum transmission unit</a></li>
+<li><a href="/wiki/IP_fragmentation" title="IP fragmentation">IP fragmentation</a></li>
+<li><a href="/wiki/Maximum_segment_size" title="Maximum segment size">Maximum segment size</a></li>
+<li><a href="/wiki/Maximum_segment_lifetime" title="Maximum segment lifetime">Maximum segment lifetime</a></li>
+<li><a href="/wiki/Micro-bursting_(networking)" title="Micro-bursting (networking)">Micro-bursting (networking)</a></li>
+<li><a href="/wiki/Silly_window_syndrome" title="Silly window syndrome">Silly window syndrome</a></li>
+<li><a href="/wiki/TCP_segment" title="TCP segment" class="mw-redirect">TCP segment</a></li>
+<li><a href="/wiki/TCP_Sequence_Prediction_Attack" title="TCP Sequence Prediction Attack" class="mw-redirect">TCP Sequence Prediction Attack</a></li>
+<li><a href="/wiki/SYN_flood" title="SYN flood">SYN flood</a></li>
+<li><a href="/wiki/SYN_cookies" title="SYN cookies">SYN cookies</a></li>
+<li><a href="/wiki/TCP_pacing" title="TCP pacing">TCP pacing</a></li>
+<li><a href="/wiki/TCP_tuning" title="TCP tuning">TCP tuning</a> for high performance networks</li>
+<li><a href="/wiki/Path_MTU_discovery" title="Path MTU discovery" class="mw-redirect">Path MTU discovery</a></li>
+<li><a href="/wiki/Stream_Control_Transmission_Protocol" title="Stream Control Transmission Protocol">Stream Control Transmission Protocol</a> (SCTP)</li>
+<li><a href="/wiki/Multipurpose_Transaction_Protocol" title="Multipurpose Transaction Protocol">Multipurpose Transaction Protocol</a> (MTP/IP)</li>
+<li><a href="/wiki/Transport_Layer#toc" title="Transport Layer" class="mw-redirect">Transport protocol comparison table</a></li>
+<li><a href="/wiki/Sockstress" title="Sockstress">Sockstress</a></li>
+<li><a href="/wiki/TCP_global_synchronization" title="TCP global synchronization">TCP global synchronization</a></li>
+</ul>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=33" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation Journal">Vinton G. Cerf, Robert E. Kahn, (May 1974). <a rel="nofollow" class="external text" href="http://ece.ut.ac.ir/Classpages/F84/PrincipleofNetworkDesign/Papers/CK74.pdf">"<i>A Protocol for Packet Network Intercommunication</i>"</a>. <i>IEEE Transactions on Communications</i> <b>22</b> (5): 637–648<span class="printonly">. <a rel="nofollow" class="external free" href="http://ece.ut.ac.ir/Classpages/F84/PrincipleofNetworkDesign/Papers/CK74.pdf">http://ece.ut.ac.ir/Classpages/F84/PrincipleofNetworkDesign/Papers/CK74.pdf</a></span>.</span></span></li>
+<li id="cite_note-comer-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-comer_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-comer_2-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-comer_2-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-comer_2-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-comer_2-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-comer_2-5"><sup><i><b>f</b></i></sup></a> <a href="#cite_ref-comer_2-6"><sup><i><b>g</b></i></sup></a> <a href="#cite_ref-comer_2-7"><sup><i><b>h</b></i></sup></a> <a href="#cite_ref-comer_2-8"><sup><i><b>i</b></i></sup></a></span> <span class="reference-text"><span class="citation book"><a href="/wiki/Douglas_Comer" title="Douglas Comer">Comer, Douglas E.</a> (2006). <i>Internetworking with TCP/IP:Principles, Protocols, and Architecture</i>. <b>1</b> (5th ed.). Prentice Hall. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-187671-6" title="Special:BookSources/0-13-187671-6">0-13-187671-6</a>.</span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.linktionary.com/t/tcp.html">TCP (Linktionary term)</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc791#section-2.1">RFC 791 – section 2.1</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc793">RFC 793</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc793">RFC 793</a> section 3.1</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc1323#page-9">RFC 1323, TCP Extensions for High Performance, Section 2.2</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc2018#section-2">RFC 2018, TCP Selective Acknowledgement Options, Section 2</a></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc2018#section-3">RFC 2018, TCP Selective Acknowledgement Options, Section 3</a></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc1323#page-11">RFC 1323, TCP Extensions for High Performance, Section 3.2</a></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc1146#page-2">RFC 1146, TCP Alternate Checksum Options</a></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc793">RFC 793</a> Section 3.2</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="/wiki/Andrew_S._Tanenbaum" title="Andrew S. Tanenbaum">Tanenbaum, Andrew S.</a> (2003-03-17). <i>Computer Networks</i> (Fourth ed.). Prentice Hall. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-066102-3" title="Special:BookSources/0-13-066102-3">0-13-066102-3</a>.</span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.linfo.org/tcp.html">"TCP Definition"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.linfo.org/tcp.html">http://www.linfo.org/tcp.html</a></span><span class="reference-accessdate">. Retrieved 2011-03-12</span>.</span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><span class="citation Journal">Stone; Partridge (2000). <a rel="nofollow" class="external text" href="http://citeseer.ist.psu.edu/stone00when.html">"When The CRC and TCP Checksum Disagree"</a>. <i>Sigcomm</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://citeseer.ist.psu.edu/stone00when.html">http://citeseer.ist.psu.edu/stone00when.html</a></span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.faqs.org/rfcs/rfc879.html">RFC 879</a></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://lwn.net/Articles/92727/">TCP window scaling and broken routers [LWN.net]</a></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><span class="citation web">Gont, Fernando (2008-11). <a rel="nofollow" class="external text" href="http://www.gont.com.ar/talks/IETF73/ietf73-tcpm-urgent-data.ppt">"On the implementation of TCP urgent data"</a>. 73rd IETF meeting<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.gont.com.ar/talks/IETF73/ietf73-tcpm-urgent-data.ppt">http://www.gont.com.ar/talks/IETF73/ietf73-tcpm-urgent-data.ppt</a></span><span class="reference-accessdate">. Retrieved 2009-01-04</span>.</span></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><span class="citation book">Peterson, Larry (2003). <i>Computer Networks</i>. Morgan Kaufmann. p.&#160;401. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-55860-832-X" title="Special:BookSources/1-55860-832-X">1-55860-832-X</a>.</span></span></li>
+<li id="cite_note-Stevens2006-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-Stevens2006_20-0">^</a></b></span> <span class="reference-text"><span class="citation book">Richard W. Stevens (2006). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=b2elQwAACAAJ"><i>TCP/IP Illustrated. Vol. 1, The protocols</i></a>. Addison-Wesley. pp.&#160;Chapter 20. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-201-63346-7" title="Special:BookSources/978-0-201-63346-7">978-0-201-63346-7</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://books.google.com/books?id=b2elQwAACAAJ">http://books.google.com/books?id=b2elQwAACAAJ</a></span><span class="reference-accessdate">. Retrieved 14 November 2011</span>.</span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cpni.gov.uk/Docs/tn-03-09-security-assessment-TCP.pdf">Security Assessment of the Transmission Control Protocol (TCP)</a><sup class="noprint Inline-Template"><span title="&#160;since July 2012" style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot">dead link</a></i>]</span></sup></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/draft-ietf-tcpm-tcp-security">Security Assessment of the Transmission Control Protocol (TCP)</a></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.gont.com.ar/talks/hacklu2009/fgont-hacklu2009-tcp-security.pdf">Some insights about the recent TCP DoS (Denial of Service) vulnerabilities</a></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://phrack.org/issues.html?issue=66&amp;id=9#article">Exploiting TCP and the Persist Timer Infiniteness</a></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.usenix.org/publications/library/proceedings/security95/joncheray.html">Laurent Joncheray, <i>Simple Active Attack Against TCP</i>, 1995</a></span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.medianet.kent.edu/projects_files/projectITCP.html">TCP Interactive (iTCP)</a></span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc6182">RFC 6182</a></span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/draft-ietf-mptcp-multiaddressed-09">"TCP Extensions for Multipath Operation with Multiple Addresses draft-ietf-mptcp-multiaddressed-09"</a>. tools.ietf.org. Archived from <a rel="nofollow" class="external text" href="http://datatracker.ietf.org/doc/draft-ietf-mptcp-multiaddressed/">the original</a> on June 6, 2012<span class="printonly">. <a rel="nofollow" class="external free" href="http://tools.ietf.org/html/draft-ietf-mptcp-multiaddressed-09">http://tools.ietf.org/html/draft-ietf-mptcp-multiaddressed-09</a></span>.</span></span></li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=1794199">TCP with feed-forward source coding for wireless downlink networks</a></span></li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text"><span class="citation Journal">Raiciu; Barre; Pluntke; Greenhalgh; Wischik; Handley (2011). <a rel="nofollow" class="external text" href="http://inl.info.ucl.ac.be/publications/improving-datacenter-performance-and-robustness-multipath-tcp">"Improving datacenter performance and robustness with multipath TCP"</a>. <i>Sigcomm</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://inl.info.ucl.ac.be/publications/improving-datacenter-performance-and-robustness-multipath-tcp">http://inl.info.ucl.ac.be/publications/improving-datacenter-performance-and-robustness-multipath-tcp</a></span></span></span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://mptcp.info.ucl.ac.be/">MultiPath TCP - Linux Kernel implementation</a></span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><span class="citation Journal">Barre; Paasch; Bonaventure (2011). <a rel="nofollow" class="external text" href="http://inl.info.ucl.ac.be/publications/multipath-tcp-theory-practice">"MultiPath TCP: From Theory to Practice"</a>. <i>IFIP Networking</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://inl.info.ucl.ac.be/publications/multipath-tcp-theory-practice">http://inl.info.ucl.ac.be/publications/multipath-tcp-theory-practice</a></span></span></span></li>
+<li id="cite_note-lwn-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-lwn_33-0">^</a></b></span> <span class="reference-text"><span class="citation news">Michael Kerrisk (2012-08-01). <a rel="nofollow" class="external text" href="https://lwn.net/SubscriberLink/508865/39212876277c174c/">"TCP Fast Open: expediting web services"</a>. <a href="/wiki/LWN.net" title="LWN.net">LWN.net</a><span class="printonly">. <a rel="nofollow" class="external free" href="https://lwn.net/SubscriberLink/508865/39212876277c174c/">https://lwn.net/SubscriberLink/508865/39212876277c174c/</a></span>.</span></span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text"><span class="citation IETF_document">Y. Cheng, J. Chu, S. Radhakrishnan, A. Jain (2012-07-16). <a rel="nofollow" class="external text" href="https://tools.ietf.org/html/draft-ietf-tcpm-fastopen-01"><i>TCP Fast Open</i></a>. <a href="/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. I-D draft-ietf-tcpm-fastopen-01<span class="printonly">. <a rel="nofollow" class="external free" href="https://tools.ietf.org/html/draft-ietf-tcpm-fastopen-01">https://tools.ietf.org/html/draft-ietf-tcpm-fastopen-01</a></span>.</span></span></li>
+<li id="cite_note-Microsoft_Academic_Research-35"><span class="mw-cite-backlink">^ <a href="#cite_ref-Microsoft_Academic_Research_35-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Microsoft_Academic_Research_35-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://academic.research.microsoft.com/Paper/3352358.aspx">"TCP performance over CDMA2000 RLP"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://academic.research.microsoft.com/Paper/3352358.aspx">http://academic.research.microsoft.com/Paper/3352358.aspx</a></span><span class="reference-accessdate">. Retrieved 2010-08-30</span></span></span></li>
+<li id="cite_note-IEEE_Computer_Society-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-IEEE_Computer_Society_36-0">^</a></b></span> <span class="reference-text"><span class="citation Journal">Muhammad Adeel &amp; Ahmad Ali Iqbal (2004). <a rel="nofollow" class="external text" href="http://www.computer.org/portal/web/csdl/doi/10.1109/ITNG.2007.190">"TCP Congestion Window Optimization for CDMA2000 Packet Data Networks"</a>. <i>International Conference on Information Technology (ITNG'07)</i>: 31–35. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1109%2FITNG.2007.190">10.1109/ITNG.2007.190</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-7695-2776-5" title="Special:BookSources/978-0-7695-2776-5">978-0-7695-2776-5</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.computer.org/portal/web/csdl/doi/10.1109/ITNG.2007.190">http://www.computer.org/portal/web/csdl/doi/10.1109/ITNG.2007.190</a></span>.</span></span></li>
+</ol>
+</div>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=34" title="Edit section: Further reading">edit</a>]</span> <span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<ul>
+<li><span class="citation book"><a href="/wiki/W._Richard_Stevens" title="W. Richard Stevens">Stevens, W. Richard</a>. <i>TCP/IP Illustrated, Volume 1: The Protocols</i>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-63346-9" title="Special:BookSources/0-201-63346-9">0-201-63346-9</a>.</span></li>
+<li><span class="citation book">Stevens, W. Richard; Wright, Gary R. <i>TCP/IP Illustrated, Volume 2: The Implementation</i>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-63354-X" title="Special:BookSources/0-201-63354-X">0-201-63354-X</a>.</span></li>
+<li><span class="citation book">Stevens, W. Richard. <i>TCP/IP Illustrated, Volume 3: TCP for Transactions, HTTP, NNTP, and the UNIX Domain Protocols</i>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-63495-3" title="Special:BookSources/0-201-63495-3">0-201-63495-3</a>.</span></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=35" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=36" title="Edit section: RFC">edit</a>]</span> <span class="mw-headline" id="RFC">RFC</span></h3>
+<ul>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc675">RFC 675</a> – Specification of Internet Transmission Control Program, December 1974 Version</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc793">RFC 793</a> – TCP v4</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1122">RFC 1122</a> – includes some error corrections for TCP</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1323">RFC 1323</a> – TCP-Extensions</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1379">RFC 1379</a> – Extending TCP for Transactions—Concepts</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1948">RFC 1948</a> – Defending Against Sequence Number Attacks</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc2018">RFC 2018</a> – TCP Selective Acknowledgment Options</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc4614">RFC 4614</a> – A Roadmap for TCP Specification Documents</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc5681">RFC 5681</a> – TCP Congestion Control</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc6298">RFC 6298</a> – Computing TCP's Retransmission Timer</li>
+</ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit&amp;section=37" title="Edit section: Others">edit</a>]</span> <span class="mw-headline" id="Others">Others</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://purl.umn.edu/107387">Oral history interview with Robert E. Kahn</a>, <a href="/wiki/Charles_Babbage_Institute" title="Charles Babbage Institute">Charles Babbage Institute</a>, University of Minnesota, Minneapolis. Focuses on Kahn's role in the development of computer networking from 1967 through the early 1980s. Beginning with his work at <a href="/wiki/Bolt_Beranek_and_Newman" title="Bolt Beranek and Newman" class="mw-redirect">Bolt Beranek and Newman</a> (BBN), Kahn discusses his involvement as the <a href="/wiki/ARPANET" title="ARPANET">ARPANET</a> proposal was being written, his decision to become active in its implementation, and his role in the public demonstration of the ARPANET. The interview continues into Kahn's involvement with networking when he moves to IPTO in 1972, where he was responsible for the administrative and technical evolution of the ARPANET, including programs in packet radio, the development of a new network protocol (TCP/IP), and the switch to TCP/IP to connect multiple networks.</li>
+<li><a rel="nofollow" class="external text" href="http://www.iana.org/assignments/port-numbers">IANA Port Assignments</a></li>
+<li><a rel="nofollow" class="external text" href="http://condor.depaul.edu/~jkristof/technotes/tcp.html">John Kristoff's Overview of TCP (Fundamental concepts behind TCP and how it is used to transport data between two endpoints)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.visualland.net/tcp_histrory.php?simu=tcp_fast_retransmit&amp;protocol=TCP&amp;title=4.%20Fast%20transmit&amp;ctype=1">TCP fast retransmit simulation animated: slow start, sliding window, duplicated Ack, congestion window</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.networksorcery.com/enp/protocol/tcp.htm">TCP, Transmission Control Protocol</a></li>
+<li><a rel="nofollow" class="external text" href="http://mathforum.org/library/drmath/view/54379.html">Checksum example</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ilmondodelletelecomunicazioni.it/english/telematics/protocols.html">Engineer Francesco Buffa's page about Transmission Control Protocol</a><sup class="noprint Inline-Template"><span title="&#160;since July 2012" style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot">dead link</a></i>]</span></sup></li>
+<li><a rel="nofollow" class="external text" href="http://www.ssfnet.org/Exchange/tcp/tcpTutorialNotes.html">TCP tutorial</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.linktionary.com/s/segment_tcp.html">Linktionary on TCP segments</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.visualland.net/tcp_histrory.php?simu=tcp_swnd&amp;protocol=TCP&amp;title=2.Sliding%20Window&amp;ctype=1">TCP Sliding Window simulation animated (ns2)</a></li>
+<li><a rel="nofollow" class="external text" href="http://inl.info.ucl.ac.be/mptcp">Multipath TCP in Linux kernel</a></li>
+</ul>
+<p><span id="interwiki-de-ga"></span></p>
+
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 14624/1000000
+Preprocessor generated node count: 60410/1500000
+Post-expand include size: 70859/2048000 bytes
+Template argument size: 27557/2048000 bytes
+Highest expansion depth: 22/40
+Expensive parser function count: 8/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:30538-0!*!0!!en!4!* and timestamp 20130312132524 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=Transmission_Control_Protocol&amp;oldid=543626719">http://en.wikipedia.org/w/index.php?title=Transmission_Control_Protocol&amp;oldid=543626719</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Categories" title="Help:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Transmission_Control_Protocol" title="Category:Transmission Control Protocol">Transmission Control Protocol</a></li><li><a href="/wiki/Category:Transport_layer_protocols" title="Category:Transport layer protocols">Transport layer protocols</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">All articles with dead external links</a></li><li><a href="/wiki/Category:Articles_with_dead_external_links_from_July_2012" title="Category:Articles with dead external links from July 2012">Articles with dead external links from July 2012</a></li><li><a href="/wiki/Category:Articles_with_inconsistent_citation_formats" title="Category:Articles with inconsistent citation formats">Articles with inconsistent citation formats</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_March_2008" title="Category:Wikipedia articles needing clarification from March 2008">Wikipedia articles needing clarification from March 2008</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_2010" title="Category:Articles containing potentially dated statements from 2010">Articles containing potentially dated statements from 2010</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_July_2012" title="Category:Articles containing potentially dated statements from July 2012">Articles containing potentially dated statements from July 2012</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<!-- header -->
+			<div id="mw-head">
+				
+<!-- 0 -->
+<div id="p-personal" role="navigation" class="">
+	<h3>Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Transmission+Control+Protocol&amp;type=signup">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Transmission+Control+Protocol" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+
+<!-- /0 -->
+				<div id="left-navigation">
+					
+<!-- 0 -->
+<div id="p-namespaces" role="navigation" class="vectorTabs">
+	<h3>Namespaces</h3>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Transmission_Control_Protocol"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+					<li  id="ca-talk"><span><a href="/wiki/Talk:Transmission_Control_Protocol"  title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+				</div>
+				<div id="right-navigation">
+					
+<!-- 0 -->
+<div id="p-views" role="navigation" class="vectorTabs">
+	<h3>Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/wiki/Transmission_Control_Protocol" >Read</a></span></li>
+					<li id="ca-edit"><span><a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet">
+	<h3><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/w/index.php" id="searchform">
+				<div id="simpleSearch">
+						<input name="search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" />						<button type="submit" name="button" title="Search Wikipedia for this text" id="searchButton"><img src="//bits.wikimedia.org/static-1.21wmf11/skins/vector/images/search-ltr.png?303-4" alt="Search" width="12" height="13" /></button>								<input type='hidden' name="title" value="Special:Search"/>
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+				</div>
+			</div>
+			<!-- /header -->
+			<!-- panel -->
+			<div id="mw-panel">
+				<!-- logo -->
+					<div id="p-logo" role="banner"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" role="navigation" id='p-navigation'>
+	<h3>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+			<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+			<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+			<li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" role="navigation" id='p-interaction'>
+	<h3>Interaction</h3>
+	<div class="body">
+		<ul>
+			<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+			<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" role="navigation" id='p-tb'>
+	<h3>Toolbox</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Transmission_Control_Protocol" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Transmission_Control_Protocol" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li>
+			<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-permalink"><a href="/w/index.php?title=Transmission_Control_Protocol&amp;oldid=543626719" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="/w/index.php?title=Transmission_Control_Protocol&amp;action=info">Page information</a></li>
+<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Transmission_Control_Protocol&amp;id=543626719" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" role="navigation" id='p-coll-print_export'>
+	<h3>Print/export</h3>
+	<div class="body">
+		<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Transmission+Control+Protocol" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Transmission+Control+Protocol&amp;oldid=543626719&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Transmission_Control_Protocol&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>	</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" role="navigation" id='p-lang'>
+	<h3>Languages</h3>
+	<div class="body">
+		<ul>
+			<li class="interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D9%85%D9%8A%D9%81%D8%A7%D9%82_%D8%B6%D8%A8%D8%B7_%D8%A7%D9%84%D8%A7%D8%B1%D8%B3%D8%A7%D9%84" title="ميفاق ضبط الارسال" lang="ar" hreflang="ar">العربية</a></li>
+			<li class="interwiki-ast"><a href="//ast.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="ast" hreflang="ast">Asturianu</a></li>
+			<li class="interwiki-bn"><a href="//bn.wikipedia.org/wiki/%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8%E0%A6%AE%E0%A6%BF%E0%A6%B6%E0%A6%A8_%E0%A6%95%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B2_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%9F%E0%A7%8B%E0%A6%95%E0%A6%B2" title="ট্রান্সমিশন কন্ট্রোল প্রোটোকল" lang="bn" hreflang="bn">বাংলা</a></li>
+			<li class="interwiki-bg"><a href="//bg.wikipedia.org/wiki/TCP" title="TCP" lang="bg" hreflang="bg">Български</a></li>
+			<li class="interwiki-bs"><a href="//bs.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="bs" hreflang="bs">Bosanski</a></li>
+			<li class="interwiki-br"><a href="//br.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="br" hreflang="br">Brezhoneg</a></li>
+			<li class="interwiki-ca"><a href="//ca.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="ca" hreflang="ca">Català</a></li>
+			<li class="interwiki-cs"><a href="//cs.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="cs" hreflang="cs">Česky</a></li>
+			<li class="interwiki-da"><a href="//da.wikipedia.org/wiki/TCP" title="TCP" lang="da" hreflang="da">Dansk</a></li>
+			<li class="interwiki-de"><a href="//de.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="de" hreflang="de">Deutsch</a></li>
+			<li class="interwiki-et"><a href="//et.wikipedia.org/wiki/Edastusohje_protokoll" title="Edastusohje protokoll" lang="et" hreflang="et">Eesti</a></li>
+			<li class="interwiki-el"><a href="//el.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="el" hreflang="el">Ελληνικά</a></li>
+			<li class="interwiki-es"><a href="//es.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="es" hreflang="es">Español</a></li>
+			<li class="interwiki-eo"><a href="//eo.wikipedia.org/wiki/TCP" title="TCP" lang="eo" hreflang="eo">Esperanto</a></li>
+			<li class="interwiki-eu"><a href="//eu.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="eu" hreflang="eu">Euskara</a></li>
+			<li class="interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AF_%D9%87%D8%AF%D8%A7%DB%8C%D8%AA_%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84" title="قرارداد هدایت انتقال" lang="fa" hreflang="fa">فارسی</a></li>
+			<li class="interwiki-fr"><a href="//fr.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="fr" hreflang="fr">Français</a></li>
+			<li class="interwiki-gl"><a href="//gl.wikipedia.org/wiki/TCP" title="TCP" lang="gl" hreflang="gl">Galego</a></li>
+			<li class="interwiki-gu"><a href="//gu.wikipedia.org/wiki/%E0%AA%AA%E0%AB%8D%E0%AA%B0%E0%AA%B8%E0%AA%BE%E0%AA%B0%E0%AA%A3_%E0%AA%A8%E0%AA%BF%E0%AA%AF%E0%AA%82%E0%AA%A4%E0%AB%8D%E0%AA%B0%E0%AA%A3_%E0%AA%AA%E0%AB%8D%E0%AA%B0%E0%AB%8B%E0%AA%9F%E0%AB%8B%E0%AA%95%E0%AB%8B%E0%AA%B2" title="પ્રસારણ નિયંત્રણ પ્રોટોકોલ" lang="gu" hreflang="gu">ગુજરાતી</a></li>
+			<li class="interwiki-ko"><a href="//ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EC%A0%9C%EC%96%B4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" title="전송 제어 프로토콜" lang="ko" hreflang="ko">한국어</a></li>
+			<li class="interwiki-hy"><a href="//hy.wikipedia.org/wiki/TCP" title="TCP" lang="hy" hreflang="hy">Հայերեն</a></li>
+			<li class="interwiki-hr"><a href="//hr.wikipedia.org/wiki/TCP" title="TCP" lang="hr" hreflang="hr">Hrvatski</a></li>
+			<li class="interwiki-id"><a href="//id.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="id" hreflang="id">Bahasa Indonesia</a></li>
+			<li class="interwiki-is"><a href="//is.wikipedia.org/wiki/TCP" title="TCP" lang="is" hreflang="is">Íslenska</a></li>
+			<li class="interwiki-it"><a href="//it.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="it" hreflang="it">Italiano</a></li>
+			<li class="interwiki-he"><a href="//he.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="he" hreflang="he">עברית</a></li>
+			<li class="interwiki-pam"><a href="//pam.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="pam" hreflang="pam">Kapampangan</a></li>
+			<li class="interwiki-lv"><a href="//lv.wikipedia.org/wiki/TCP" title="TCP" lang="lv" hreflang="lv">Latviešu</a></li>
+			<li class="interwiki-lb"><a href="//lb.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="lb" hreflang="lb">Lëtzebuergesch</a></li>
+			<li class="interwiki-lt"><a href="//lt.wikipedia.org/wiki/TCP" title="TCP" lang="lt" hreflang="lt">Lietuvių</a></li>
+			<li class="interwiki-hu"><a href="//hu.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="hu" hreflang="hu">Magyar</a></li>
+			<li class="interwiki-ms"><a href="//ms.wikipedia.org/wiki/Protokol_Kawalan_Penghantaran" title="Protokol Kawalan Penghantaran" lang="ms" hreflang="ms">Bahasa Melayu</a></li>
+			<li class="interwiki-nl"><a href="//nl.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="nl" hreflang="nl">Nederlands</a></li>
+			<li class="interwiki-ja"><a href="//ja.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="ja" hreflang="ja">日本語</a></li>
+			<li class="interwiki-no"><a href="//no.wikipedia.org/wiki/TCP" title="TCP" lang="no" hreflang="no">Norsk bokmål</a></li>
+			<li class="interwiki-nn"><a href="//nn.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="nn" hreflang="nn">Norsk nynorsk</a></li>
+			<li class="interwiki-uz"><a href="//uz.wikipedia.org/wiki/TCP" title="TCP" lang="uz" hreflang="uz">Oʻzbekcha</a></li>
+			<li class="interwiki-pl"><a href="//pl.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="pl" hreflang="pl">Polski</a></li>
+			<li class="interwiki-pt"><a href="//pt.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="pt" hreflang="pt">Português</a></li>
+			<li class="interwiki-ro"><a href="//ro.wikipedia.org/wiki/Protocol_de_control_al_transmisiei" title="Protocol de control al transmisiei" lang="ro" hreflang="ro">Română</a></li>
+			<li class="interwiki-ru"><a href="//ru.wikipedia.org/wiki/TCP" title="TCP" lang="ru" hreflang="ru">Русский</a></li>
+			<li class="interwiki-sq"><a href="//sq.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="sq" hreflang="sq">Shqip</a></li>
+			<li class="interwiki-simple"><a href="//simple.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="simple" hreflang="simple">Simple English</a></li>
+			<li class="interwiki-sk"><a href="//sk.wikipedia.org/wiki/Protokol_riadenia_prenosu" title="Protokol riadenia prenosu" lang="sk" hreflang="sk">Slovenčina</a></li>
+			<li class="interwiki-sr"><a href="//sr.wikipedia.org/wiki/TCP" title="TCP" lang="sr" hreflang="sr">Српски / srpski</a></li>
+			<li class="interwiki-sh"><a href="//sh.wikipedia.org/wiki/TCP" title="TCP" lang="sh" hreflang="sh">Srpskohrvatski / српскохрватски</a></li>
+			<li class="interwiki-fi"><a href="//fi.wikipedia.org/wiki/TCP" title="TCP" lang="fi" hreflang="fi">Suomi</a></li>
+			<li class="interwiki-sv"><a href="//sv.wikipedia.org/wiki/Transmission_control_protocol" title="Transmission control protocol" lang="sv" hreflang="sv">Svenska</a></li>
+			<li class="interwiki-ta"><a href="//ta.wikipedia.org/wiki/%E0%AE%AA%E0%AE%B0%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%95%E0%AF%88_%E0%AE%95%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%81%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%BE%E0%AE%9F%E0%AF%81_%E0%AE%A8%E0%AF%86%E0%AE%B1%E0%AE%BF%E0%AE%AE%E0%AF%81%E0%AE%B1%E0%AF%88" title="பரப்புகை கட்டுப்பாடு நெறிமுறை" lang="ta" hreflang="ta">தமிழ்</a></li>
+			<li class="interwiki-th"><a href="//th.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="th" hreflang="th">ไทย</a></li>
+			<li class="interwiki-tr"><a href="//tr.wikipedia.org/wiki/TCP" title="TCP" lang="tr" hreflang="tr">Türkçe</a></li>
+			<li class="interwiki-uk"><a href="//uk.wikipedia.org/wiki/TCP" title="TCP" lang="uk" hreflang="uk">Українська</a></li>
+			<li class="interwiki-ur"><a href="//ur.wikipedia.org/wiki/%D8%AA%D8%B6%D8%A8%DB%8C%D8%B7_%D8%AA%D8%B1%D8%B3%DB%8C%D9%84_%D8%AF%D8%B3%D8%AA%D9%88%D8%B1" title="تضبیط ترسیل دستور" lang="ur" hreflang="ur">اردو</a></li>
+			<li class="interwiki-vi"><a href="//vi.wikipedia.org/wiki/TCP" title="TCP" lang="vi" hreflang="vi">Tiếng Việt</a></li>
+			<li class="interwiki-yo"><a href="//yo.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol" lang="yo" hreflang="yo">Yorùbá</a></li>
+			<li class="interwiki-zh-yue"><a href="//zh-yue.wikipedia.org/wiki/%E5%82%B3%E8%BC%B8%E6%8E%A7%E5%88%B6%E5%8D%94%E8%AD%B0" title="傳輸控制協議" lang="zh-yue" hreflang="zh-yue">粵語</a></li>
+			<li class="interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE" title="传输控制协议" lang="zh" hreflang="zh">中文</a></li>
+			<li class="wbc-editpage"><a href="//www.wikidata.org/wiki/Special:ItemByTitle/enwiki/Transmission Control Protocol" title="Edit interlanguage links">Edit links</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+			<!-- /panel -->
+		</div>
+		<!-- footer -->
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 12 March 2013 at 13:25.<br /></li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/wiki/Transmission_Control_Protocol" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="//wikimediafoundation.org/"><img src="//bits.wikimedia.org/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="//bits.wikimedia.org/static-1.21wmf11/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=skins.vector&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mobile.desktop","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","mw.MwEmbedSupport.style","ext.vector.collapsibleNav","ext.vector.collapsibleTabs","ext.vector.editWarning","ext.UserBuckets","ext.articleFeedbackv5.startup","ext.markAsHelpful","ext.gettingstarted.openTask","mw.PopUpMediaTransform"], null, true);
+}</script>
+<script src="/w/index.php?title=MediaWiki:Gadget-ReferenceTooltips.js&amp;action=raw&amp;ctype=text/javascript&amp;508635914"></script>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<!-- Served by mw1055 in 0.210 secs. -->
+	</body>
+</html>

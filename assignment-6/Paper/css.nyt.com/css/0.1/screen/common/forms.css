@@ -1,0 +1,376 @@
+/* $Id: forms.css 69372 2011-06-08 14:54:46Z fisherc $
+/css/0.1/screen/common/forms.css
+(c)2006 - 2010 The New York Times Company
+*/
+
+/* form layout controls */
+
+.control {
+  margin-bottom: 10px;
+}
+
+.lastControl {
+  margin-bottom: 0 !important;
+}
+
+.horizontalControl .control {
+  margin-right: 10px;
+}
+
+.horizontalControl .lastControl {
+  margin-right: 0 !important;
+  margin-bottom: 10px !important;
+}
+
+.horizontalControl .control,
+.horizontalControl .legendContainer,
+.horizontalControl .labelContainer,
+.horizontalFormControl .legendContainer,
+.horizontalFormControl .labelContainer {
+  float: left;
+  display: inline;
+}
+
+/* clearfix control elements */
+
+.control:after,
+.horizontalControl:after,
+.horizontalFormControl:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.control,
+.horizontalControl,
+.horizontalFormControl {
+  display: block;
+}
+
+.control,
+.horizontalControl,
+.horizontalFormControl {
+  *display: inline-block; /* IE8 + ignores this */
+}
+
+/* other controls */
+
+.checkboxControl .labelContainer,
+.radioControl .labelContainer,
+.switchControl .labelContainer {
+  float: none;
+  display: block;
+}
+
+.checkboxControl .fieldContainer,
+.radioControl .fieldContainer,
+.switchControl .fieldContainer {
+  float: left;
+  display: inline;
+}
+
+.checkboxControl .fieldContainer,
+.radioControl .fieldContainer {
+  width: 19px;
+  padding-left: 0 !important;
+}
+
+.checkboxControl .labelContainer,
+.radioControl .labelContainer {
+  padding-left: 19px;
+}
+
+.checkboxControl .checkbox,
+.radioControl .radio {
+  margin: 2px 0 0;
+  padding: 0;
+}
+
+.errorControl {
+  position: relative;
+}
+
+/* reset labels back to inline default, global.css sets them to block, use .blockLabel if block is needed. */
+
+.control label {
+  display: inline;
+}
+
+.labelBd {
+  font-weight: bold;
+}
+
+.control .checkboxLabelSm {
+  display: inline-block; /* creates browser consistent box height */
+}
+
+.labelContainer .insetV {
+  margin: 4px 0 0; /* use to align label to input type text */
+}
+
+.radio,
+.checkbox {
+  *height: 13px;  /* IE7 for vertical alignment consistency */
+  *width: 13px;  /* IE7 for horizontal alignment consistency */
+}
+
+.legendDescription,
+.legendDescriptionLg,
+.labelDescription,
+.inputDescription,
+.selectDescription,
+.textareaDescription {
+  font-weight: normal;
+  color: #808080;
+}
+
+.legendDescription,
+.labelDescription,
+.inputDescription,
+.selectDescription,
+.textareaDescription,
+.checkboxLabelSm {
+  font-size: 10px; /* px in case nested */
+}
+
+.legendDescriptionLg {
+  font-size: 11px; /* px in case nested */
+}
+
+/* font family stack */
+
+.formHint,
+.legendDescription,
+.legendDescriptionLg,
+.labelDescription,
+.inputDescription,
+.selectDescription,
+.textareaDescription,
+.button,
+.applicationButton,
+.applicationButtonLt,
+.textButton,
+.appButton,
+.appButtonSmall {
+  font-family: arial, helvetica, sans-serif;
+}
+
+/* form hints */
+
+.formHint {
+  font-size: 1em;
+}
+
+/* input hints */
+
+.inputHint {
+  color: #808080;
+}
+
+/* error handling */
+
+.nytdvalidateError {
+  color: #a81817;
+}
+
+/* buttons */
+
+.button,
+.applicationButton,
+.applicationButtonLt,
+.textButton {
+  vertical-align: middle;
+  text-align: center;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.button,
+.applicationButton,
+.applicationButtonLt {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.button {
+  padding: 1px 2px;
+  font-size: 10px;
+  line-height: 12px;
+  background-color: #fff;
+  border: 1px solid #c1c1c1;
+  color: #333;
+}
+
+.applicationButton,
+.applicationButtonLt,
+.textButton {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.applicationButton,
+.textButton {
+  border: none;
+}
+
+.textButton { /* appears as border-less button */
+  font-weight: normal;
+  background-color: transparent;
+  color: #004276;
+}
+
+.applicationButton {
+  background-color: #004276;
+  color: #fff;
+  font-weight: bold;
+}
+
+.applicationButtonLt {
+  background-color: #fff;
+  border: 1px solid #004276;
+  color: #004276;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+a.applicationButton {
+  color: #fff;
+}
+
+a.applicationButtonLt {
+  color: #004276;
+}
+
+a.applicationButton:hover,
+a.applicationButtonLt:hover {
+  text-decoration: none;
+}
+
+/* webkit padding adjustments */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .button {
+    padding: 3px 4px 2px;
+  }
+  .applicationButton,
+  .textButton {
+    padding: 6px 12px;
+  }
+  .applicationButtonLt {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+/* app buttons (sliding door images seen in timespeople) */
+
+.appButton,
+.appButtonSmall {
+  vertical-align: middle;
+  font-size: 11px;
+  line-height: normal !important;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 12px 0 0;
+  height: 28px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+  background: url(/images/apps/buttons/rightcap.png) right no-repeat;
+  cursor: pointer;
+  width: auto;
+}
+
+.appButtonSmall {
+  padding: 0 8px 0 0;
+  height: 19px;
+  background: url(/images/apps/buttons/rightcapsmall.png) right no-repeat;
+}
+
+.appButton::-moz-focus-inner,
+.appButtonSmall::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.appButton:focus,
+.appButtonSmall:focus {
+  outline: 1px dotted;
+}
+
+.appButton span,
+.appButtonSmall span {
+  display: block;
+  white-space: nowrap;
+  padding: 0 0 0 12px;
+  height: 28px;
+  line-height: 28px;
+  background: url(/images/apps/buttons/leftcap.png) left no-repeat;
+  text-transform: none;
+}
+
+.appButtonSmall span  {
+  padding: 0 0 0 8px;
+  font-size: 11px;
+  height: 19px;
+  line-height: 19px;
+  background: url(/images/apps/buttons/leftcapsmall.png) left no-repeat;
+}
+
+.altSmall {
+  color: #004276;
+  font-weight: normal;
+  background: url(/images/apps/buttons/rightcapsmall_line.png) right no-repeat;
+}
+
+.altSmall span {
+  background: url(/images/apps/buttons/leftcapsmall_line.png) left no-repeat;
+}
+
+.appButtonSmallDone {
+  color: #808080;
+  font-weight: normal;
+  background: url(/images/apps/buttons/rightcapsmall_done.png) right no-repeat;
+}
+
+.appButtonSmallDone span {
+  background: url(/images/apps/buttons/leftcapsmall_done.png) left no-repeat;
+}
+
+.appButtonDisabled {
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: default;
+}
+
+/*FIXME remove when this is added in ie files*/
+
+.appButton,
+.appButtonSmall {
+  *width: auto;
+  *overflow: visible;
+  _width: auto;
+  _overflow: visible;
+}
+
+.appButton span,
+.appButtonSmall span {
+  _margin-top: 1px;
+}
+
+a.appButton,
+a.appButtonSmall {
+  color: white !important;
+  display: block;
+}
+
+a.altSmall {
+  color: #004276 !important;
+}

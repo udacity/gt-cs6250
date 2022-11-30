@@ -1,0 +1,733 @@
+diff --git a/net/base/host_resolver_impl.cc b/net/base/host_resolver_impl.cc
+index ba59569..c645223 100644
+--- a/net/base/host_resolver_impl.cc
++++ b/net/base/host_resolver_impl.cc
+@@ -18,9 +18,11 @@
+ #include "base/bind.h"
+ #include "base/bind_helpers.h"
+ #include "base/callback.h"
++#include "base/command_line.h"
+ #include "base/compiler_specific.h"
+ #include "base/debug/debugger.h"
+ #include "base/debug/stack_trace.h"
++#include "base/file_util.h"
+ #include "base/message_loop_proxy.h"
+ #include "base/metrics/field_trial.h"
+ #include "base/metrics/histogram.h"
+@@ -51,6 +53,45 @@
+ 
+ namespace net {
+ 
++// Lock only writes, reads should be after all is done.
++ResolveContT g_resolves;
++namespace {
++base::Lock g_resolves_lock;
++void PushResolve(const std::string &url, uint16 port) {
++  static const ResolveContT::size_type max_size = 2048;
++  static bool started = false;
++  if (!started) {
++    // Prevent reallocations.
++    g_resolves.reserve(max_size);
++    started = true;
++  }
++  DCHECK_LT(g_resolves.size(), g_resolves.capacity()); // No realloc.
++  Resolve r;
++  r.url = url;
++  r.port = port;
++  r.start = r.end = base::Time::Now();
++  r.net_error = 1;
++  base::AutoLock lock(g_resolves_lock);
++  g_resolves.push_back(r);
++}
++void UpdateResolve(const std::string &url, uint16 port,
++                   const AddressList &addrlist, int net_error) {
++  // Assume this is only updated once and the container is never
++  // reallocated: don't lock. Hack, but we don't want to perturb
++  // the regular code.
++  base::Time t(base::Time::Now());
++  ResolveContT::size_type size = g_resolves.size();
++  ResolveContT::size_type i;
++  for (i = 0; i != size; ++i)
++    if (g_resolves[i].url == url && g_resolves[i].port == port)
++      break;
++  DCHECK_NE(i, size);  // Not found.
++  g_resolves[i].end = t;
++  g_resolves[i].addrlist = addrlist;  // TODO(jfb) This probably allocates.
++  g_resolves[i].net_error = net_error;
++}
++}
++
+ namespace {
+ 
+ // Limit the size of hostnames that will be resolved to combat issues in
+@@ -335,6 +376,7 @@ base::Value* NetLogDnsConfigCallback(const DnsConfig* config,
+ void LogStartRequest(const BoundNetLog& source_net_log,
+                      const BoundNetLog& request_net_log,
+                      const HostResolver::RequestInfo& info) {
++  PushResolve(info.hostname(), info.port());
+   source_net_log.BeginEvent(
+       NetLog::TYPE_HOST_RESOLVER_IMPL,
+       request_net_log.source().ToEventParametersCallback());
+@@ -348,7 +390,9 @@ void LogStartRequest(const BoundNetLog& source_net_log,
+ void LogFinishRequest(const BoundNetLog& source_net_log,
+                       const BoundNetLog& request_net_log,
+                       const HostResolver::RequestInfo& info,
+-                      int net_error) {
++                      int net_error,
++                      const AddressList &addrlist) {
++  UpdateResolve(info.hostname(), info.port(), addrlist, net_error);
+   request_net_log.EndEventWithNetErrorCode(
+       NetLog::TYPE_HOST_RESOLVER_IMPL_REQUEST, net_error);
+   source_net_log.EndEvent(NetLog::TYPE_HOST_RESOLVER_IMPL);
+@@ -1580,7 +1624,7 @@ class HostResolverImpl::Job : public PrioritizedDispatcher::Job {
+       DCHECK_EQ(this, req->job());
+       // Update the net log and notify registered observers.
+       LogFinishRequest(req->source_net_log(), req->request_net_log(),
+-                       req->info(), entry.error);
++                       req->info(), entry.error, entry.addrlist);
+       if (did_complete) {
+         // Record effective total time from creation to completion.
+         RecordTotalTime(had_dns_config_, req->info().is_speculative(),
+@@ -1748,7 +1792,7 @@ int HostResolverImpl::Resolve(const RequestInfo& info,
+ 
+   int rv = ResolveHelper(key, info, addresses, request_net_log);
+   if (rv != ERR_DNS_CACHE_MISS) {
+-    LogFinishRequest(source_net_log, request_net_log, info, rv);
++    LogFinishRequest(source_net_log, request_net_log, info, rv, *addresses);
+     RecordTotalTime(HaveDnsConfig(), info.is_speculative(), base::TimeDelta());
+     return rv;
+   }
+@@ -1770,7 +1814,7 @@ int HostResolverImpl::Resolve(const RequestInfo& info,
+       evicted->OnEvicted();  // Deletes |evicted|.
+       if (evicted == job) {
+         rv = ERR_HOST_RESOLVER_QUEUE_TOO_LARGE;
+-        LogFinishRequest(source_net_log, request_net_log, info, rv);
++        LogFinishRequest(source_net_log, request_net_log, info, rv, *addresses);
+         return rv;
+       }
+     }
+@@ -1810,6 +1854,65 @@ int HostResolverImpl::ResolveHelper(const Key& key,
+     request_net_log.AddEvent(NetLog::TYPE_HOST_RESOLVER_IMPL_CACHE_HIT);
+     return net_error;
+   }
++
++  // Command line switch to hack up DNS resolution on cache miss.
++  // TODO(jfb) Totally not thread safe.
++  const CommandLine& parsed_command_line = *CommandLine::ForCurrentProcess();
++  static const char hack_dns_switch[] = "hack_dns";
++  if (parsed_command_line.HasSwitch(hack_dns_switch)) {
++    typedef std::map<std::string, std::pair<AddressList, uint16> > MapType;
++    static bool initialized = false;
++    static MapType map;
++    if (!initialized) {
++      map.clear();  // If half-initialized.
++      base::FilePath dns_map_path(
++          parsed_command_line.GetSwitchValuePath(hack_dns_switch));
++      file_util::ScopedFILE dns_map_file(
++          file_util::OpenFile(dns_map_path, "r"));
++      fprintf(stderr, "Loading hacky DNS from '%s' %s.\n",
++             dns_map_path.value().c_str(),
++             dns_map_file.get() ? "succeeded" : "failed");
++      DCHECK(dns_map_file.get());
++      char line[1024] = { '\0' };
++      while(fgets(line, sizeof(line), dns_map_file.get())) {
++        size_t len = strlen(line);
++        if (len && (line[len - 1] == '\n')) {
++          line[len - 1] = '\0';
++          --len;
++        }
++        size_t space0 = 0, space1 = 0;
++        for (space0 = 0; space0 < len; ++space0) {
++          if (line[space0] == ' ')
++            break;
++        }
++        for (space1 = space0 + 1; space1 < len; ++space1) {
++          if (line[space1] == ' ')
++            break;
++        }
++        std::string original(line, 0, space0);
++        std::string remap(line, space0 + 1, space1 - space0 - 1);
++        char *end(&line[len]);
++        uint16 port = strtoul(&line[space1], &end, 10); // TODO(jfb) Handle failure.
++        fprintf(stderr, "Remapping '%s' -> '%s' port %u\n",
++               original.c_str(), remap.c_str(), port);
++        IPAddressNumber ip;
++        bool parse_res = ParseIPLiteralToNumber(remap, &ip);
++        DCHECK(parse_res);
++        map[original] = std::make_pair(
++            AddressList::CreateFromIPAddress(ip, port), port);
++      }
++      //DCHECK(ferror(dns_map_file.get()));
++      initialized = true;
++    }
++
++    MapType::const_iterator found(map.find(info.hostname()));
++    DCHECK(found != map.end());
++    const AddressList &list(found->second.first);
++    uint16 port = found->second.second;
++    *addresses = AddressList::CopyWithPort(list, port);
++    return OK;
++  }
++
+   // TODO(szym): Do not do this if nsswitch.conf instructs not to.
+   // http://crbug.com/117655
+   if (ServeFromHosts(key, info, addresses)) {
+@@ -1835,7 +1938,7 @@ int HostResolverImpl::ResolveFromCache(const RequestInfo& info,
+   Key key = GetEffectiveKeyForRequest(info);
+ 
+   int rv = ResolveHelper(key, info, addresses, request_net_log);
+-  LogFinishRequest(source_net_log, request_net_log, info, rv);
++  LogFinishRequest(source_net_log, request_net_log, info, rv, *addresses);
+   return rv;
+ }
+ 
+diff --git a/net/base/host_resolver_impl.h b/net/base/host_resolver_impl.h
+index 29a6d67..eb70bd4 100644
+--- a/net/base/host_resolver_impl.h
++++ b/net/base/host_resolver_impl.h
+@@ -24,6 +24,18 @@
+ 
+ namespace net {
+ 
++struct Resolve {
++  std::string url;
++  uint16 port;
++  base::Time start;
++  base::Time end;
++  AddressList addrlist;
++  int net_error;
++};
++typedef std::vector<Resolve> ResolveContT;
++extern ResolveContT g_resolves;
++
++
+ class BoundNetLog;
+ class DnsClient;
+ class NetLog;
+diff --git a/net/http/http_network_transaction.cc b/net/http/http_network_transaction.cc
+index 5b120f7..af7e62a 100644
+--- a/net/http/http_network_transaction.cc
++++ b/net/http/http_network_transaction.cc
+@@ -63,6 +63,16 @@ using base::Time;
+ 
+ namespace net {
+ 
++// Lock only writes, reads should be after all is done.
++ReqUrlContT g_requested_urls;
++namespace {
++base::Lock g_requested_urls_lock;
++void PushUrl(const ReqUrl &requrl) {
++  base::AutoLock lock(g_requested_urls_lock);
++  g_requested_urls.push_back(requrl);
++}
++}
++
+ namespace {
+ 
+ void ProcessAlternateProtocol(HttpStreamFactory* factory,
+@@ -134,6 +144,15 @@ HttpNetworkTransaction::HttpNetworkTransaction(HttpNetworkSession* session)
+ }
+ 
+ HttpNetworkTransaction::~HttpNetworkTransaction() {
++  requrl.end = base::Time::Now();
++  HttpResponseHeaders* h = GetResponseHeaders();
++  if (h) {
++    requrl.status_line = h->GetStatusText();
++    h->GetMimeTypeAndCharset(&requrl.mime_type, &requrl.charset);
++    requrl.is_redirect = h->IsRedirect(&requrl.redirect_location);
++  }
++  PushUrl(requrl);
++
+   if (stream_.get()) {
+     HttpResponseHeaders* headers = GetResponseHeaders();
+     // TODO(mbelshe): The stream_ should be able to compute whether or not the
+@@ -166,6 +185,9 @@ int HttpNetworkTransaction::Start(const HttpRequestInfo* request_info,
+                                   const BoundNetLog& net_log) {
+   SIMPLE_STATS_COUNTER("HttpNetworkTransaction.Count");
+ 
++  requrl.url = request_info->url.spec();
++  requrl.start = base::Time::Now();
++
+   net_log_ = net_log;
+   request_ = request_info;
+   start_time_ = base::Time::Now();
+diff --git a/net/http/http_network_transaction.h b/net/http/http_network_transaction.h
+index 47f7d91..aa646e4 100644
+--- a/net/http/http_network_transaction.h
++++ b/net/http/http_network_transaction.h
+@@ -31,6 +31,19 @@ class HttpStreamRequest;
+ class IOBuffer;
+ struct HttpRequestInfo;
+ 
++struct ReqUrl {
++  std::string url;
++  base::Time start;
++  base::Time end;
++  std::string status_line;
++  std::string mime_type;
++  std::string charset;
++  std::string redirect_location;
++  bool is_redirect;
++};
++typedef std::vector<ReqUrl> ReqUrlContT;
++extern ReqUrlContT g_requested_urls;
++
+ class NET_EXPORT_PRIVATE HttpNetworkTransaction
+     : public HttpTransaction,
+       public HttpStreamRequest::Delegate {
+@@ -241,6 +254,8 @@ class NET_EXPORT_PRIVATE HttpNetworkTransaction
+   // Get the {scheme, host, path, port} for the authentication target
+   GURL AuthURL(HttpAuth::Target target) const;
+ 
++  ReqUrl requrl;
++
+   // Debug helper.
+   static std::string DescribeState(State state);
+ 
+diff --git a/net/socket/tcp_client_socket.cc b/net/socket/tcp_client_socket.cc
+index dbd2105..810a0f8 100644
+--- a/net/socket/tcp_client_socket.cc
++++ b/net/socket/tcp_client_socket.cc
+@@ -17,6 +17,9 @@ namespace {
+ // kernel support. Additionally, this checks system configuration to ensure that
+ // it's enabled.
+ bool SystemSupportsTCPFastOpen() {
++  // Hack around Mininet.
++  return true;
++
+   static const base::FilePath::CharType kTCPFastOpenProcFilePath[] =
+       "/proc/sys/net/ipv4/tcp_fastopen";
+   std::string system_enabled_tcp_fastopen;
+diff --git a/run.sh b/run.sh
+new file mode 100755
+index 0000000..46ed8e2
+--- /dev/null
++++ b/run.sh
+@@ -0,0 +1,9 @@
++#! /bin/bash
++rm -rf ./out/Debug/cache/
++DISPLAY=:1 ./out/Debug/test_shell \
++  --stats \
++  --enable-tcp-fastopen=1 \
++  --hack_dns=hack_dns \
++  --save_files \
++  http://www.google.com
++
+diff --git a/tools/clang/scripts/update.sh b/tools/clang/scripts/update.sh
+index b32b108..f143906 100755
+--- a/tools/clang/scripts/update.sh
++++ b/tools/clang/scripts/update.sh
+@@ -8,7 +8,7 @@
+ # Do NOT CHANGE this if you don't know what you're doing -- see
+ # https://code.google.com/p/chromium/wiki/UpdatingClang
+ # Reverting problematic clang rolls is safe, though.
+-CLANG_REVISION=174965
++CLANG_REVISION=174966
+ # ASan Mac builders are pinned to this revision, see http://crbug.com/170629.
+ CLANG_ASAN_MAC_REVISION=170392
+ 
+diff --git a/webkit/tools/test_shell/simple_resource_loader_bridge.cc b/webkit/tools/test_shell/simple_resource_loader_bridge.cc
+index be8fd2e..35b3dbc 100644
+--- a/webkit/tools/test_shell/simple_resource_loader_bridge.cc
++++ b/webkit/tools/test_shell/simple_resource_loader_bridge.cc
+@@ -33,10 +33,12 @@
+ #include "webkit/tools/test_shell/simple_resource_loader_bridge.h"
+ 
+ #include "base/bind.h"
++#include "base/command_line.h"
+ #include "base/compiler_specific.h"
+ #include "base/file_util.h"
+ #include "base/files/file_path.h"
+ #include "base/logging.h"
++#include "base/md5.h"
+ #include "base/memory/ref_counted.h"
+ #include "base/message_loop.h"
+ #include "base/message_loop_proxy.h"
+@@ -473,16 +475,62 @@ class RequestProxy
+     SimpleAppCacheSystem::SetExtraRequestInfo(
+         request_.get(), params->appcache_host_id, params->request_type);
+ 
+-    download_to_file_ = params->download_to_file;
++    // Cache all the files that get downloaded as-is, with their hostname
++    // and directory structure, so that a local server can later serve the same
++    // files from local path.
++    // Include the full path, query and ref in the saved file.
++    download_to_file_ =
++        CommandLine::ForCurrentProcess()->HasSwitch("save_files");
+     if (download_to_file_) {
+-      base::FilePath path;
+-      if (file_util::CreateTemporaryFile(&path)) {
+-        downloaded_file_ = ShareableFileReference::GetOrCreate(
+-            path, ShareableFileReference::DELETE_ON_FINAL_RELEASE,
+-            base::MessageLoopProxy::current());
+-        file_stream_.reset(new net::FileStream(NULL));
+-        file_stream_->OpenSync(
+-            path, base::PLATFORM_FILE_OPEN | base::PLATFORM_FILE_WRITE);
++      std::string base("Internet/");
++      GURL url(params->url);
++      std::string host(url.host());
++      // Ignore port.
++      std::string path(url.path());
++      std::string query(url.query());
++      std::string ref(url.ref());
++      std::string file_name((path.empty() || path == "/") ?
++                            "/index.html" : path);
++      if (!query.empty())
++        file_name += "?" + query;
++      if (!ref.empty())
++        file_name += "#" + ref;
++      if (file_name.length() > 64) {
++        // Some websites create very long query strings which the OS
++        // might or might not like. Limit ourselves to an arbitrary
++        // length, and over this use and MD5 sum of the name instead.
++        std::string old_file_name(file_name);
++        file_name = "/" + base::MD5String(file_name);
++        fprintf(stderr, "*** Renamed %s to %s ***\n",
++                old_file_name.c_str(), file_name.c_str());
++      }
++      std::string file_str(base + host + file_name);
++      std::string::size_type last_slash(file_str.rfind('/'));
++      DCHECK(last_slash != std::string::npos);
++      std::string dir_str(file_str.substr(0, last_slash));
++      base::FilePath file_path(file_str);
++      base::FilePath dir_path(dir_str);
++      bool create_res(file_util::CreateDirectory(dir_path));
++      DCHECK(create_res);  // Created or existed.
++      int flags = base::PLATFORM_FILE_CREATE_ALWAYS | base::PLATFORM_FILE_WRITE;
++      bool created;
++      base::PlatformFileError error;
++      // Will fail if there are unsafe file traversals in the path, or too long.
++      base::PlatformFile file(base::CreatePlatformFile(
++          file_path, flags, &created, &error));
++      if (!created) {
++        fprintf(stderr, "*** Failed creating file %s ***\n",
++                file_str.c_str());
++        download_to_file_ = false;
++      } else {
++        bool closed(base::ClosePlatformFile(file));
++        DCHECK(closed);
++        file_path_ = file_path;
++        {
++          file_stream_.reset(new net::FileStream(NULL));
++          file_stream_->OpenSync(
++              file_path, base::PLATFORM_FILE_OPEN | base::PLATFORM_FILE_WRITE);
++        }
+       }
+     }
+ 
+@@ -560,10 +608,6 @@ class RequestProxy
+   virtual void OnReceivedData(int bytes_read) {
+     if (download_to_file_) {
+       file_stream_->WriteSync(buf_->data(), bytes_read);
+-      owner_loop_->PostTask(
+-          FROM_HERE,
+-          base::Bind(&RequestProxy::NotifyDownloadedData, this, bytes_read));
+-      return;
+     }
+ 
+     owner_loop_->PostTask(
+@@ -692,8 +736,7 @@ class RequestProxy
+     request->GetMimeType(&info->mime_type);
+     request->GetCharset(&info->charset);
+     info->content_length = request->GetExpectedContentSize();
+-    if (downloaded_file_)
+-      info->download_file_path = downloaded_file_->path();
++    info->download_file_path = file_path_;
+     SimpleAppCacheSystem::GetExtraResponseInfo(
+         request,
+         &info->appcache_id,
+@@ -791,7 +834,7 @@ class RequestProxy
+   // Support for request.download_to_file behavior.
+   bool download_to_file_;
+   scoped_ptr<net::FileStream> file_stream_;
+-  scoped_refptr<ShareableFileReference> downloaded_file_;
++  base::FilePath file_path_;
+ 
+   // Size of our async IO data buffers
+   static const int kDataSize = 16*1024;
+@@ -867,8 +910,7 @@ class SyncRequestProxy : public RequestProxy {
+   virtual void OnReceivedData(int bytes_read) OVERRIDE {
+     if (download_to_file_)
+       file_stream_->WriteSync(buf_->data(), bytes_read);
+-    else
+-      result_->data.append(buf_->data(), bytes_read);
++    result_->data.append(buf_->data(), bytes_read);
+     AsyncReadData();  // read more (may recurse)
+   }
+ 
+diff --git a/webkit/tools/test_shell/test_shell.cc b/webkit/tools/test_shell/test_shell.cc
+index 8895e4f..f8e480f 100644
+--- a/webkit/tools/test_shell/test_shell.cc
++++ b/webkit/tools/test_shell/test_shell.cc
+@@ -14,14 +14,17 @@
+ #include "base/md5.h"
+ #include "base/message_loop.h"
+ #include "base/metrics/stats_table.h"
++#include "base/metrics/statistics_recorder.h"
+ #include "base/path_service.h"
+ #include "base/string_util.h"
+ #include "base/utf_string_conversions.h"
+ #include "build/build_config.h"
+ #include "googleurl/src/url_util.h"
+ #include "grit/webkit_strings.h"
++#include "net/base/host_resolver_impl.h"
+ #include "net/base/mime_util.h"
+ #include "net/base/net_util.h"
++#include "net/http/http_network_transaction.h"
+ #include "net/url_request/url_request.h"
+ #include "net/url_request/url_request_file_job.h"
+ #include "net/url_request/url_request_filter.h"
+@@ -155,7 +158,9 @@ TestShell::TestShell()
+                                &URLRequestTestShellFileJob::InspectorFactory);
+     url_util::AddStandardScheme("test-shell-resource");
+     webkit_glue::SetUserAgent(webkit_glue::BuildUserAgentFromProduct(
+-        "TestShell/0.0.0.0"), false);
++        "Chrome/27.0.0.0"), false);
++
++    start_ = base::Time::Now();
+ }
+ 
+ TestShell::~TestShell() {
+@@ -183,6 +188,10 @@ TestShell::~TestShell() {
+ 
+   PlatformCleanUp();
+ 
++  DumpStats();
++}
++
++void TestShell::DumpStats() {
+   base::StatsTable *table = base::StatsTable::current();
+   if (dump_stats_table_on_exit_) {
+     // Dump the stats table.
+@@ -197,7 +206,62 @@ TestShell::~TestShell() {
+         }
+       }
+     }
+-    printf("</stats>\n");
++    printf("</stats>\n\n");
++    printf("<resolves>\n");
++    printf("strt (ms) | end (ms)  | len (ms)  | err | "
++           "url:port -> address_list\n");
++    for (net::ResolveContT::const_iterator it(net::g_resolves.begin());
++         it != net::g_resolves.end(); ++it) {
++      double start = (it->start - start_).InMillisecondsF();
++      double end = (it->end - start_).InMillisecondsF();
++      double completion = (it->end - it->start).InMillisecondsF();
++      const net::AddressList &addrlist(it->addrlist);
++      printf("%9.3f | %9.3f | %9.3f | %3u | %s:%u -> ",
++             start, end, completion, it->net_error,
++             it->url.c_str(), it->port);
++      if (addrlist.empty())
++        printf(" nil");
++      for (net::AddressList::const_iterator a(addrlist.begin());
++           a != addrlist.end(); ++a) {
++        printf(" %s", a->ToString().c_str());
++      }
++      printf("\n");
++    }
++    printf("</resolves>\n\n");
++    printf("<transactions>\n");
++    printf("strt (ms) | end (ms)  | len (ms)  | url\n");
++    for (net::ReqUrlContT::const_iterator it(net::g_requested_urls.begin());
++         it != net::g_requested_urls.end(); ++it) {
++      double start = (it->start - start_).InMillisecondsF();
++      double end = (it->end - start_).InMillisecondsF();
++      double completion = (it->end - it->start).InMillisecondsF();
++      printf("%9.3f | %9.3f | %9.3f | %s\n",
++             start, end, completion, it->url.c_str());
++    }
++    printf("</transactions>\n\n");
++    printf("<responses>\n");
++    printf("status       | mime_type       | charset | "
++           "url -> redirect_url\n");
++    for (net::ReqUrlContT::const_iterator it(net::g_requested_urls.begin());
++         it != net::g_requested_urls.end(); ++it) {
++      printf("%12s | %15s | %7s | %s -> %s\n",
++             it->status_line.c_str(),
++             it->mime_type.c_str(),
++             it->charset.c_str(),
++             it->url.c_str(),
++             it->is_redirect ? it->redirect_location.c_str() : "nil");
++    }
++    printf("</responses>\n\n");
++    printf("<queries>\n");
++    static const char *queries[] = {
++      "DNS.", "Net.",
++    };
++    for (size_t i = 0; i < sizeof(queries) / sizeof(queries[0]); ++i) {
++      std::string stat;
++      base::StatisticsRecorder::WriteGraph(queries[i], &stat);
++      printf("%s\n", stat.c_str());
++    }
++    printf("</queries>\n");
+   }
+ }
+ 
+diff --git a/webkit/tools/test_shell/test_shell.h b/webkit/tools/test_shell/test_shell.h
+index c6394e9..c32a400 100644
+--- a/webkit/tools/test_shell/test_shell.h
++++ b/webkit/tools/test_shell/test_shell.h
+@@ -18,6 +18,7 @@
+ #include "base/memory/ref_counted.h"
+ #include "base/memory/weak_ptr.h"
+ #include "base/string_piece.h"
++#include "base/time.h"
+ #include "third_party/WebKit/Source/WebKit/chromium/public/WebNavigationPolicy.h"
+ #include "ui/gfx/native_widget_types.h"
+ #include "webkit/tools/test_shell/webview_host.h"
+@@ -255,6 +256,7 @@ public:
+ 
+     // Have the shell print the StatsTable to stdout on teardown.
+     void DumpStatsTableOnExit() { dump_stats_table_on_exit_ = true; }
++    void DumpStats();
+ 
+     void CallJSGC();
+ 
+@@ -406,6 +408,8 @@ private:
+ 
+     // Dump the stats table counters on exit.
+     bool dump_stats_table_on_exit_;
++
++  base::Time start_;
+ };
+ 
+ #endif  // WEBKIT_TOOLS_TEST_SHELL_TEST_SHELL_H_
+diff --git a/webkit/tools/test_shell/test_shell_main.cc b/webkit/tools/test_shell/test_shell_main.cc
+index 36c761d..88831f9 100644
+--- a/webkit/tools/test_shell/test_shell_main.cc
++++ b/webkit/tools/test_shell/test_shell_main.cc
+@@ -13,6 +13,8 @@
+ #include "base/files/file_path.h"
+ #include "base/i18n/icu_util.h"
+ #include "base/message_loop.h"
++#include "base/metrics/stats_counters.h"
++#include "base/metrics/statistics_recorder.h"
+ #include "base/metrics/stats_table.h"
+ #include "base/path_service.h"
+ #include "base/process_util.h"
+@@ -25,6 +27,7 @@
+ #include "net/cookies/cookie_monster.h"
+ #include "net/http/http_cache.h"
+ #include "net/http/http_util.h"
++#include "net/socket/tcp_client_socket.h"
+ #include "net/test/test_server.h"
+ #include "net/url_request/url_request_context.h"
+ #include "third_party/WebKit/Source/WebKit/chromium/public/WebKit.h"
+@@ -54,7 +57,7 @@ namespace {
+ // StatsTable initialization parameters.
+ const char* const kStatsFilePrefix = "testshell_";
+ int kStatsFileThreads = 20;
+-int kStatsFileCounters = 200;
++int kStatsFileCounters = 2000;
+ 
+ void RemoveSharedMemoryFile(std::string& filename) {
+   // Stats uses SharedMemory under the hood. On posix, this results in a file
+@@ -272,7 +275,14 @@ int main(int argc, char* argv[]) {
+       kStatsFileCounters);
+   base::StatsTable::set_current(table);
+ 
+-  TestShell* shell;
++  base::StatisticsRecorder::Initialize();
++
++  bool want_tfo = parsed_command_line.HasSwitch(test_shell::kEnableTcpFastOpen);
++  net::SetTCPFastOpenEnabled(want_tfo);
++  base::StatsCounter tfo_supported("tfo.supported");
++  tfo_supported.Set(net::IsTCPFastOpenEnabled());
++
++  TestShell* shell = NULL;
+   if (TestShell::CreateNewWindow(starting_url, &shell)) {
+     shell->Show(WebKit::WebNavigationPolicyNewWindow);
+ 
+@@ -283,6 +293,9 @@ int main(int argc, char* argv[]) {
+     MessageLoop::current()->Run();
+   }
+ 
++  if (shell)
++    shell->DumpStats();
++
+   TestShell::ShutdownTestShell();
+   TestShell::CleanupLogging();
+ 
+diff --git a/webkit/tools/test_shell/test_shell_switches.cc b/webkit/tools/test_shell/test_shell_switches.cc
+index eafdfa4..b70a825 100644
+--- a/webkit/tools/test_shell/test_shell_switches.cc
++++ b/webkit/tools/test_shell/test_shell_switches.cc
+@@ -72,4 +72,6 @@ const char kEnableAccelCompositing[] = "enable-accelerated-compositing";
+ 
+ const char kEnableSmoothScrolling[] = "enable-smooth-scrolling";
+ 
++const char kEnableTcpFastOpen[] = "enable-tcp-fastopen";
++
+ }  // namespace test_shell
+diff --git a/webkit/tools/test_shell/test_shell_switches.h b/webkit/tools/test_shell/test_shell_switches.h
+index f45296a..972d136 100644
+--- a/webkit/tools/test_shell/test_shell_switches.h
++++ b/webkit/tools/test_shell/test_shell_switches.h
+@@ -30,6 +30,7 @@ extern const char kAllowExternalPages[];
+ extern const char kEnableAccel2DCanvas[];
+ extern const char kEnableAccelCompositing[];
+ extern const char kEnableSmoothScrolling[];
++extern const char kEnableTcpFastOpen[];
+ 
+ }  // namespace test_shell
+ 
+diff --git a/webkit/tools/test_shell/test_webview_delegate.cc b/webkit/tools/test_shell/test_webview_delegate.cc
+index 1fb12e0..e3b9032 100644
+--- a/webkit/tools/test_shell/test_webview_delegate.cc
++++ b/webkit/tools/test_shell/test_webview_delegate.cc
+@@ -11,6 +11,7 @@
+ #include "base/debug/trace_event.h"
+ #include "base/file_util.h"
+ #include "base/message_loop.h"
++#include "base/perftimer.h"
+ #include "base/process_util.h"
+ #include "base/string_number_conversions.h"
+ #include "base/string_util.h"
+@@ -252,13 +253,16 @@ void TestWebViewDelegate::didAddMessageToConsole(
+ }
+ 
+ void TestWebViewDelegate::didStartLoading() {
++  load_timer_.Start();
+   shell_->set_is_loading(true);
+   shell_->UpdateNavigationControls();
+ }
+ 
+ void TestWebViewDelegate::didStopLoading() {
++  load_timer_.Stop();
+   shell_->set_is_loading(false);
+   shell_->UpdateNavigationControls();
++  MessageLoop::current()->QuitWhenIdle();
+ }
+ 
+ // The output from these methods in layout test mode should match that
+@@ -852,7 +856,8 @@ TestWebViewDelegate::TestWebViewDelegate(TestShell* shell)
+       select_trailing_whitespace_enabled_(false),
+ #endif
+       block_redirects_(false),
+-      request_return_null_(false) {
++      request_return_null_(false),
++      load_timer_("tfo.page_load_timer") {
+ }
+ 
+ TestWebViewDelegate::~TestWebViewDelegate() {
+diff --git a/webkit/tools/test_shell/test_webview_delegate.h b/webkit/tools/test_shell/test_webview_delegate.h
+index e882017..a6756ba 100644
+--- a/webkit/tools/test_shell/test_webview_delegate.h
++++ b/webkit/tools/test_shell/test_webview_delegate.h
+@@ -17,6 +17,7 @@
+ #include "base/basictypes.h"
+ #include "base/memory/scoped_ptr.h"
+ #include "base/memory/weak_ptr.h"
++#include "base/metrics/stats_counters.h"
+ #include "base/string16.h"
+ #include "build/build_config.h"
+ #include "third_party/WebKit/Source/Platform/chromium/public/WebFileSystem.h"
+@@ -440,6 +441,8 @@ class TestWebViewDelegate : public WebKit::WebViewClient,
+   // The mock spellchecker used in TestWebViewDelegate::spellCheck().
+   MockSpellCheck mock_spellcheck_;
+ 
++  base::StatsCounterTimer load_timer_;
++
+   DISALLOW_COPY_AND_ASSIGN(TestWebViewDelegate);
+ };
+ 

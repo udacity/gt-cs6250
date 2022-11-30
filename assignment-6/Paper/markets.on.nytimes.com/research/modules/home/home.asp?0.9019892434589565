@@ -1,0 +1,11 @@
+
+	var wsodModule = [];
+
+	wsodModule.push('<div id="wsod-home"><span class="tradeTimea">At 2:03 AM ET</span><h4><a href="http://markets.on.nytimes.com/research/markets/overview/overview.asp">Markets &#187;</a></h4>');
+wsodModule.push('<div class="marketContainer" style="width:48px;"><div class="countryLabel">Japan</div><div class="marketLabel"><a href="http://markets.on.nytimes.com/research/markets/usmarkets/snapshot.asp?symbol=576473" class="asia">Nikkei</a></div><div><span class="negLast">12,254.77</span></div><div><span class="negChange">&#150;60.04</span></div><div><span class="negChangePct">&#150;0.49%</span></div></div><div class="marketContainer mMarket" style="width:53px;">&nbsp<div class="marketLabel"><a href="http://markets.on.nytimes.com/research/markets/usmarkets/snapshot.asp?symbol=568838" class="asia">HangSeng</a></div><div><span class="negLast">22,717.43</span></div><div><span class="negChange">&#150;173.17</span></div><div><span class="negChangePct">&#150;0.76%</span></div></div><div class="marketContainer" style="width:47px;"><div class="countryLabel" style="background:white;position:relative;width:52px;margin-left:-5px;">China</div><div class="marketLabel"><a href="http://markets.on.nytimes.com/research/markets/usmarkets/snapshot.asp?symbol=586621" class="asia">Shanghai</a></div><div><span class="negLast">2,263.09</span></div><div><span class="negChange">&#150;23.52</span></div><div><span class="negChangePct">&#150;1.03%</span></div></div><div class="disclaimer">Data delayed at least 15 minutes</div>');
+	wsodModule.push('<div class="clearElm"></div></div>');
+	
+	var destModule = document.getElementById("wsodMarketsChart");
+	if (destModule) {
+		destModule.innerHTML = wsodModule.join("");
+	}

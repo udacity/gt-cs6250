@@ -1,0 +1,50 @@
+/* $Id: nytModal.css 64263 2011-08-16 15:43:23Z reed.emmons $
+/css/0.1/screen/common/modal/loginModal.css
+(c)2006 - 2010 The New York Times Company */
+
+@import url(/css/0.1/screen/common/forms.css);
+
+.loginModalForm .labelContainer {
+  text-align: right;
+  width: 120px;
+}
+
+.loginModalForm .insetV {
+  margin: 4px 0 0;
+}
+
+.loginModalForm label {
+  color: #000;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.loginModalForm .fieldContainer,
+.loginModalForm .insetContainer {
+  padding-left: 130px;
+}
+
+.loginModalForm .passwordControl .labelDescription {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  line-height: 12px;
+}
+
+.loginModalForm .loginSubmitControl .control {
+  margin-bottom: 0;
+}
+
+.loginModalForm .loginSubmitControl .labelContainer {
+  text-align: left;
+  width: auto;
+}
+
+.loginModalForm .loginSubmitControl .checkboxControl {
+  margin-top: 5px;
+}
+
+.loginModalForm .checkboxLabel {
+  display: inline-block;
+  margin-top: 3px;
+}

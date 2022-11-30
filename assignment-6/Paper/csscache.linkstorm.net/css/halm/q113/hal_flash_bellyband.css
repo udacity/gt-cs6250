@@ -1,0 +1,53 @@
+.ls-basemedia img,
+#holder-ff8080823cc3fa63013cca9bd0290004 img {
+	border: none;
+	margin: 0; padding: 0;
+}
+
+.ls-altmedia a img{ margin-top: 0 !important;}
+.ls-basemedia img { margin-top: 0 !important;}
+
+#holder-ff8080823cc3fa63013cca9bd0290004 .ls-menu-no-vi { display: none; }
+#holder-ff8080823cc3fa63013cca9bd0290004 .ls-item .ls-menu-vi {
+	display: none;
+}
+
+#holder-ff8080823cc3fa63013cca9bd0290004 {
+	position: absolute;
+	width: 970px !important;
+	height: 90px;
+	margin: 0; padding: 0;
+}
+
+#holder-ff8080823cc3fa63013cca9bd0290004 .ls-menu {
+	width: 970px !important;
+	height: 90px;
+}
+
+#holder-ff8080823cc3fa63013cca9bd0290004 .ls-item-1 {
+	width: 970px !important;
+	height: 90px;
+}
+
+#holder-ff8080823cc3fa63013cca9bd0290004 .ls-item-2 { display: none; }
+
+#holder-ff8080823cc3fa63013cca9bd0290004 .ls-item-3 { display: none; }
+
+#holder-ff8080823cc3fa63013cca9bd0290004 .ls-item-4 { display: none; }
+
+#holder-ff8080823cc3fa63013cca9bd0290004 .ls-item .ls-holder .ls-item .ls-holder .ls-item-on {
+	background-position: top right;
+}
+
+.ls-closebtn {
+	position: absolute !important;
+	top: -8px !important; left: -8px !important;
+	height: 18px !important; width: 18px !important;
+	background-image: url('http://imagecache.linkstorm.net/images/halm/gnrc/stormbird/hal_close.png');
+	background-repeat: no-repeat;
+	z-index:50;
+}
+
+.ls-closebtn:hover {
+	background-position: -20px 0 !important;
+}
